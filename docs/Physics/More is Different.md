@@ -1,0 +1,1 @@
+$ \int f(x) \lim_{ x \to \infty}$
