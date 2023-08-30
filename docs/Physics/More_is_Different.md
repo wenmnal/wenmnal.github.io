@@ -74,7 +74,7 @@ obey the laws of science Y.
 | social sciences                 | psychology                  |
 
 
-But this hierarchy does not imply that science X is "just applied Y\".
+But this hierarchy does not imply that science X is "just applied Y".
 At each stage entirely new laws, concepts, and generalizations are
 necessary, requiring inspiration and creativity to just as great a
 degree as in the previous one. Psychology is not applied biology, nor is
@@ -128,7 +128,7 @@ in time) has an electric dipole moment. If ammonia starts out from the
 above unsymmetrical state, it will not stay in it very long. By means of
 quantum mechanical tunneling, the nitrogen can leak through the triangle
 of hydrogens to the other side, turning the pyramid inside out, and, in
-fact, it can do so very rapidly. This is the so-called "inversion,\"
+fact, it can do so very rapidly. This is the so-called "inversion,"
 which occurs at frequency of about $3\times 10^{10}$ per second. A truly
 stationary state can only be an equal superposition of the unsymmetrical
 pyramid and its inverse. That mixture does not have a dipole moment. (I
@@ -278,7 +278,7 @@ relationships with each other, the symmetry allows only the body as a
 whole to respond to external forces.
 
 This leads to a "rigidity,"which is also an apt description of
-superconductivity and superfluidity in spite of their apparent "fluid\"
+superconductivity and superfluidity in spite of their apparent "fluid"
 behavior. \[In the former case, London noted this aspect very early.\]
 Actually, for a hypothetical gaseous but intelligent citizen of Jupiter
 or of a hydrogen cloud somewhere in the galactic center, the properties
@@ -354,7 +354,7 @@ hand, may be not only possible but fruitful in all kinds of ways:
 Without an understanding of the broken symmetry in superconductivity,
 for instance, Josephson would probably not have discovered his
 effect.\[Another name for the Josephson effect is "macroscopic
-quantum-interference phenomena\": interference effects observed between
+quantum-interference phenomena": interference effects observed between
 macroscopic wave functions of electrons in superconductors, or of helium
 atoms in superfluid liquid helium. These phenomena have already
 enormously extended the accuracy of electromagnetic measurements, and
@@ -372,7 +372,7 @@ science alone.
 
 The arrogance of the particle physicist and his intensive research may
 be behind us (the discoverer of the positron said "the rest is
-chemistry\"), but we have yet to recover from that of some molecular
+chemistry"), but we have yet to recover from that of some molecular
 biologists, who seem determined to try to reduce everything about the
 human organism to "only"chemistry, from the common cold and all mental
 disease to the religious instinct. Surely there are more levels of
