@@ -7,7 +7,8 @@ site_description: 王俊的个人网站
 # [Navigtion]
 nav:
   - Physics:
-    - Physics/More_is_Different.md
+    - Thesis:
+    - Physics/Thesis/More_is_Different.md
 # [UI]
 ## [top]
 theme:
