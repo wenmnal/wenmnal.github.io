@@ -63,7 +63,7 @@ obey the laws of science Y.
 
 | X                               | Y                           |
 |---------------------------------|-----------------------------|
-| solid state ormany-body physics | elementary particle physics |
+| solid state or many-body physics | elementary particle physics |
 | chemistry                       | many-body physics           |
 | molecular biology               | chemistry                   |
 | cell biology                    | molecular biology           |
