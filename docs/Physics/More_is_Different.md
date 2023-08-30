@@ -115,8 +115,6 @@ no exception. The chemists will tell you that ammonia "is\" a triangular
 pyramid with the nitrogen negatively charged and the hydrogens
 positively
 
-![NH3](nh3.pdf){width="50%"}
-
 charged, so that it has an electric dipole moment ($\mu$), negative
 toward the apex of the pyramid. Now this seemed very strange to me,
 because I was just being taught that nothing has an electric dipole
