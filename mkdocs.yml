@@ -16,6 +16,32 @@ nav:
 ## [top]
 theme:
   name: material
+  custom_dir: material/.overrides
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrates
   palette:
     - scheme: default # 日间模式
       primary: black # 上方的
@@ -29,15 +55,15 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: 切换至日间模式
-  features:
-    - navigation.tabs # 使用Tab来进行分类
-    - navigation.top # 返回顶部的按钮 在上滑时出现
-    - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
-    - navigation.expand # 打开Tab时左侧目录全部展开
-    - search.suggest # 搜索输入一些字母时推荐补全整个单词
-    - search.highlight # 搜索出的文章关键词加入高亮
-    - content.code.copy # 可以通过按钮复制代码
-    - content.action.edit # 点击按钮跳转到编辑页面  需要结合 edit_uri 一起使用
+  # features:
+  #   - navigation.tabs # 使用Tab来进行分类
+  #   - navigation.top # 返回顶部的按钮 在上滑时出现
+  #   - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
+  #   - navigation.expand # 打开Tab时左侧目录全部展开
+  #   - search.suggest # 搜索输入一些字母时推荐补全整个单词
+  #   - search.highlight # 搜索出的文章关键词加入高亮
+  #   - content.code.copy # 可以通过按钮复制代码
+  #   - content.action.edit # 点击按钮跳转到编辑页面  需要结合 edit_uri 一起使用
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/github
