@@ -16,8 +16,8 @@ This point of view, which is the main purpose of this article to oppose,
 is expressed in a rather well-known passage by Weisskopf:
 
 > Looking at the development of science in the Twentieth Century one can
-> distinguish two trends, which I will call "intensive\" and
-> "extensive\" research, lacking a better terminology. In short:
+> distinguish two trends, which I will call "intensive" and
+> "extensive"research, lacking a better terminology. In short:
 > intensive research goes for the fundamental laws, extensive research
 > goes for the explanation of phenomena in terms of known fundamental
 > laws. As always, distinctions of this kind are not unambiguous, but
@@ -37,12 +37,12 @@ is expressed in a rather well-known passage by Weisskopf:
 The effectiveness of this message may be indicated by the fact that I
 heard it quoted recently by a leader in the field of materials science,
 who urged the participants at a meeting dedicated to "fundamental
-problems in condensed matter physics\" to accept that there were few or
+problems in condensed matter physics"to accept that there were few or
 no such problems and that nothing was left but extensive science, which
 he seemed to equate with device engineering.
 
 The main fallacy in this kind of thinking is that the reductionist
-hypothesis does not by any means imply a "constructionist\" one: The
+hypothesis does not by any means imply a "constructionist"one: The
 ability to reduce everything to simple fundamental laws does not imply
 the ability to start from those laws and reconstruct the universe. In
 fact, the more the elementary particle physicists tell us about the
@@ -61,20 +61,18 @@ seems to me that one may array the sciences roughly linearly in a
 hierarchy, according to the idea: The elementary entities of science X
 obey the laws of science Y.
 
-  ------------------- -------------------
-           X                   Y
-                      
-   many-body physics  
-        physics       
-       chemistry       many-body physics
-   molecular biology       chemistry
-     cell biology      molecular biology
-       $\bullet$           $\bullet$
-       $\bullet$           $\bullet$
-       $\bullet$           $\bullet$
-      psychology          physiology
-    social sciences       psychology
-  ------------------- -------------------
+| X                               | Y                           |
+|---------------------------------|-----------------------------|
+| solid state ormany-body physics | elementary particle physics |
+| chemistry                       | many-body physics           |
+| molecular biology               | chemistry                   |
+| cell biology                    | molecular biology           |
+| $\bullet $                      | $\bullet$                   |
+| $\bullet $                      | $\bullet$                   |
+| $\bullet $                      | $\bullet$                   |
+| psychology                      | physiology                  |
+| social sciences                 | psychology                  |
+
 
 But this hierarchy does not imply that science X is "just applied Y\".
 At each stage entirely new laws, concepts, and generalizations are
@@ -87,7 +85,7 @@ fundamental, intensive underpinnings than in any other science in which
 nontrivial complexities occur, and as a result we have begun to
 formulate a general theory of just how this shift from quantitative to
 qualitative differentiation takes place. This formulation, called the
-theory of "broken symmetry,\" may be of help in making more generally
+theory of "broken symmetry,"may be of help in making more generally
 clear the breakdown of the constructionist converse of reductionism. I
 will give an elementary and incomplete explanation of these ideas, and
 then go on to some more general speculative comments about analogies at
@@ -111,7 +109,7 @@ Let me then start my discussion with an example on the simplest possible
 level, a natural one for me because I worked with it when I was a
 graduate student: the ammonia molecule. At that time everyone knew about
 ammonia and used it to calibrate his theory or his apparatus, and I was
-no exception. The chemists will tell you that ammonia "is\" a triangular
+no exception. The chemists will tell you that ammonia "is"a triangular
 pyramid with the nitrogen negatively charged and the hydrogens
 positively
 
@@ -203,7 +201,7 @@ need not be symmetrical even if the total state of it is. I would
 challenge you start from the fundamental laws of quantum mechanics and
 predict the ammonia inversion and its easily observable properties
 without going through the stage of using the unsymmetrical pyramidal
-structure, even though no "state\" ever has that structure. It is
+structure, even though no "state"ever has that structure. It is
 fascinating that it was not until a couple of decades ago that nuclear
 physicists stopped thinking of the nucleus as a featureless, symmetrical
 little ball and realized that while it really never has a dipole moment,
@@ -221,7 +219,7 @@ The basic reason why this result would have been difficult to derive is
 an important one for our further thinking. If the nucleus is
 sufficiently small there is no real way to define its shape rigorously:
 Three or four or ten particles whirling about each other do not define a
-rotating "plate\" or "football.\" It is only as the nucleus is
+rotating "plate"or "football."It is only as the nucleus is
 considered to be a many-body system--in what is often called the
 $N \to \infty$ limit--that such behavior is rigorously definable. We say
 to ourselves: A macroscopic body of that shape would have such-and-such
@@ -266,7 +264,7 @@ history, but give a bibliography at the end of this article.
 The essential idea is that in the so called $N\to \infty$limit of large
 systems (on our own, macroscopic scale) it is not only convenient but
 essential to realize that matter will undergo mathematically sharp,
-singular "phase transitions\" to states in which the microscopic
+singular "phase transitions"to states in which the microscopic
 symmetries, and even the microscopic equations of motion, are in a sense
 violated. The symmetry leaves behind as its expression only certain
 characteristic behaviors, for instance, long-wavelength vibrations, of
@@ -279,7 +277,7 @@ parts find it energetically more favorable to maintain certain fixed
 relationships with each other, the symmetry allows only the body as a
 whole to respond to external forces.
 
-This leads to a "rigidity,\" which is also an apt description of
+This leads to a "rigidity,"which is also an apt description of
 superconductivity and superfluidity in spite of their apparent "fluid\"
 behavior. \[In the former case, London noted this aspect very early.\]
 Actually, for a hypothetical gaseous but intelligent citizen of Jupiter
@@ -298,17 +296,17 @@ only more than but very different from the sum of its parts.
 The next order of business logically is to ask whether an even more
 complete destruction of the fundamental symmetries of space and time is
 possible and whether new phenomena then arise, intrinsically different
-from the "simple\" phase transition representing a condensation into a
+from the "simple"phase transition representing a condensation into a
 less symmetric state.
 
 We have already excluded the apparently unsymmetric cases of liquids,
 gases, and glasses. (In any real sense they are more symmetric.)It seems
 to me that the next stage is to consider the system which is regular but
 contains information. That is, it is regular in space in some sense so
-that it can be "read out,\" but it contains elements which can be varied
-from one "cell\" to the next. An obvious example is DNA; in everyday
+that it can be "read out,"but it contains elements which can be varied
+from one "cell"to the next. An obvious example is DNA; in everyday
 life, a line of type or a movie film have the same structure. This type
-of "information-bearing crystallinity\" seems to be essential to life.
+of "information-bearing crystallinity"seems to be essential to life.
 Whether the development of life requires any further breaking of
 symmetry is by no means clear.
 
@@ -367,7 +365,7 @@ biology has certainly taken on al whole new aspect from the reduction of
 genetics to biochemistry and biophysics, which will have untold
 consequences. So it is not true, as a recent article would have it, that
 we each should "cultivate our own valley, and not attempt to build roads
-over the mountain ranges \... between the sciences.\" Rather, we should
+over the mountain ranges \... between the sciences."Rather, we should
 recognize that such roads, while often the quickest shortcut to another
 part of our own science, are not visible from the viewpoint of one
 science alone.
@@ -376,7 +374,7 @@ The arrogance of the particle physicist and his intensive research may
 be behind us (the discoverer of the positron said "the rest is
 chemistry\"), but we have yet to recover from that of some molecular
 biologists, who seem determined to try to reduce everything about the
-human organism to "only\" chemistry, from the common cold and all mental
+human organism to "only"chemistry, from the common cold and all mental
 disease to the religious instinct. Surely there are more levels of
 organization between human ethology and DNA than there are between DNA
 and quantum electrodynamics, and each level can require a whole new
