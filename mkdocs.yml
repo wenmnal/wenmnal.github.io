@@ -11,7 +11,7 @@ nav:
       - Physics/Thesis/More_is_Different.md
   - Math: 
     - Algebra: 
-      - Math/Linear_Algebra_Done_Right.md
+      - Math/Algebra/Linear_Algebra_Done_Right.md
 # [UI]
 ## [top]
 theme:
