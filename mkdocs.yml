@@ -8,7 +8,8 @@ site_description: 王俊的个人网站
 nav:
   - 讲稿:
     - index.md 
-    
+  - Physics:
+    - More is Different.md
 # [UI]
 ## [top]
 theme:
