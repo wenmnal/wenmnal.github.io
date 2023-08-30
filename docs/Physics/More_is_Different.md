@@ -67,9 +67,9 @@ obey the laws of science Y.
 | chemistry                       | many-body physics           |
 | molecular biology               | chemistry                   |
 | cell biology                    | molecular biology           |
-| $\bullet $                      | $\bullet$                   |
-| $\bullet $                      | $\bullet$                   |
-| $\bullet $                      | $\bullet$                   |
+| $\bullet$                      | $\bullet$                   |
+| $\bullet$                      | $\bullet$                   |
+| $\bullet$                      | $\bullet$                   |
 | psychology                      | physiology                  |
 | social sciences                 | psychology                  |
 
