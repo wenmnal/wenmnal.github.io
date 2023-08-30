@@ -6,8 +6,6 @@ site_description: 王俊的个人网站
 
 # [Navigtion]
 nav:
-  - 讲稿:
-    - index.md 
   - Physics:
     - More is Different.md
 # [UI]
