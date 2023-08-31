@@ -1,3 +1,7 @@
+# More is Different
+ **Broken symmetry and the nature of the hierarchical structure of science by** **P.W.Anderson**
+ 
+
 The reductionist hypothesis may still be a topic for controversy among
 philosophers, but among the great majority of active scientists I think
 it is accepted without question. The workings of our minds and bodies,
