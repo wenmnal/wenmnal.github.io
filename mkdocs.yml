@@ -33,6 +33,9 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: 切换至日间模式
+  font:
+    text: Roboto # 文字字体
+    code: Roboto Mono
   features:
     - navigation.tabs # 使用Tab来进行分类
     - navigation.top # 返回顶部的按钮 在上滑时出现
