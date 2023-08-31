@@ -15,24 +15,25 @@ physicists, some logicians and other mathematicians, and few others.
 This point of view, which is the main purpose of this article to oppose,
 is expressed in a rather well-known passage by Weisskopf:
 
-> Looking at the development of science in the Twentieth Century one can
-> distinguish two trends, which I will call "intensive" and
-> "extensive"research, lacking a better terminology. In short:
-> intensive research goes for the fundamental laws, extensive research
-> goes for the explanation of phenomena in terms of known fundamental
-> laws. As always, distinctions of this kind are not unambiguous, but
-> they are clear in most cases. Solid sate physics, plasma physics, and
-> perhaps also biology are extensive. High energy physics and a good
-> part of nuclear physics are intensive. There is always much less
-> intensive research going on than extensive. Once new fundamental laws
-> are discovered,a large and ever increasing activity begins in order to
-> apply the discoveries to hitherto unexplained phenomena. Thus there
-> are two dimensions to basic research. The frontier of science extends
-> all along a long line from the newest and most modern intensive
-> research, over the extensive research recently spawned by the
-> intensive research of yesterday, to the broad and well developed web
-> of extensive research activities based on intensive research of past
-> decades.
+!!! quote  
+     Looking at the development of science in the Twentieth Century one can
+    distinguish two trends, which I will call "intensive" and
+    "extensive"research, lacking a better terminology. In short:
+    intensive research goes for the fundamental laws, extensive research
+    goes for the explanation of phenomena in terms of known fundamental
+    laws. As always, distinctions of this kind are not unambiguous, but
+    they are clear in most cases. Solid sate physics, plasma physics, and
+    perhaps also biology are extensive. High energy physics and a good
+    part of nuclear physics are intensive. There is always much less
+    intensive research going on than extensive. Once new fundamental laws
+    are discovered,a large and ever increasing activity begins in order to
+    apply the discoveries to hitherto unexplained phenomena. Thus there
+    are two dimensions to basic research. The frontier of science extends
+    all along a long line from the newest and most modern intensive
+    research, over the extensive research recently spawned by the
+    intensive research of yesterday, to the broad and well developed web
+    of extensive research activities based on intensive research of past
+    decades.
 
 The effectiveness of this message may be indicated by the fact that I
 heard it quoted recently by a leader in the field of materials science,

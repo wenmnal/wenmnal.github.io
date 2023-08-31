@@ -7,12 +7,17 @@ site_description: 王俊的个人网站
 # [Navigtion]
 nav:
   - Study: # 顶部导航栏的标题
-    - Physics:
+    - Physics: 
+      - Mathematical Physics:  
+        - Study/Physics/Mathematical Physics/Complex Analysis/Formula of Complex Analysis.md
       - Thesis:
-        - Physics/Thesis/More_is_Different.md
+        - Study/Physics/Thesis/More is different/More_is_Different.md
+        - Study/Physics/Thesis/More is different/More Is Different Chinese.md
+       
+     
     - Math: 
       - Algebra: 
-        - Math/Algebra/Linear_Algebra_Done_Right.md
+        - Study/Math/Algebra/Linear_Algebra_Done_Right.md
   - Me:
     - Self Introduction:
       - Me/Self_Introduction/About_Me.md
