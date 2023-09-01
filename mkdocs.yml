@@ -1,14 +1,15 @@
 # [Info]
-site_name: 王俊的个人网站 # 左上角标题
+site_name: JUN WANG's Home Page # 左上角标题
 site_url: https://wenmnal.github.io
-site_author: 王俊
-site_description: 王俊的个人网站
+site_author: JUN WANG 
+site_description: Jun Wang's Home Page
 
 # [Navigtion]
 nav:
   - Home: 
     - index.md
-  - Study: # 顶部导航栏的标题
+  - Study:
+    - Study/index.md # 顶部导航栏的标题
     - Physics: 
       - Mathematical Physics:  
         - Study/Physics/Mathematical Physics/Complex Analysis/Formula of Complex Analysis.md
@@ -53,22 +54,22 @@ theme:
     code: Roboto Mono
   features:
     - announce.dismiss
-    - content.action.edit
-    - content.action.view
+    #- content.action.edit
+    #- content.action.view
     - content.code.annotate
     - content.code.copy
-    # - content.code.select
-    # - content.tabs.link
+    - content.code.select
+    - content.tabs.link
     - content.tooltips
-    # - header.autohide
-    # - navigation.expand
+    - header.autohide
+    - navigation.expand
     - navigation.footer
     - navigation.indexes
-    # - navigation.instant
-    # - navigation.prune
+    - navigation.instant
+    - navigation.prune
     - navigation.sections
     - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
@@ -83,7 +84,7 @@ theme:
     # - search.highlight # 搜索出的文章关键词加入高亮
     # - content.code.copy # 可以通过按钮复制代码
     # - content.action.edit # 点击按钮跳转到编辑页面  需要结合 edit_uri 一起使用
-  language: zh # 一些提示性的文字会变成中文
+  language: en # 一些提示性的文字会变成中文
 ## [top-right corner]
 repo_url: https://github.com/wenmnal/wenmnal.github.io # 右上角点击跳转的链接
 repo_name: wenmnal.github.io # 右上角的名字
@@ -166,5 +167,5 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.bytedance.com/?query=mathjax&version=3.2.0
 extra_css:
-  - stylesheets/no-footer.css # 不使用底部的翻页
+  #- stylesheets/no-footer.css # 不使用底部的翻页
   - stylesheets/unordered-list-symbols.css # multiplt unordered list symbols
