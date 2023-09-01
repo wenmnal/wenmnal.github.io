@@ -18,6 +18,10 @@ nav:
         - Introduction to Quantum Field Theory:
           - Study/Physics/Quantum Field Theory/Introduction to Quantum Field Theory by peskin/Introductio to Quantum Field Theory Note.md
           - Study/Physics/Quantum Field Theory/Introduction to Quantum Field Theory by peskin/量子场论公式与记号.md 
+        - Quantum Field Theory for the Gifted amateur:
+          - Study/Physics/Quantum Field Theory/QFTFGA Note/Part I The Universe as a set of harmonic oscillators.md
+          - Study/Physics/Quantum Field Theory/QFTFGA Note/Part II Writing down Lagrangians.md
+          - Study/Physics/Quantum Field Theory/QFTFGA Note/Part IV Propagators and perturbations.md
       - Thesis:
         - Study/Physics/Thesis/More is different/More_is_Different.md
         - Study/Physics/Thesis/More is different/More Is Different Chinese.md
@@ -48,14 +52,37 @@ theme:
     text: Noto Sans Math # 文字字体
     code: Roboto Mono
   features:
-    - navigation.tabs # 使用Tab来进行分类
-    - navigation.top # 返回顶部的按钮 在上滑时出现
-    - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
-    - navigation.expand # 打开Tab时左侧目录全部展开
-    - search.suggest # 搜索输入一些字母时推荐补全整个单词
-    - search.highlight # 搜索出的文章关键词加入高亮
-    - content.code.copy # 可以通过按钮复制代码
-    - content.action.edit # 点击按钮跳转到编辑页面  需要结合 edit_uri 一起使用
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - navigation.tabs # 使用Tab来进行分类
+    # - navigation.top # 返回顶部的按钮 在上滑时出现
+    # - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
+    # - navigation.expand # 打开Tab时左侧目录全部展开
+    # - search.suggest # 搜索输入一些字母时推荐补全整个单词
+    # - search.highlight # 搜索出的文章关键词加入高亮
+    # - content.code.copy # 可以通过按钮复制代码
+    # - content.action.edit # 点击按钮跳转到编辑页面  需要结合 edit_uri 一起使用
   language: zh # 一些提示性的文字会变成中文
 ## [top-right corner]
 repo_url: https://github.com/wenmnal/wenmnal.github.io # 右上角点击跳转的链接
@@ -78,19 +105,57 @@ plugins:
         - ja
   - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
 markdown_extensions:
-  - pymdownx.arithmatex: # latex支持
-      generic: true
-  - attr_list # 给图片后面添加{width="300"}设置大小
+  # - pymdownx.arithmatex: # latex支持
+  #     generic: true
+  # - attr_list # 给图片后面添加{width="300"}设置大小
+  # - toc:
+  #     permalink: true # 固定标题位置为当前位置
+  # - pymdownx.highlight: # 代码块高亮
+  #      linenums: true # 显示行号
+  #      auto_title: true # 显示编程语言名称
+  # - pymdownx.superfences # 代码块高亮插件
+  # # 支持Markdown文件上方自定义标题标签等
+  # - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks
+  # - pymdownx.details # admonition需要
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
   - toc:
-      permalink: true # 固定标题位置为当前位置
-  - pymdownx.highlight: # 代码块高亮
-       linenums: true # 显示行号
-       auto_title: true # 显示编程语言名称
-  - pymdownx.superfences # 代码块高亮插件
-  # 支持Markdown文件上方自定义标题标签等
-  - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks
-  - pymdownx.details # admonition需要
-
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 extra_javascript:
   # latex支持
   # check https://squidfunk.github.io/mkdocs-material/reference/mathjax/?h=math for more information
