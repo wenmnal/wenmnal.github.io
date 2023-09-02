@@ -1,4 +1,3 @@
-#physics/problems
 # 量子力学问题
 
 1.  什么是⿊体?

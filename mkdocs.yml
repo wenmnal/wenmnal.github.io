@@ -11,10 +11,18 @@ nav:
   - Study:
     - Study/index.md # 顶部导航栏的标题
     - Physics: 
+      - Quantum Mechanics: 
+        - Study/Physics/Quantum Mechanics/第一章 绪论.md
+        - Study/Physics/Quantum Mechanics/第二章 非相对论粒子波函数和 Schrödinger 方程.md
+        - Study/Physics/Quantum Mechanics/第三章 形式理论.md
+        - Study/Physics/Quantum Mechanics/量子力学复习.md
+        - Study/Physics/Quantum Mechanics/附录 A 量子力学问题.md
+      - Statistical Physics:
+        - Study/Physics/Statistical Physics/Maxwell 关系.md
       - Mathematical Physics:  
         - Study/Physics/Mathematical Physics/Complex Analysis/Formula of Complex Analysis.md
-        - Study/Physics/Mathematical Physics/Group theory/第一章李群和李代数的基本概念.md
-        - Study/Physics/Mathematical Physics/Sadri Hassani Mathematical Physics/Part 0 Mathematical Preliminaries.md
+        #- Study/Physics/Mathematical Physics/Group theory/第一章李群和李代数的基本概念.md
+        #- Study/Physics/Mathematical Physics/Sadri Hassani Mathematical Physics/Part 0 Mathematical Preliminaries.md
       - Quantum Field Theory:
         - Introduction to Quantum Field Theory:
           - Study/Physics/Quantum Field Theory/Introduction to Quantum Field Theory by peskin/Introductio to Quantum Field Theory Note.md
