@@ -11,6 +11,8 @@ nav:
   - Study:
     - Study/index.md # 顶部导航栏的标题
     - Physics: 
+      - Formula:
+        - Study/Physics/Formula/formula.md
       - Quantum Mechanics: 
         - Study/Physics/Quantum Mechanics/第一章 绪论.md
         - Study/Physics/Quantum Mechanics/第二章 非相对论粒子波函数和 Schrödinger 方程.md
