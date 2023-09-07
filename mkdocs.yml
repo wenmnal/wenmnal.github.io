@@ -22,9 +22,10 @@ nav:
       - Statistical Physics:
         - Study/Physics/Statistical Physics/Maxwell 关系.md
       - Mathematical Physics:  
-        - Study/Physics/Mathematical Physics/Complex Analysis/Formula of Complex Analysis.md
-        #- Study/Physics/Mathematical Physics/Group theory/第一章李群和李代数的基本概念.md
-        #- Study/Physics/Mathematical Physics/Sadri Hassani Mathematical Physics/Part 0 Mathematical Preliminaries.md
+        - Complex Analysis:
+          - Study/Physics/Mathematical Physics/Complex Analysis/Formula of Complex Analysis.md
+        - Group theory in a nutshell:
+          - Study/Physics/Mathematical Physics/Group theory in a nutshell/index.md
       - Quantum Field Theory:
         - Introduction to Quantum Field Theory:
           - Study/Physics/Quantum Field Theory/Introduction to Quantum Field Theory by peskin/Introductio to Quantum Field Theory Note.md
