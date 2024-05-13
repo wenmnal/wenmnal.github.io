@@ -25,7 +25,7 @@ $$
 \implies \frac{ \delta S }{ \delta \phi}=\frac{ \partial \mathcal{L} }{ \partial \phi }-\partial_\mu\left( \frac{ \partial \mathcal{L} }{ \partial (\partial_\mu \phi)}  \right)=0
 $$
 
-!!! example s
+!!! example 
     $\displaystyle \mathcal{L}=\frac{1}{2}(\partial_\mu \phi)^{2}-\frac{1}{2}m^{2}\phi^{2}$
     $\displaystyle \frac{ \delta \mathcal{L} }{ \delta \phi }=-m^{2}\phi\quad \partial_\mu \frac{ \partial \mathcal{L} }{ \partial (\partial_\mu \phi) }=\partial_\mu \partial^{\mu}\phi=\partial^{2}\phi\quad \frac{ \delta S }{ \delta \phi}=-m^{2}\phi-\partial^{2}\phi=0\implies(\partial^{2}+m^{2})\phi=0$
 !!! note  "**Notes: The derivative of tensor.**"
