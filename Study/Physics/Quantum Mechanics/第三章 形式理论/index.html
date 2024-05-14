@@ -1,0 +1,2014 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Jun Wang's Home Page">
+      
+      
+        <meta name="author" content="JUN WANG">
+      
+      
+        <link rel="canonical" href="https://wenmnal.github.io/Study/Physics/Quantum%20Mechanics/%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E5%BD%A2%E5%BC%8F%E7%90%86%E8%AE%BA/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E9%9D%9E%E7%9B%B8%E5%AF%B9%E8%AE%BA%E7%B2%92%E5%AD%90%E6%B3%A2%E5%87%BD%E6%95%B0%E5%92%8C%20Schr%C3%B6dinger%20%E6%96%B9%E7%A8%8B/">
+      
+      
+        <link rel="next" href="../%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%A4%8D%E4%B9%A0/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+    
+    
+      
+        <title>第三章 形式理论 - JUN WANG's Home Page</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.732c4fb1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Math:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans Math";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/unordered-list-symbols.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="JUN WANG&#39;s Home Page" class="md-header__button md-logo" aria-label="JUN WANG's Home Page" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            JUN WANG's Home Page
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第三章 形式理论
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wenmnal/wenmnal.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wenmnal.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
+          
+  
+    
+  
+  Study
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../Me/Self_Introduction/About_Me/" class="md-tabs__link">
+          
+  
+    
+  
+  Me
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../Documents/" class="md-tabs__link">
+          
+  
+    
+  
+  Documents
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="JUN WANG&#39;s Home Page" class="md-nav__button md-logo" aria-label="JUN WANG's Home Page" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    JUN WANG's Home Page
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/wenmnal/wenmnal.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wenmnal.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../.." class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Study
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Study
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Physics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Physics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Formula/formula/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Formula
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Quantum Mechanics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Quantum Mechanics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E7%BB%AA%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第一章 绪论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E9%9D%9E%E7%9B%B8%E5%AF%B9%E8%AE%BA%E7%B2%92%E5%AD%90%E6%B3%A2%E5%87%BD%E6%95%B0%E5%92%8C%20Schr%C3%B6dinger%20%E6%96%B9%E7%A8%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第二章 非相对论粒子波函数和 Schrödinger 方程
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    第三章 形式理论
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    第三章 形式理论
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性代数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性代数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      矢量空间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      矢量空间的基
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      内积
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      矩阵
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      算符与矩阵
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      力学量的算符
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="力学量的算符">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      坐标空间与动量空间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      一般物理量的算符
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hermitian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hermitian 算符
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      厄米算符的本征值和本征函数
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%A4%8D%E4%B9%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第一章从经典物理到量子论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95%20A%20%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E9%97%AE%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    量子力学问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Statistical%20Physics/Maxwell%20%E5%85%B3%E7%B3%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Statistical Physics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../Mathematical%20Physics/Complex%20Analysis/Formula%20of%20Complex%20Analysis/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Mathematical Physics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../Quantum%20Field%20Theory/Introduction%20to%20Quantum%20Field%20Theory%20by%20peskin/Introductio%20to%20Quantum%20Field%20Theory%20Note/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Quantum Field Theory
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Thesis/More%20is%20different/More_is_Different/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Thesis
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Math
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Math
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Math/Algebra/Linear_Algebra_Done_Right/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Algebra
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../../../Me/Self_Introduction/About_Me/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Me
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../../Documents/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Documents
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      线性代数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="线性代数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      矢量空间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      矢量空间的基
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      内积
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      矩阵
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      算符与矩阵
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      力学量的算符
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="力学量的算符">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      坐标空间与动量空间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      一般物理量的算符
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hermitian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hermitian 算符
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      厄米算符的本征值和本征函数
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="_1">第三章 形式理论<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">线性代数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">矢量空间<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>无限维复矢量空间: Hilbert 空间</p>
+<p><strong>矢量空间满足的性质</strong></p>
+<ul>
+<li>
+<p>矢量加法</p>
+</li>
+<li>
+<p>加法封闭性</p>
+<ul>
+<li><span class="arithmatex">\(\left|\alpha\right&gt;+\left|\beta\right&gt;=\left|\gamma\right&gt;\in V\)</span></li>
+</ul>
+</li>
+<li>
+<p>加法交换律</p>
+<ul>
+<li><span class="arithmatex">\(\left|\beta\right&gt;+\left|\alpha\right&gt;=\left|\alpha\right&gt; +\left|\beta\right&gt;\)</span></li>
+</ul>
+</li>
+<li>
+<p>加法结合律</p>
+<ul>
+<li><span class="arithmatex">\((\left|\alpha\right&gt; +\left|\beta\right&gt; )+\left|\gamma\right&gt; =\left|\alpha\right&gt; +(\left|\beta\right&gt;+\left|\gamma\right&gt; )\)</span></li>
+</ul>
+</li>
+<li>
+<p>存在唯一零元 <span class="arithmatex">\(\left|0\right&gt;\)</span> </p>
+</li>
+</ul>
+<div class="arithmatex">\[\forall \left|\alpha\right&gt; \in V,,,\left|\alpha\right&gt; +\left|0\right&gt; =\left|\alpha\right&gt;\]</div>
+<ul>
+<li>存在唯一逆元 <span class="arithmatex">\(\left|-\alpha\right&gt;\)</span></li>
+</ul>
+<div class="arithmatex">\[\left|\alpha\right&gt; +\left|-\alpha\right&gt; =\left|0\right&gt;\]</div>
+<ul>
+<li>
+<p>标量乘法</p>
+</li>
+<li>
+<p>标量乘法封闭性</p>
+<ul>
+<li><span class="arithmatex">\(a\left|\alpha\right&gt; =\left|\gamma\right&gt; \in V\)</span></li>
+</ul>
+</li>
+<li>
+<p>乘法结合律</p>
+<ul>
+<li><span class="arithmatex">\(a\left|\alpha\right&gt; +b\left|\alpha\right&gt; =(a+b)\left|\alpha\right&gt; \quad a\left|\alpha\right&gt; +a\left|\beta\right&gt; =a(\left|\alpha\right&gt; +\left|\beta\right&gt; )\)</span></li>
+</ul>
+</li>
+</ul>
+<h3 id="_4">矢量空间的基<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>若存在一组向量 <span class="arithmatex">\(\left\{\left|\alpha_i\right&gt;  \right\}\)</span>, 使得 <span class="arithmatex">\(\forall\left|\alpha\right&gt; \in V\)</span> 存在唯一的一组数 <span class="arithmatex">\(\left\{ a_i \right\}\)</span> 有
+<span class="arithmatex">\(\left|\alpha\right&gt; =\sum_{i}a_i\left|\alpha_i\right&gt;\)</span>
+则称向量组 <span class="arithmatex">\(\left|\alpha_i\right&gt;\)</span> 是矢量空间 <span class="arithmatex">\(V\)</span> 的一个基. 可用数组 <span class="arithmatex">\((a_1,a_2,\cdots a_n)\)</span> 来表示矢量 <span class="arithmatex">\(\left|\alpha\right&gt;\)</span>.
+基中线性无关的向量的个数称为矢量空间的维数.</p>
+<h3 id="_5">内积<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\left|\alpha\right&gt;\)</span> 与 <span class="arithmatex">\(\left|\beta\right&gt;\)</span> 的内积是一个数记作 <span class="arithmatex">\(\left&lt;\alpha|\beta\right&gt;\)</span></p>
+<p>如波函数可看作态矢 <span class="arithmatex">\(\psi(x)\longleftrightarrow \left|\psi\right&gt;\)</span>
+则波函数的内积可写为</p>
+<div class="arithmatex">\[\int_{-\infty}^{+\infty} \psi_{1}^\ast(x)\psi_{2}(x) \mathrm{d}x=\left&lt;\psi_{1}|\psi_{2}\right&gt;\]</div>
+<p><strong>内积的性质</strong></p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\left&lt;\alpha|\beta\right&gt; =\left&lt;\beta|\alpha\right&gt;^{\ast}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\left&lt;\alpha|\alpha\right&gt; \geqslant 0 ,\left&lt;\alpha|\alpha\right&gt; =0 \iff \left|\alpha\right&gt; =\left|0\right&gt;\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\left&lt;\alpha|(b\left|\beta\right&gt; +c\left|\gamma\right&gt; )\right.  =b\left&lt;\alpha|\beta\right&gt; +c\left&lt;\alpha|\gamma\right&gt;\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\left&lt;\alpha|(b|\beta\right&gt;)=b\left&lt;\alpha|\beta\right&gt; \quad \left&lt;a\alpha|\beta\right&gt; =a^{\ast}\left&lt;\alpha|\beta\right&gt;\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\left&lt;b\beta+c\gamma|\alpha\right&gt; =b^{\ast}\left&lt;\beta|\alpha\right&gt; +c^{\ast}\left&lt;\gamma|\alpha\right&gt;\)</span></p>
+</li>
+</ul>
+<p>矢量的模</p>
+<div class="arithmatex">\[\left\| \alpha \right\|_{}=\sqrt{\left&lt;\alpha|\alpha\right&gt; }\]</div>
+<p>单位矢量</p>
+<div class="arithmatex">\[\left|\hat{\alpha}\right&gt; =\frac{\left|\alpha\right&gt; }{\left\| \alpha \right\|_{}}\quad \left&lt;\hat{\alpha}|\hat{\alpha}\right&gt;=1\]</div>
+<p>正交矢量</p>
+<div class="arithmatex">\[\left&lt;\alpha_1|\alpha_2\right&gt; =0\]</div>
+<p>若基 <span class="arithmatex">\(\left\{ \left|\alpha_i\right&gt;  \right\}\)</span> 满足<span class="arithmatex">\(\left&lt;\alpha_i|\alpha_j\right&gt; =\delta_{ij}\)</span> 则称为标准正交基.
+用正交基 <span class="arithmatex">\(\left\{ \left|\alpha_i\right&gt;  \right\}\)</span> 来表示向量则有</p>
+<div class="arithmatex">\[
+\begin{align}
+&amp;\left|\alpha\right&gt; =\sum_{i}a_i\left|\alpha_i\right&gt; \quad \left&lt;\alpha|\alpha\right&gt; =\sum_{i}a_i^{*}a_i=\sum_{i}\left| a_i \right|^{2}\\ 
+&amp;\left|\beta\right&gt; =\sum_{i}b_i\left|\alpha_i\right&gt; \quad \left&lt;\alpha|\beta\right&gt; =\sum_{i}a_i^{*}b_i 
+\end{align}
+\]</div>
+<p>Schwartz 不等式</p>
+<div class="arithmatex">\[\left| \left&lt;\alpha|\beta\right&gt;  \right|^{2}\leqslant \left&lt;\alpha|\alpha\right&gt; \left&lt;\beta|\beta\right&gt;\]</div>
+<h3 id="_6">矩阵<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>算符和线性变换 <span class="arithmatex">\(\hat{T}\)</span> 可用矩阵表示.</p>
+<div class="arithmatex">\[\left|\alpha\right&gt; \stackrel{\hat{T}}{\longrightarrow}\left|\alpha ^{\prime}\right&gt; =\hat{T}\left|\alpha\right&gt;\]</div>
+<p>线性变换即</p>
+<div class="arithmatex">\[\hat{T}(a\left|\alpha\right&gt; +b\left|\beta\right&gt; )=a \hat{T}\left|\alpha\right&gt; +b \hat{T}\left|\beta\right&gt;\]</div>
+<p>对于 <span class="arithmatex">\(n\)</span> 维矢量空间的基 <span class="arithmatex">\(\left\{ \left|e_i\right&gt;  \right\}\)</span></p>
+<div class="arithmatex">\[\hat{T}\left|e_j\right&gt; =\sum_{i}T_{ij}\left|e_i\right&gt;\]</div>
+<p>对于任意一个矢量 <span class="arithmatex">\(\left|\alpha\right&gt; =\sum_{i}a_i\left|e_i\right&gt;\)</span>, <span class="arithmatex">\(\left|\alpha^{\prime}\right&gt; =\hat{T}\left|\alpha\right&gt; =\sum_{i}a_i^{\prime}\left|e_i\right&gt;\)</span>
+<span class="arithmatex">\(\hat{T}\left|\alpha\right&gt; =\hat{T}\sum_{j}a_j\left|e_j\right&gt; =\sum_{j}a_j \hat{T}\left|e_j\right&gt; =\sum_{j}a_j \sum_{i}T_{ij}\left|e_i\right&gt;=\sum_{i}\sum_{j}a_j \hat{T}_{ij}\left|e_i\right&gt;\)</span>m
+则有</p>
+<div class="arithmatex">\[
+a_i^{\prime}=\sum_{j}T_{ij}a_j\implies \boldsymbol{a}^{\prime}=\boldsymbol{T}\boldsymbol{a}\quad \begin{pmatrix} a^\prime_1 \ a^\prime_2 \ \vdots \ a^\prime_n \end{pmatrix}
+\begin{pmatrix} 
+T_{11}&amp;T _{12}&amp;\cdots &amp;T_{1n}\\
+T_{21}&amp;\cdots &amp;\cdots &amp;T_{2n}\\
+\vdots&amp; &amp; &amp; \vdots\\
+T_{n_1}&amp;\cdots &amp;\cdots &amp;T_{nn}
+\end{pmatrix} 
+\begin{pmatrix} a_1 \\ a_2 \\ \vdots \\ a_n \end{pmatrix}
+\]</div>
+<h3 id="_7">算符与矩阵<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ol>
+<li>算符的乘积</li>
+</ol>
+<div class="arithmatex">\[
+\hat{S} \hat{T}\left|\alpha\right&gt; =\hat{U} \left|\alpha\right&gt; \quad \hat{S} \hat{T} =\hat{U} \quad U_{ik}=\sum_{j}S_{ij}T_{jk}
+\]</div>
+<ol>
+<li>矩阵的转置</li>
+</ol>
+<div class="arithmatex">\[
+(\boldsymbol{O}^{\mathrm{T}})_{ij}=\boldsymbol{O}_{ji}
+\]</div>
+<p>对称矩阵 <span class="arithmatex">\(\boldsymbol{O}^{\mathrm{T}}=\boldsymbol{O}\)</span> , 反对称矩阵 <span class="arithmatex">\(\boldsymbol{O}^{\mathrm{T}}=-\boldsymbol{O}\)</span>.
+3. 复共轭矩阵</p>
+<div class="arithmatex">\[(\boldsymbol{O}^{\ast}_{ij})=(\boldsymbol{O}_{ij})^{\ast}\]</div>
+<p>实矩阵 <span class="arithmatex">\(\boldsymbol{O}^{\ast}=\boldsymbol{O}\)</span>, 虚矩阵 <span class="arithmatex">\(\boldsymbol{O}^{\ast}=-\boldsymbol{O}\)</span>.
+4. 厄米共轭</p>
+<div class="arithmatex">\[(\boldsymbol{O}^{\dagger})_{ij}=\boldsymbol{O}^{\dagger}_{ji}\]</div>
+<p>厄米矩阵 <span class="arithmatex">\(\boldsymbol{O}^{\dagger}=\boldsymbol{O}\)</span>, 反厄米矩阵 <span class="arithmatex">\(\boldsymbol{O}^{\dagger}=-\boldsymbol{O}\)</span> \
+用向量表示则为</p>
+<div class="arithmatex">\[
+\boldsymbol{a}=\begin{pmatrix} a_1 \\ a_2 \\ \vdots \\ a_n \end{pmatrix}    
+\quad \boldsymbol{a}^{\dagger}=\begin{pmatrix} a^\dagger_1, a^\dagger_2, \cdots, a^\dagger_n \end{pmatrix}
+\]</div>
+<p>内积也可用厄米矩阵表示</p>
+<div class="arithmatex">\[
+\left&lt;\alpha|\alpha\right&gt; =\boldsymbol{a}^{\dagger}\boldsymbol{a}\quad\left&lt;\alpha|\beta\right&gt; =\boldsymbol{a}^{\dagger} \boldsymbol{b}\quad\left&lt;\alpha\right|\hat{T} \left|\beta\right&gt; =\boldsymbol{a}^{\dagger}\boldsymbol{T} \boldsymbol{b}
+\]</div>
+<ol>
+<li>矩阵乘积的转置、复共轭、厄米共轭</li>
+</ol>
+<div class="arithmatex">\[
+(\boldsymbol{AB})^{\mathrm{T}}=\boldsymbol{B}^{\mathrm{T}}\boldsymbol{A}^{\mathrm{T}}\quad(\boldsymbol{AB})^{\ast}=\boldsymbol{A}^{\ast}\boldsymbol{B}^{\ast}\quad(\boldsymbol{AB})^{\dagger}=\boldsymbol{B}^{\dagger}\boldsymbol{A}^{\dagger}
+\]</div>
+<ol>
+<li>矩阵交换律 <span class="arithmatex">\(\boldsymbol{AB}\neq \boldsymbol{BA}\)</span> 
+对易子 </li>
+</ol>
+<div class="arithmatex">\[=\boldsymbol{AB}-\boldsymbol{BA}\]</div>
+<p>若
+<span class="arithmatex">\([\boldsymbol{A},\boldsymbol{B}]=0\)</span> 则称 <span class="arithmatex">\(\boldsymbol{A,B}\)</span>
+具有对易关系
+反对易子</p>
+<div class="arithmatex">\[\{\boldsymbol{A},\boldsymbol{B}\}=\boldsymbol{AB}+\boldsymbol{BA}\]</div>
+<p>若 <span class="arithmatex">\(\{\boldsymbol{A},\boldsymbol{B}\}=0\)</span> 则称<span class="arithmatex">\(\boldsymbol{A,B}\)</span> 具有反对易关系</p>
+<ol>
+<li>单位矩阵 <span class="arithmatex">\(\boldsymbol{I}\)</span> <span class="arithmatex">\(\to\)</span> 恒等算符 <span class="arithmatex">\(\hat{I}\)</span></li>
+</ol>
+<div class="arithmatex">\[\boldsymbol{I}\to \hat{I} \quad I_{ij}=\delta _{ij}\]</div>
+<ol>
+<li>逆矩阵
+<span class="arithmatex">\(\boldsymbol{A}\)</span> 可逆, 当且仅当 <span class="arithmatex">\(\det \boldsymbol{A}\neq 0\)</span>, 且有</li>
+</ol>
+<div class="arithmatex">\[\det \boldsymbol{AB}=\det \boldsymbol{A}\det \boldsymbol{B}\quad (\boldsymbol{AB})^{-1}=\boldsymbol{B}^{-1}\boldsymbol{A}^{-1}\]</div>
+<ol>
+<li>正交矩阵（实矩阵）</li>
+</ol>
+<div class="arithmatex">\[\boldsymbol{O}^{\mathrm{T}}\boldsymbol{O}=\boldsymbol{O}\boldsymbol{O}^{\mathrm{T}}=\boldsymbol{I}\]</div>
+<ol>
+<li>幺正矩阵</li>
+</ol>
+<div class="arithmatex">\[\boldsymbol{U}^{\dagger}\boldsymbol{U}=\boldsymbol{U}\boldsymbol{U}^{\dagger}=\boldsymbol{I}\]</div>
+<h2 id="_8">力学量的算符<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="_9">坐标空间与动量空间<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>波函数
+<span class="arithmatex">\(\psi(x)\)</span> 实际上是态矢 <span class="arithmatex">\(\left|\psi\right&gt;\)</span> 在坐标空间 <span class="arithmatex">\(\left|x\right&gt;\)</span> 上的投影
+<span class="arithmatex">\(\psi(x)=\left&lt;x|\psi\right&gt; \quad \left|\psi\right&gt; =\int \psi(x)\left|x\right&gt; \mathrm{d}x\)</span>
+<span class="arithmatex">\(\psi(x)\)</span>可看作将 <span class="arithmatex">\(\left|\psi\right&gt;\)</span> 在坐标空间中分解时, 具有确定位置的态 <span class="arithmatex">\(\left|x\right&gt;\)</span> 所占的比例̱.
+则粒子位置的期望值为
+<span class="arithmatex">\(\left&lt;x\right&gt; =\int_{-\infty}^{+\infty} \left| \psi(x) \right|^{2} \mathrm{d}x=\int_{-\infty}^{+\infty} \psi^\ast(x)x\psi(x) \mathrm{d}x\)</span>
+同理动量的期望值为
+<span class="arithmatex">\(\left&lt;p\right&gt; =\int_{-\infty}^{+\infty} \phi^{\ast}(p) p \phi(p) \mathrm{d}p\)</span>
+其中 <span class="arithmatex">\(\phi(p)\)</span> 为将 <span class="arithmatex">\(\left|\psi\right&gt;\)</span> 在动量空间中分解时，具有确定动量 <span class="arithmatex">\(p\)</span> 的态 <span class="arithmatex">\(\left|p\right&gt;\)</span> 所占的比例.</p>
+<p>则同样有
+<span class="arithmatex">\(\phi(p)=\left&lt;p|\psi\right&gt; \quad \left|\psi\right&gt; =\int \phi(p)\left|p\right&gt; \mathrm{d}p\)</span>
+已知具有确定动量的波函数 <span class="arithmatex">\(\frac{1}{\sqrt{2\pi\hbar} }\mathrm{e}^{\mathrm{i}px/\hbar}\)</span>
+即动量为 <span class="arithmatex">\(p\)</span> 的本征态 <span class="arithmatex">\(\left|p\right&gt;\)</span>. 则
+<span class="arithmatex">\(\psi(x) =\int \phi(p) \frac{1}{\sqrt{2\pi\hbar} }\mathrm{e}^{\mathrm{i}px/\hbar}\mathrm{d}p\)</span>
+两边同乘 <span class="arithmatex">\(\frac{1}{\sqrt{2\pi\hbar} }\mathrm{e}^{-\mathrm{i}p^{\prime}x/\hbar}\)</span> 再积分得</p>
+<div class="arithmatex">\[\begin{aligned}
+    \int\frac{1}{\sqrt{2\pi\hbar} }\mathrm{e}^{-\mathrm{i}p^{\prime}x/\hbar}\psi(x) \mathrm{d}x=&amp;\iint \phi(p) \frac{1}{2\pi\hbar }\mathrm{e}^{\mathrm{i}(p-p^{\prime})x/\hbar}\mathrm{d}p \mathrm{d}x
+ \\
+ =&amp;\int \phi(p) \int\frac{1}{2\pi\hbar }\mathrm{e}^{\mathrm{i}(p-p^{\prime})x/\hbar}\mathrm{d}x\mathrm{d}p \\
+ =&amp;\int \phi(p) \delta(p-p^{\prime})\mathrm{d}p =\phi(p^{\prime})\,\,({\color{red}\int \mathrm{e}^{\mathrm{i}kx} \mathrm{d}x=2\pi \delta (k)})
+\end{aligned}\]</div>
+<p>即 </p>
+<div class="arithmatex">\[\phi(p)=\int\frac{1}{\sqrt{2\pi\hbar} }\mathrm{e}^{-\mathrm{i}px/\hbar}\psi(x) \mathrm{d}x\]</div>
+<p><span class="arithmatex">\(\left| \phi(p) \right|^{2} \mathrm{d}p\)</span> 表示粒子动量处于 <span class="arithmatex">\(p\to p+\mathrm{d}p\)</span> 的概率
+由上述讨论可知，在各自表象的波函数下，位置和动量的算符就是自身
+利用上述关系也可得到在坐标表象下动量算符的表达式 </p>
+<div class="arithmatex">\[\begin{aligned}
+    \left&lt;p\right&gt; =&amp;\int_{-\infty}^{+\infty} \phi^{\ast}(p) p \phi(p) \mathrm{d}p
+ \\
+ =&amp;\int_{-\infty}^{+\infty}\mathrm{d}p\int\frac{1}{\sqrt{2\pi\hbar} }\mathrm{e}^{\mathrm{i}px/\hbar}\psi^{\ast}(x) \mathrm{d}x\cdot p\cdot \int\frac{1}{\sqrt{2\pi\hbar} }\mathrm{e}^{-\mathrm{i}px^{\prime}/\hbar}\psi(x^{\prime}) \mathrm{d}x^{\prime}\\
+ =&amp;\int \mathrm{d}x \mathrm{d}x^{\prime}\psi^{^{\ast}}(x)\int\frac{1}{2\pi\hbar}p\mathrm{e}^{\mathrm{i}p(x-x^{\prime})/\hbar} \mathrm{d}p \,\psi(x^{\prime})
+ \\=&amp;
+ \int \mathrm{d}x \mathrm{d}x^{\prime}\psi^{^{\ast}}(x)\int\frac{1}{2\pi\hbar}(-\mathrm{i}\hbar \frac{\mathrm{d}}{\mathrm{d}x})\mathrm{e}^{\mathrm{i}p(x-x^{\prime})/\hbar} \mathrm{d}p \,\psi(x^{\prime})\\
+ =&amp;\int \mathrm{d}x \mathrm{d}x^{\prime}\psi^{^{\ast}}(x)(-\mathrm{i}\hbar \frac{\mathrm{d}}{\mathrm{d}x})\delta (x-x^{\prime})\,\psi(x^{\prime})
+ =\int\mathrm{d}x \psi^{^{\ast}}(x)(-\mathrm{i}\hbar \frac{\mathrm{d}}{\mathrm{d}x})\psi(x)\\
+ =&amp;\int \psi^{^{\ast}}(x) \hat{p}  \psi(x)\mathrm{d}x\quad (\hat{p}=-\mathrm{i}\hbar \frac{\mathrm{d}}{\mathrm{d}x} )
+\end{aligned}\]</div>
+<p>写成三维形式为</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(\hat{p} =-\mathrm{i}\hbar \nabla\)</span>\)</span></p>
+<h3 id="_10">一般物理量的算符<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>对于其他的经典物理量算符都可按照经典形式写成 <span class="arithmatex">\(\hat{x}\)</span> 和 <span class="arithmatex">\(\hat{p}\)</span> 的组合（但要注意对易关系）.</p>
+<ol>
+<li>动能算符</li>
+</ol>
+<div class="arithmatex">\[\hat{T}=\frac{\hat{p}^{2}}{2m} =-\frac{\hbar^{2}}{2m}\nabla^{2}\]</div>
+<ol>
+<li>角动量算符 </li>
+</ol>
+<div class="arithmatex">\[\hat{L}=\hat{r} \times \hat{p}\]</div>
+<p>使用 Levi-Civita 符号</p>
+<div class="arithmatex">\[\varepsilon_{ijk}=\left\{
+    \begin{aligned}
+        1&amp;\quad ijk=123,231,312
+     \\-1&amp;\quad ijk=132,213,321
+     \\0&amp; \quad \rm otherwise
+    \end{aligned}
+\right.\]</div>
+<p>得</p>
+<div class="arithmatex">\[\hat{L} _{i}=\varepsilon_{ijk} \hat{x}_{j} \hat{p}_{k}\]</div>
+<p>并且 Levi-Civita 符号有如下关系</p>
+<div class="arithmatex">\[\varepsilon_{ijk}\varepsilon_{imn}=\delta _{jm}\delta _{kn}-\delta _{jn}\delta _{km}\]</div>
+<p>对易子的恒等式 </p>
+<div class="arithmatex">\[\begin{aligned}
+    &amp;[\hat{A}, \hat{A}]=0, \quad[\hat{A}, C]=0\\
+    &amp;[\hat{A}, \hat{B}+\hat{C}]=[\hat{A}, \hat{B}]+[\hat{A}, \hat{C}] \\
+   &amp;[\hat{A}, \hat{B} \hat{C}]=[\hat{A}, \hat{B}] \hat{C}+\hat{B}[\hat{A}, \hat{C}]\\
+    &amp;[\hat{A} \hat{B}, \hat{C}]=\hat{A}[\hat{B}, \hat{C}]+[\hat{A}, \hat{C}] \hat{B}\\
+    &amp;[\hat{A},[\hat{B}, \hat{C}]]+[\hat{B},[\hat{C}, \hat{A}]]+[\hat{C},[\hat{A}, \hat{B}]]=0\quad(\rm Jacobi \,\,identity)
+\end{aligned}\]</div>
+<p>角动量算符的对易关系</p>
+<div class="arithmatex">\[=\mathrm{i}\hbar\varepsilon_{ijk}x_k\quad[L_i,p_j]=\mathrm{i}\hbar\varepsilon_{ijk}p_k\quad[L_i,L_j]=\mathrm{i}\hbar\varepsilon_{ijk}L_k\]</div>
+<p>证明如下
+<em>Proof.</em>
+1.  <span class="arithmatex">\([L_i,x_j]=\mathrm{i}\hbar\varepsilon_{ijk}x_k\quad[L_i,p_j]=\mathrm{i}\hbar\varepsilon_{ijk}p_k\)</span></p>
+<div class="arithmatex">\[\begin{aligned}
+        [L_i,x_j]&amp;=[\varepsilon_{ilm}x_l p_m,x_j]=
+                \varepsilon_{ilm}[x_l p_m,x_j]
+             \\
+             &amp;=\varepsilon_{ilm}(x_l[p_m,x_j]+[x_l,x_j]p_m)\\
+             &amp;=\varepsilon_{ilm}(-\mathrm{i}\hbar\delta _{mj}x_l+0)=-\mathrm{i}\hbar\varepsilon_{ilm}x_l\delta _{mj}=-\mathrm{i}\hbar\varepsilon_{ilj}x_l\qquad\qquad\qquad\qquad\\
+             &amp;=\mathrm{i}\hbar\varepsilon_{ijk}x_k\qquad
+            \end{aligned}\]</div>
+<p>对于 <span class="arithmatex">\([L_i,p_j]\)</span> 同理可得.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\([L_i,L_j]=\mathrm{i}\hbar\varepsilon_{ijk}L_k\)</span></p>
+<div class="arithmatex">\[\begin{align}
+ [L_i,L_j]=&amp;[\varepsilon_{iab}x_a p_b,\varepsilon_{jmn}x_m p_n]=\varepsilon_{iab}\varepsilon_{jmn}[x_a p_b,x_mp_n]\\
+       =&amp;\varepsilon_{iab}\varepsilon_{jmn}\{x_a[p_b,x_m]p_n+x_a x_m[p_b,p_n]+[x_a,x_m]p_n p_b+x_m[x_a,p_n]p_b\}\\
+       =&amp;\varepsilon_{iab}\varepsilon_{jmn}\{x_a(-\mathrm{i}\hbar\delta _{bm})p_n+x_a x_m\cdot 0+0\cdot p_n p_b+x_m(\mathrm{i}\hbar\delta _{an})p_b\}\\
+       =&amp;\mathrm{i}\hbar\varepsilon_{iab}\varepsilon_{jmn}(\delta _{an}x_m p_b-\delta _{bm}x_a p_n)=\mathrm{i}\hbar\varepsilon_{inb}\varepsilon_{jmn}x_m p_b -\mathrm{i}\hbar\varepsilon_{iam}\varepsilon_{jmn}x_a p_n\\=&amp;\mathrm{i}\hbar(\varepsilon_{nbi}\varepsilon_{njm}x_m p_b-\varepsilon_{mia}\varepsilon_{mnj}x_a p_n)\\
+       =&amp;\mathrm{i}\hbar(\delta _{bj}\delta _{im}-\delta _{bm}\delta _{ij})x_m p_b -\mathrm{i}\hbar (\delta _{in}  \delta_{aj}-\delta _{ij}\delta _{an} )x_a p_n\\=&amp;\mathrm{i}\hbar(\delta _{bj}\delta _{im}x_m p_b -\delta _{in}  \delta_{aj}x_a p_n)+\mathrm{i}\hbar\delta _{ij}(\delta _{an}x_a p_n-\delta _{bm}x_m p_b)\\
+       =&amp;\mathrm{i}\hbar(\delta _{nj}\delta _{im}x_m p_n -\delta _{in}  \delta_{mj}x_m p_n)+\mathrm{i}\hbar\delta _{ij}(x_n p_n-x_m p_m)\\=&amp;\mathrm{i}\hbar\varepsilon_{kmn}\varepsilon_{kij}x_m p_n=\mathrm{i}\hbar \varepsilon_{ijk}(\varepsilon _{kmn}x_m p_n)=\mathrm{i}\hbar \varepsilon_{ijk}L_k
+    \end{align}\]</div>
+</li>
+</ol>
+<p>由此可推得对于任意矢量算符 <span class="arithmatex">\(\hat{V}\)</span> 都有如下关系</p>
+<div class="arithmatex">\[[\hat{L}_{i},\hat{V}_{j}]=\mathrm{i}\hbar \varepsilon_{ijk}V_k\]</div>
+<ol>
+<li>算符的幂</li>
+</ol>
+<div class="arithmatex">\[\hat{A}^{n} \equiv \underbrace{\hat{A} \cdot \hat{A} \cdots \hat{A}}_{n}\]</div>
+<p>并且有 <span class="arithmatex">\(\hat{A}^{m+n}=\hat{A}^{m} \cdot \hat{A}^{n}\)</span><br />
+对于角动量平方算子 <span class="arithmatex">\(\vec{L}^{2}=L_{x}^{2}+L_{y}^{2}+L_{z}^{2}\)</span>,
+它和其中一个角动量分量的对易子为 </p>
+<div class="arithmatex">\[\begin{aligned}
+{\left[\vec{L}^{2}, L_{x}\right] } &amp;=\left[L_{x}^{2}+L_{y}^{2}+L_{z}^{2}, L_{x}\right]=\left[L_{y}^{2}, L_{x}\right]+\left[L_{z}^{2}, L_{x}\right] \\
+&amp;=L_{y}\left[L_{y}, L_{x}\right]+\left[L_{y}, L_{x}\right] L_{y}+L_{z}\left[L_{z}, L_{x}\right]+\left[L_{z}, L_{x}\right] L_{z} \\
+&amp;=-i \hbar\left(L_{y} L_{z}+L_{z} L_{y}\right)+i \hbar\left(L_{z} L_{y}+L_{y} L_{z}\right) \\
+&amp;=0
+\end{aligned}\]</div>
+<p>也就是有 <span class="arithmatex">\(\left[\vec{L}, L_{i}\right]=0\)</span>.</p>
+<ol>
+<li>算符的函数</li>
+</ol>
+<div class="arithmatex">\[f(\hat{A} )=c_0+c_1 \hat{A} +c_2 \hat{A}^{2}+\cdots +c_n \hat{A}^{n}\]</div>
+<p>其中 <span class="arithmatex">\(c_1,c_2,\cdots ,c_n\)</span> 为具有特定不同量纲的数</p>
+<div class="arithmatex">\[e^{\hat{A}}=\sum_{n=0}^{\infty} \frac{\hat{A}^{n}}{n !}\]</div>
+<p>其中 <span class="arithmatex">\([\hat{A} ]=[c]\)</span>, <span class="arithmatex">\(c\)</span> 是一个数</p>
+<ol>
+<li>逆算符\
+对于 <span class="arithmatex">\(\hat{A}\)</span>, 若存在 <span class="arithmatex">\(\hat{A}^{-1}\)</span> 满足</li>
+</ol>
+<div class="arithmatex">\[\hat{A} \hat{A}^{-1}\left|\psi\right&gt; =\hat{A}^{-1} \hat{A} \left|\psi\right&gt; =\hat{I}\left|\psi\right&gt;\]</div>
+<p>则称 <span class="arithmatex">\(\hat{A}^{-1}\)</span> 为 <span class="arithmatex">\(\hat{A}\)</span> 的逆算符.</p>
+<h3 id="hermitian">Hermitian 算符<a class="headerlink" href="#hermitian" title="Permanent link">&para;</a></h3>
+<ol>
+<li>态矢量的内积
+对于两个态 <span class="arithmatex">\(\psi\)</span> 和 <span class="arithmatex">\(\varphi\)</span> 的内积为</li>
+</ol>
+<div class="arithmatex">\[(\psi, \varphi)=\langle\psi \mid \varphi\rangle\]</div>
+<p>是一个数.
+对于态 <span class="arithmatex">\(\psi\)</span> 和 <span class="arithmatex">\(\varphi\)</span> 的波函数
+<span class="arithmatex">\(\psi(\boldsymbol{r},t)\)</span> 和 <span class="arithmatex">\(\phi(\boldsymbol{r},t)\)</span> 内积表示为</p>
+<div class="arithmatex">\[\int \psi^{*}(\boldsymbol{r},t) \varphi(\boldsymbol{r},t) \mathrm{d} \boldsymbol{r}\]</div>
+<p>内积的性质</p>
+<ol>
+<li>
+<div class="arithmatex">\[\langle\psi \mid \psi\rangle=\int|\psi|^{2} \mathrm{d}\boldsymbol{r}\geq 0\]</div>
+</li>
+<li>
+<div class="arithmatex">\[\langle\psi \mid \varphi\rangle=\langle\varphi \mid \psi\rangle^{*}\]</div>
+<div class="arithmatex">\[\begin{array}{l}
+\left\langle\psi \mid C_{1} \varphi_{1}+C_{2} \varphi_{2}\right\rangle=C_{1}\left\langle\psi \mid \varphi_{1}\right\rangle+C_{2}\left\langle\psi \mid \varphi_{2}\right\rangle \\
+\left\langle C_{1} \psi_{1}+C_{2} \psi_{2} \mid \varphi\right\rangle=C_{1}^{*}\left\langle\psi_{1} \mid \varphi\right\rangle+C_{2}^{*}\left\langle\psi_{2} \mid \varphi\right\rangle
+\end{array}\]</div>
+</li>
+<li>
+<p>复共轭 </p>
+</li>
+</ol>
+<div class="arithmatex">\[\hat{O}\to  \hat{O}^{*}\]</div>
+<p>如</p>
+<div class="arithmatex">\[p_{x}=-\mathrm{i} \hbar \partial_{x} \quad p_{x}^{*}=\mathrm{i} \hbar \partial_{x}=-p_{x}\]</div>
+<ol>
+<li>转置算符</li>
+</ol>
+<div class="arithmatex">\[\hat{O}\to \hat{ O}^{\rm T}\,\text{or} \, \tilde{\hat{O}}\]</div>
+<p>转置算符的定义满足 </p>
+<div class="arithmatex">\[(\psi, \tilde{\hat{O} } \varphi)=\langle\psi \mid \tilde{\hat{O} } \varphi\rangle=\langle\varphi^{*} \mid\hat{O} \psi^{*}\rangle=\left(\varphi^{*},\hat{O}  \psi^{*}\right)\]</div>
+<p>则称 </p>
+<div class="arithmatex">\[\tilde{\hat{O}}\]</div>
+<p>为 <span class="arithmatex">\(\hat{O}\)</span> 的转置算符, 可以证明</p>
+<div class="arithmatex">\[\widetilde{\hat{A}  \hat{B} }=\tilde{ \hat{B}} \tilde{\hat{A}}\]</div>
+<p><strong>Proof</strong></p>
+<div class="arithmatex">\[\begin{align} (\psi, \tilde{ \hat{B}} \tilde{A} \varphi)=\left((\tilde{A} \varphi)^{*},  \hat{B} \psi^{*}\right)=\left((\tilde{A} \varphi),  \hat{B}^{*} \psi\right)^{*}\\=\left( \hat{B}^{*} \psi,(\tilde{\hat{A}} \varphi)\right)=\left(\varphi^{*}, \hat{A} \hat{B} \psi^{*}\right)=(\psi, \widetilde{\hat{A}  \hat{B}} \varphi)\end{align}\]</div>
+<p>对于动量算符可以证明
+<span class="arithmatex">\(\frac{\tilde{\partial}}{\partial x}=-\frac{\partial}{\partial x}\)</span>,
+证明如下 (其中采用了束缚态波函数, 对于非束缚态也成立)</p>
+<p><strong>Proof</strong></p>
+<div class="arithmatex">\[\begin{aligned}\left(\varphi^{*}, \frac{\partial}{\partial x} \psi^{*}\right) &amp;=\int_{-\infty}^{+\infty} \mathrm{d} x \varphi \frac{\partial}{\partial x} \psi^{*} \\&amp;=\left.\varphi \psi^{*}\right|_{-\infty} ^{+\infty}-\int_{-\infty}^{+\infty} \mathrm{d} x \psi^{*} \frac{\partial}{\partial x} \varphi \\&amp;=\int_{-\infty}^{+\infty} \mathrm{d} x \psi^{*}\left(-\frac{\partial}{\partial x}\right) \varphi \\&amp;=\left(\psi,\left(-\frac{\partial}{\partial x}\right) \varphi\right)\end{aligned}\]</div>
+<p>即 </p>
+<div class="arithmatex">\[\tilde{\hat{p} }_{x}=-\hat{p} _{x}.\]</div>
+<ol>
+<li>Hermitian 共轭算符
+定义 </li>
+</ol>
+<div class="arithmatex">\[\hat{O}^{\dagger}=\tilde{\hat{O} }^{*}\]</div>
+<p>性质 </p>
+<div class="arithmatex">\[\langle\psi \mid    \hat{O}^{\dagger} \varphi\rangle=\langle\psi \mid \tilde{   \hat{O}}^{*} \varphi\rangle=\langle\psi^{*} \mid \tilde{   \hat{O}} \varphi^{*}\rangle^{*}=\langle\varphi \mid    \hat{O}\psi\rangle^{*}=\langle    \hat{O} \psi \mid \varphi\rangle\]</div>
+<p>Hermitian 共轭算符的乘积满足</p>
+<div class="arithmatex">\[(\hat{A} \hat{B}   )^{\dagger}=\hat{B} ^{\dagger} \hat{A} ^{\dagger}\]</div>
+<ol>
+<li>Hermitian 算符\
+定义 </li>
+</ol>
+<div class="arithmatex">\[\hat{O}^\dagger=\hat{O}\]</div>
+<p>称 <span class="arithmatex">\(\hat{O}\)</span> 为厄米算符 
+性质</p>
+<div class="arithmatex">\[\langle \psi|\hat{O} \phi\rangle =\langle \hat{O} \psi|\phi\rangle\]</div>
+<p>注:</p>
+<ol>
+<li>
+<p>如果
+    <span class="arithmatex">\(\hat{A} \hat{B}\)</span> 都是厄米算符那么 <span class="arithmatex">\((\hat{A} \hat{B} )^\dagger=\hat{B}^{\dagger} \hat{A}^{\dagger}=\hat{B} \hat{A}\)</span> \
+    厄米算符的乘积不一定为厄米算符, 只有当两个算符对易时才满足它们的乘积为厄米算符.</p>
+</li>
+<li>
+<p>对于任意两个厄米算符
+    <span class="arithmatex">\(\hat{A} \hat{B}\)</span><span class="arithmatex">\(<span class="arithmatex">\(\frac{\hat{A}\hat{B} +\hat{B} \hat{A} }{2} \,,\,\frac{\hat{A} \hat{B} -\hat{B} \hat{A} }{2\mathrm{i}}\)</span>\)</span>
+    也是厄米算符.</p>
+</li>
+<li>
+<p>任意一个算符 <span class="arithmatex">\(\hat{O}\)</span> 都可以写成两个厄米算符的线性组合 <span class="arithmatex">\(<span class="arithmatex">\(\hat{O} =O_{+}+\mathrm{i}O_-\)</span>\)</span>
+    其中 <span class="arithmatex">\(O_+=\frac{O+O^{\dagger}}{2}\)</span>,
+    <span class="arithmatex">\(O_-=\frac{O-O^{\dagger}}{2\mathrm{i}}\)</span> 都是厄米算符.</p>
+</li>
+</ol>
+<p>可观测量 <span class="arithmatex">\(\longrightarrow\)</span> 厄米算符</p>
+<h2 id="_11">厄米算符的本征值和本征函数<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<p>对于一个算符 <span class="arithmatex">\(\hat{F}\)</span>, 它的本征方程为
+<span class="arithmatex">\(<span class="arithmatex">\(\hat{F} \left|\psi\right&gt; =\lambda\left|\psi\right&gt;\)</span>\)</span>
+其中 <span class="arithmatex">\(\lambda\)</span> 为 <span class="arithmatex">\(\hat{F}\)</span> 的本征值 (<span class="arithmatex">\(\lambda \in \mathbb{R} \operatorname{or}\mathbb{C}\)</span>),
+<span class="arithmatex">\(\left|\psi\right&gt;\)</span> 为 <span class="arithmatex">\(\hat F\)</span> 的本征态 
+可以有多个相互独立的态对应于同一个本征值, 称为简并, 简并度为相互独立的态的数目.</p>
+<ol>
+<li>厄米算符的平均值在任何量子态下均为实数，在本征态下，即本征值为实数.
+<span class="arithmatex">\(<span class="arithmatex">\(\langle\hat{F} \rangle=\langle \psi|\hat{F} |\psi\rangle =\langle \psi|\hat{F}^{\dagger} |\psi\rangle =\langle\hat{F}  \psi|\psi\rangle=\langle \psi|\hat{F} |\psi\rangle ^\ast=\langle\hat{F}  \rangle^\ast\)</span>\)</span></li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E9%9D%9E%E7%9B%B8%E5%AF%B9%E8%AE%BA%E7%B2%92%E5%AD%90%E6%B3%A2%E5%87%BD%E6%95%B0%E5%92%8C%20Schr%C3%B6dinger%20%E6%96%B9%E7%A8%8B/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 第二章 非相对论粒子波函数和 Schrödinger 方程">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                第二章 非相对论粒子波函数和 Schrödinger 方程
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%A4%8D%E4%B9%A0/" class="md-footer__link md-footer__link--next" aria-label="Next: 第一章从经典物理到量子论">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                第一章从经典物理到量子论
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      
+        <script src="../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.bytedance.com/?query=mathjax&amp;version=3.2.0"></script>
+      
+    
+  </body>
+</html>

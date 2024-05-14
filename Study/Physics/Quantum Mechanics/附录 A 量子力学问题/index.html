@@ -1,0 +1,1935 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Jun Wang's Home Page">
+      
+      
+        <meta name="author" content="JUN WANG">
+      
+      
+        <link rel="canonical" href="https://wenmnal.github.io/Study/Physics/Quantum%20Mechanics/%E9%99%84%E5%BD%95%20A%20%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E9%97%AE%E9%A2%98/">
+      
+      
+        <link rel="prev" href="../%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%A4%8D%E4%B9%A0/">
+      
+      
+        <link rel="next" href="../../Statistical%20Physics/Maxwell%20%E5%85%B3%E7%B3%BB/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+    
+    
+      
+        <title>量子力学问题 - JUN WANG's Home Page</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.732c4fb1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Math:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans Math";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/unordered-list-symbols.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="JUN WANG&#39;s Home Page" class="md-header__button md-logo" aria-label="JUN WANG's Home Page" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            JUN WANG's Home Page
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              量子力学问题
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wenmnal/wenmnal.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wenmnal.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
+          
+  
+    
+  
+  Study
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../Me/Self_Introduction/About_Me/" class="md-tabs__link">
+          
+  
+    
+  
+  Me
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../Documents/" class="md-tabs__link">
+          
+  
+    
+  
+  Documents
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="JUN WANG&#39;s Home Page" class="md-nav__button md-logo" aria-label="JUN WANG's Home Page" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    JUN WANG's Home Page
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/wenmnal/wenmnal.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wenmnal.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../.." class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Study
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Study
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Physics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Physics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Formula/formula/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Formula
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Quantum Mechanics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Quantum Mechanics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E7%BB%AA%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第一章 绪论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E9%9D%9E%E7%9B%B8%E5%AF%B9%E8%AE%BA%E7%B2%92%E5%AD%90%E6%B3%A2%E5%87%BD%E6%95%B0%E5%92%8C%20Schr%C3%B6dinger%20%E6%96%B9%E7%A8%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第二章 非相对论粒子波函数和 Schrödinger 方程
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E5%BD%A2%E5%BC%8F%E7%90%86%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第三章 形式理论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%A4%8D%E4%B9%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第一章从经典物理到量子论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    量子力学问题
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Statistical%20Physics/Maxwell%20%E5%85%B3%E7%B3%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Statistical Physics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../Mathematical%20Physics/Complex%20Analysis/Formula%20of%20Complex%20Analysis/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Mathematical Physics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../Quantum%20Field%20Theory/Introduction%20to%20Quantum%20Field%20Theory%20by%20peskin/Introductio%20to%20Quantum%20Field%20Theory%20Note/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Quantum Field Theory
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Thesis/More%20is%20different/More_is_Different/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Thesis
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Math
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Math
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Math/Algebra/Linear_Algebra_Done_Right/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Algebra
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../../../Me/Self_Introduction/About_Me/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Me
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../../Documents/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Documents
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="_1">量子力学问题<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<ol>
+<li>
+<p>什么是⿊体?</p>
+</li>
+<li>
+<p>什么是⿊体辐射?</p>
+</li>
+<li>
+<p>什么是 Stefan-Boltzmann 定律?</p>
+</li>
+<li>
+<p>Wein 位移定律指的是什么?</p>
+</li>
+<li>
+<p>Planck 公式指的是什么?</p>
+</li>
+<li>
+<p>Planck 常数的⼤⼩⼤概是多少? 其量纲是什么?</p>
+</li>
+<li>
+<p>量⼦⼒学适应的条件是什么? (<span class="arithmatex">\(\ast\)</span>)</p>
+</li>
+<li>
+<p>⿊体辐射能流频率分布和波长分布怎么对应? 有什么不同之处?</p>
+</li>
+<li>
+<p>如何通过公式推导 Wein 位移定律、Stefan-Boltzmann 定律?</p>
+</li>
+<li>
+<p>什么是光电效应?</p>
+</li>
+<li>
+<p>光电效应截⽌电压指的是什么?</p>
+</li>
+<li>
+<p>Einstein 光⼦能量是什么?</p>
+</li>
+<li>
+<p>对于电磁波, 波长、波数、周期、频率、波速各是什么?</p>
+</li>
+<li>
+<p>什么是光⼦的波粒⼆象性? 如何体现?</p>
+</li>
+<li>
+<p>什么是 Compton 散射? 它的实验结果是什么? 实验结果揭示了什么物理?</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathrm{X}\)</span> 射线的波段是多少?</p>
+</li>
+<li>
+<p>如何推 Compton 散射后光⼦的波长变化?</p>
+</li>
+<li>
+<p>电⼦的 Compton 波长是什么? 其数值结果⼤概是哪个尺度?</p>
+</li>
+<li>
+<p>能否使⽤可⻅光进⾏类 Compton 散射实验? 为什么?</p>
+</li>
+<li>
+<p>电⼦的约化 Compton 波长是什么(<span class="arithmatex">\(h\to \hbar\)</span>)?(<span class="arithmatex">\(\ast\)</span>)</p>
+</li>
+<li>
+<p>什么是 Bohr 的原⼦模型?</p>
+</li>
+<li>
+<p>什么是 Bohr 提出的对应原理?</p>
+</li>
+<li>
+<p>氢原⼦的基态能量是多少? 如何得到氢原⼦的 Bohr 能 级?</p>
+</li>
+<li>
+<p>在标准单位制、Gauss 单位制及 Heaviside-Lorentz单位制下, Coulomb势的形式各是什么?</p>
+</li>
+<li>
+<p>氢原⼦基态能量跟电⼦(折合)质量、电⼦电荷和 Planck 常数等有关,其形式是什么?</p>
+</li>
+<li>
+<p>精细结构常数⼤⼩是多少?</p>
+</li>
+<li>
+<p>电⼦能级跟电⼦静⽌质量之间是否存在某种关系? 若有,是什么?(<span class="arithmatex">\(\ast\)</span>)</p>
+</li>
+<li>
+<p>电⼦在氢原⼦中运动速度⼤约是多少?</p>
+</li>
+<li>
+<p>氢原⼦电⼦从第三能级跃迁⾄第⼆能级, 释放出的光是否是可⻅光?</p>
+</li>
+<li>
+<p>氢原⼦的 Bohr 半径指的是什么? ⼤概数值量级为多少?</p>
+</li>
+<li>
+<p>氢原⼦的 Bohr 半径跟电⼦的约化 Compton 波长具有什么⽐例关系?(<span class="arithmatex">\(\ast\)</span>)</p>
+</li>
+<li>
+<p>什么是 Bohr 量⼦化条件, 推⼴的 Bohr-Sommerfeld 量⼦化条件指的是什么?</p>
+</li>
+<li>
+<p>你是否能使⽤ Bohr-Sommerfeld 量⼦化条件可以推出⼀些⻬次幂势能下体系的量⼦化能级?</p>
+</li>
+<li>
+<p>de Broglie 物质波指的是什么? 粒⼦的 de Broglie 波长如何计算?</p>
+</li>
+<li>
+<p>同样速度(⾮相对论)的质⼦和电⼦, 谁的 de Broglie 波长更长?</p>
+</li>
+<li>
+<p>什么是粒⼦的波粒⼆象性?</p>
+</li>
+<li>
+<p>什么是平⾯波? 什么是球⾯波?</p>
+</li>
+<li>
+<p>波函数的统计解释指的是什么?</p>
+</li>
+<li>
+<p>束缚态波函数应具有哪些性质?</p>
+</li>
+<li>
+<p>三维体系束缚态的波函数的量纲是多少?</p>
+</li>
+<li>
+<p>波函数是实数还是复数?</p>
+</li>
+<li>
+<p>(束缚态)波函数如何归⼀化? 为什么波函数须要(能被)归⼀化?</p>
+</li>
+<li>
+<p>什么是量⼦⼒学中的态叠加原理?</p>
+</li>
+<li>
+<p>已知位置分布的波函数, 如何得到动量分布对应的波函数?</p>
+</li>
+<li>
+<p>动量对应的算符是什么?</p>
+</li>
+<li>
+<p>坐标和动量之间的对易关系指的是什么?</p>
+</li>
+<li>
+<p>能量算符、体系Hamiltonian量是什么?</p>
+</li>
+<li>
+<p>对于⼀个波函数, 对应的概率流是什么?</p>
+</li>
+<li>
+<p>⼀维运动, 能量为 <span class="arithmatex">\(E\)</span> 的⾃由粒⼦的波函数是? 是否具有简并度?</p>
+</li>
+<li>
+<p>什么是右⾏波? 什么是左⾏波?</p>
+</li>
+<li>
+<p>(⾮相对论)粒⼦运动的 Schrödinger ⽅程是什么? 什么是定态 Schrödinger⽅程? 定态波函数如何随时间演化?</p>
+</li>
+<li>
+<p>体系的波函数如何随时间演化?</p>
+</li>
+<li>
+<p>若已知体系的所有能级波函数, 以及体系在零时刻处于态 <span class="arithmatex">\(\psi_0(x)\)</span>, <span class="arithmatex">\(t\)</span>时刻体系的波函数是什么形式?</p>
+</li>
+<li>
+<p>什么是算符的本征⽅程? 什么是本征值? 什么是本征函数?</p>
+</li>
+<li>
+<p>什么是⽮量空间? 什么是复⽮量空间? 什么是算符? 什么 态⽮?</p>
+</li>
+<li>
+<p>什么是⼀维⽆限深势阱体系? 如何求解该体系的定态 Schrödinger ⽅程?</p>
+</li>
+<li>
+<p>⽆限深势阱的能级具有什么性质?</p>
+</li>
+<li>
+<p>宽度为 <span class="arithmatex">\(a\)</span> 的⽆限深势阱基态能量是多少? 如何计算?基态波函数具有什么形式?</p>
+</li>
+<li>
+<p>什么是波函数的节点? 不同能级的波函数的节点具有什么规律?</p>
+</li>
+<li>
+<p>具有左右对称势场的⼀维束缚态体系, 波函数具有什么性质?基态波函数具有什么宇称?</p>
+</li>
+<li>
+<p>什么是宇称变换?</p>
+</li>
+<li>
+<p>什么是⼒学量在态 <span class="arithmatex">\(\psi\)</span> 下期望值, 什么是⼒学量在态 <span class="arithmatex">\(\psi\)</span>下的测量(可能)值?</p>
+</li>
+<li>
+<p>在⼀维⽆限深势阱体系基态下, 粒⼦位置和动量的测量期望值是多少?位置平⽅和动能的期望值如何计算?</p>
+</li>
+<li>
+<p>体系的波函数随位置变化缓慢或激烈各意味着什么?</p>
+</li>
+<li>
+<p>⼀维(对称)有限深势阱体系, 定态 Schrödinger ⽅程如何求解?能级波函数具有什么性质? 对于⼀个很浅的势阱, 是否⼀定存在束缚态解?</p>
+</li>
+<li>
+<p>对于⼀维(对称)有限深势阱体系, 你能否定性地画出各能级波函数形状?</p>
+</li>
+<li>
+<p>⼀维不对称有限深势阱体系, 定态 Schrödinger ⽅程如何求解?</p>
+</li>
+<li>
+<p>对于⼀维不对称有限深势阱体系, 你能否定性地画出各能级波函数形状?</p>
+</li>
+<li>
+<p>⼀维半⽆限深势阱, 即单边有限深势阱的定态 Schrödinger ⽅程如何求解?体系的能级和波函数与对称有限深势阱体系的能级和波函数有什么联系?</p>
+</li>
+<li>
+<p>⼀维半⽆限深势阱是否⼀定存在束缚态解?</p>
+</li>
+<li>
+<p>什么是⼀维简谐振⼦? ⼀维简谐振⼦的固有频率是什么? 体系的Hamiltontian量是什么?</p>
+</li>
+<li>
+<p>对于束缚态, 为什么在平衡点附近运动的体系可以近似为⼀个简谐振⼦体系?</p>
+</li>
+<li>
+<p>如果求解⼀维谐振⼦的定态 Schrödinger ⽅程? 为什么能级具有分⽴性?</p>
+</li>
+<li>
+<p>⼀维谐振⼦的能级及其波函数具有什么性质? 能级有⽆简并度?能否定性地画出各能级波函数的形状?</p>
+</li>
+<li>
+<p>⼀维谐振⼦各能级处于\"经典禁区\"的概率如何计算? 随着能级递升,该概率是变⼤还是变⼩?</p>
+</li>
+<li>
+<p>Hermite 多项式是什么? 具有什么简单性质? ⽐如正交归</p>
+</li>
+<li>
+<p>⼀维谐振⼦的基态波函数是什么函数? 基态下,位置、动量、动能及势能的期望值是多少? (为什么? )</p>
+</li>
+<li>
+<p>各向同性⼆维简谐振⼦的定态 Schrödinger ⽅程如何⽤分离变量法求解?体系的能级和波函数具有什么性质? 能级是否简并? 各能级的简并度是多少?</p>
+</li>
+<li>
+<p>各向同性三维简谐振⼦的定态 Schrödinger ⽅程如何⽤分离变量法求解?体系的能级和波函数具有什么性质? 能级是否简并? 各能级的简并度是多少?</p>
+</li>
+<li>
+<p>为什么⾼维各向同性简谐振⼦能级具有简并度(<span class="arithmatex">\(\ast\)</span>)?</p>
+</li>
+<li>
+<p>⼀维谐振⼦的代数解法的流程是什么?</p>
+</li>
+<li>
+<p>阶梯算符(或递增、递减算符) 是怎样定义的? 它们具有怎么样的代数关系?即它们的对易⼦是什么? ⽤它们表示的 Hamiltontian 量形式是什么?粒⼦数算符是怎么定义的?</p>
+</li>
+<li>
+<p>什么是 Hermite 共轭算符? 什么是 Hermite 算符?</p>
+</li>
+<li>
+<p>阶梯算符是 Hermite 算符么? Hamiltontian 量是否是 Hermite 算符?粒⼦数算符是 Hermite 算符么?</p>
+</li>
+<li>
+<p>代数解法中如何确定基态波函数的形式?</p>
+</li>
+<li>
+<p>如何通过已知⼀个能级的波函数确定其他能级的波函数?</p>
+</li>
+<li>
+<p>如何确定⼀个已知定态波函数的能级?</p>
+</li>
+<li>
+<p>如何求解⼀维 <span class="arithmatex">\(\delta\)</span> 势阱体系的束缚态能级及其波函数?</p>
+</li>
+<li>
+<p>如何求解⼀维双 <span class="arithmatex">\(\delta\)</span> 势阱体系的束缚态能级及其波函数? (<span class="arithmatex">\(\ast\)</span>)</p>
+</li>
+<li>
+<p>什么是束缚态, 什么是散射态?</p>
+</li>
+<li>
+<p>\"势垒贯穿\"研究的是什么?</p>
+</li>
+<li>
+<p>⼊射粒⼦的⼊射概率流、反射概率流和透射概率论各指什么?透射系数和反射系数指的是什么?</p>
+</li>
+<li>
+<p>如何求解⼀维体系中⽅势垒、⽅势阱的反射系数和透射系数?</p>
+</li>
+<li>
+<p>如何求解⼀维体系中阶跃势垒(<span class="arithmatex">\(V=V_0 \theta(x)\)</span>)体系的反射系数和透射系数?</p>
+</li>
+<li>
+<p>如何求解(⼀维体系)粒⼦向左⼊射⽽⾮向右⼊射到势垒或势阱的反射系数和透射系数?</p>
+</li>
+<li>
+<p>已经体系的波函数, ⼀般⼒学量的期望值如何得到?</p>
+</li>
+<li>
+<p>什么是线性算符? 什么是算符的转置算符? 什么是算符的 Hermite 共轭算符? 什么是 Hermite 算符? 什么是反 Hermite 算符? 什么是幺正算符? 什么是单位算符? 什么是逆算符?</p>
+</li>
+<li>
+<p>什么叫做算符的对易关系? 坐标和位置的对易关系是什么?什么是对易和反对易?</p>
+</li>
+<li>
+<p>如何求坐标、动量、角动量、坐标平⽅、动量平⽅、角动量平⽅两两之间的对易关系?</p>
+</li>
+<li>
+<p>为什么角动量和动量、坐标及角动量的对易关系具有相似性?</p>
+</li>
+<li>
+<p>为什么角动量和坐标平⽅、动量平⽅及角动量平⽅对易?(<span class="arithmatex">\(\ast\)</span>)</p>
+</li>
+<li>
+<p>算符的函数表示什么意思? 如何理解算符 <span class="arithmatex">\(\exp\{\mathrm{i} \hat{A}/a \}\)</span>? 其中 <span class="arithmatex">\(\hat{A}\)</span>为算符, ⽽ <span class="arithmatex">\(a\)</span> 是同量纲常数。</p>
+</li>
+<li>
+<p>Hermite 算符的本征值具有什么性质?</p>
+</li>
+<li>
+<p>Hermite 算符的本征函数具有什么性质?</p>
+</li>
+<li>
+<p>在任何态下平均值为实数的算符即为 Hermite 算符是对的么?</p>
+</li>
+<li>
+<p>Hermite 算符属于不同本征值的本征函数正交, 对么? 如何证明?</p>
+</li>
+<li>
+<p>Hermite 算符的本征函数具有完备性, 这指的是什么意思?</p>
+</li>
+<li>
+<p>在何种态下, 测量⼀个⼒学量 <span class="arithmatex">\(F\)</span> , 可以得到⼀个确定值?</p>
+</li>
+<li>
+<p>两个⼒学量能够同时具有测量确定值的条件是什么?</p>
+</li>
+<li>
+<p>在某个态下测量⼀个⼒学量, 测量结果不确定, 描述各测量值偏离期望值的平均偏离度的⼀个量称为不确定度, 它是如何定义的?</p>
+</li>
+<li>
+<p>什么是 Heisenberg 不确定(度)关系? 如何证明?</p>
+</li>
+<li>
+<p>态随时间演化是由 Schrödinger ⽅程决定, 在⼀个态下, ⼒学量的期望值如何随时间演化?</p>
+</li>
+<li>
+<p>什么叫做运动守恒量, 该⼒学量和Hamiltontian 量存在什么关系?</p>
+</li>
+<li>
+<p>Ehrenfest 定律指的是什么? 定态下的动能期望值满⾜ Virial定理, ⼤概指的是什么?</p>
+</li>
+<li>
+<p>谐振⼦定态波函数下, 动能和势能的期望值满⾜什么关系?</p>
+</li>
+<li>
+<p>类 Coulomb 势的体系中, 定态波函数下动能和势能的期望值之间满⾜什么关系?</p>
+</li>
+<li>
+<p>对于\"能量和时间不确定性关系\" , 该如何理解?</p>
+</li>
+<li>
+<p>什么是态和⼒学量的表象?</p>
+</li>
+<li>
+<p>坐标表象下常⻅⼒学量的具体形式是什么? 在动量表象下, 会变成何种形式?</p>
+</li>
+<li>
+<p>⼀般⼒学量算符, 如能量, 其表象指的是什么? 在该表象下, 态和⼒学量的表示如何描述?</p>
+</li>
+<li>
+<p>在本征值分⽴的算符的表象中, 该算符⾃身的矩阵形式有什么特征?</p>
+</li>
+<li>
+<p>如何得到⼀个表象下, 具体⼒学量算符的矩阵形式?</p>
+</li>
+<li>
+<p>投影算符 <span class="arithmatex">\(P_i \equiv \left|i\right&gt;\left&lt;i\right|\)</span> 指的是什么? 具有什么性质? 如何⽤投影算符表示基⽮的完备性?</p>
+</li>
+<li>
+<p>对于算符的矩阵表示, 算符的本征值之和与矩阵的那个量相等? 为什么? 为什么算符的本征值乘积和矩阵的⾏列式相等?</p>
+</li>
+<li>
+<p>⼒学量的⾏列式为零, 则⼒学量的某个本征值为零, 这个说法是否正确?</p>
+</li>
+<li>
+<p>表象之间的变换指的是什么意思?</p>
+</li>
+<li>
+<p>什么叫做相似变换? 什么是幺正变换?</p>
+</li>
+<li>
+<p>幺正变换不改变⼒学量的本征值, 为什么?</p>
+</li>
+<li>
+<p>如何找出两个表象变换对应的变换矩阵?</p>
+</li>
+<li>
+<p>三维笛卡尔坐标系和球坐标分量之间的变换关系是什么?</p>
+</li>
+<li>
+<p>如何推导球坐标系下 Laplace算⼦(<span class="arithmatex">\(\nabla^{2}\)</span>)的形式?</p>
+</li>
+<li>
+<p>在球坐标下, 角动量平⽅和角动量第三分量的具体形式是什么?</p>
+</li>
+<li>
+<p>什么是 Legendre 多项式? 它们具有什么⼀般性质?</p>
+</li>
+<li>
+<p>球谐函数 <span class="arithmatex">\(Y_{\ell m}\)</span> 具有什么性质?</p>
+</li>
+<li>
+<p>宇称变换 (<span class="arithmatex">\(\boldsymbol{r}\to -\boldsymbol{r}\)</span>) 下, 球谐函数如何变换?</p>
+</li>
+<li>
+<p>氢原⼦体系如何求解? 径向定态波函数的求解⼤致过程是什么?</p>
+</li>
+<li>
+<p>氢原⼦能级波函数⽤三个量⼦数(<span class="arithmatex">\(n,\ell,m\)</span>)表示, 各代表了什么⼒学量? 在定态波函数下, 各⼒学量的本征值是什么?</p>
+</li>
+<li>
+<p>为什么氢原⼦能级波函数需要⽤三个量⼦数来表示?</p>
+</li>
+<li>
+<p>什么叫做体系的⼒学量完备集?</p>
+</li>
+<li>
+<p>氢原⼦能级( Bohr 能级)具有什么特点? 能级的简并度是多少?</p>
+</li>
+<li>
+<p>氢原⼦基态能级⼤⼩跟电⼦的折合质量 <span class="arithmatex">\(m_{\mu}\)</span>, 电⼦电荷<span class="arithmatex">\(e\)</span>, 和体现量⼦效应的 Planck 常数 <span class="arithmatex">\(\hbar\)</span> 有关, 请问能级⼤⼩跟上述三个常数的形式是什么样的? 你能否通过量纲分析得到能级的⼤概形式?</p>
+</li>
+<li>
+<p>氢原⼦的基态能量是多少? 第⼀激发态能量是多少?</p>
+</li>
+<li>
+<p>氢原⼦的基态电离能是多少?</p>
+</li>
+<li>
+<p>类氢原⼦的基态能量是多少? ⽐如原⼦核电量为<span class="arithmatex">\(Z\)</span>, 带有⼀个电⼦的原⼦, 其基态能量是多少?</p>
+</li>
+<li>
+<p>电⼦偶素是由正负电⼦形成的束缚态, 其基态能量和氢原⼦基态能量有什么关系? (<span class="arithmatex">\(\ast\)</span>)</p>
+</li>
+<li>
+<p>什么是氢原⼦中电⼦的角度分布函数及径向分布函数?</p>
+</li>
+<li>
+<p>不同能级的最可⼏半径如何计算? 基态的最可⼏半径是什么?</p>
+</li>
+<li>
+<p>三维⽆限深球势阱的定态 Schrödinger ⽅程如何求解? 是否能数值计算出各能级的⼤⼩? 能级的简并度是多少? (<span class="arithmatex">\(\ast\)</span>)</p>
+</li>
+<li>
+<p>三维各向同性的谐振⼦如何求解径向定态波函数? 其能级简并度是多少? (<span class="arithmatex">\(\ast\)</span>)</p>
+</li>
+<li>
+<p>轨道角动量对应的磁矩⼤⼩是多少?</p>
+</li>
+<li>
+<p>什么是⾃旋? 有哪些物理现象跟电⼦的⾃旋相关?</p>
+</li>
+<li>
+<p>角动量分量的对易关系(代数结构)是什么样的?</p>
+</li>
+<li>
+<p>如何通过构建角动量升降算符得到角动量平⽅及分量的本征值? (*)</p>
+</li>
+<li>
+<p>如何得到角动量平⽅、角动量第三分量的共同表象下其他分量的矩阵形式?</p>
+</li>
+<li>
+<p>例如, 轨道角动量为 <span class="arithmatex">\(1\)</span>, 角动量各分量的矩阵形式如何求得? (*)</p>
+</li>
+<li>
+<p>电⼦⾃旋磁矩是什么形式? 电⼦在磁场中受到的作⽤如何体现?</p>
+</li>
+<li>
+<p>电⼦的⾃旋具有哪些性质?</p>
+</li>
+<li>
+<p>电⼦⾃旋波函数如何表示?</p>
+</li>
+<li>
+<p>Pauli 矩阵具体形式是什么? 它们具有哪些⼀般性质?</p>
+</li>
+<li>
+<p>对于电⼦⾃旋<span class="arithmatex">\(z\)</span>分量为<span class="arithmatex">\(\left|+\right&gt;\)</span>的态, 测量其<span class="arithmatex">\(x\)</span>分量, 测量值和对应的概率是多少?</p>
+</li>
+<li>
+<p>如果只考虑⾃旋磁矩和磁场的作⽤, (定域)电⼦的能级是什么情况?</p>
+</li>
+<li>
+<p>两个角动量的耦合(或\"叠加\")指的是什么?</p>
+</li>
+<li>
+<p>什么是⽆耦合表象, 什么是耦合表象? 两个表象之间的变 换是什么样的?</p>
+</li>
+<li>
+<p>简单的 <span class="arithmatex">\(C-G\)</span> 系数如何得到?</p>
+</li>
+<li>
+<p>轨道角动量和⾃旋耦合, 总角动量指的是什么? 总角动量平⽅、总角动量第三分量、轨道角动量平⽅、轨道角动量第三分量、⾃旋平⽅、⾃旋第三分量, 以及⾃旋轨道耦合项(<span class="arithmatex">\(\boldsymbol{L}\cdot \boldsymbol{S}\)</span>)之间的相互对易关系是什么样的?</p>
+</li>
+<li>
+<p>(⾮全同)的两个⾃旋为<span class="arithmatex">\(1/2\)</span>的粒⼦, 它们组成体系的总⾃旋是多少? 什么是⾃旋单态和⾃旋三重态? 各具有什么性质?</p>
+</li>
+<li>
+<p>如果是3个或者3个以上的⾃旋为<span class="arithmatex">\(1/2\)</span>的粒⼦组成的体系, 体系总⾃旋是多少? 各⾃的态会有多少? (<span class="arithmatex">\(\ast\)</span>)</p>
+</li>
+<li>
+<p>⾮简并定态微扰论指的是什么?</p>
+</li>
+<li>
+<p>如何得到⾮简并微扰论下能级的各级近似公式? 波函数各级近似公式? 能级⼀级⼆级公式具有什么特点? 波函数⼀级近似公式具有什么特点?</p>
+</li>
+<li>
+<p>简并微扰的内涵是什么?</p>
+</li>
+<li>
+<p>变分法的原理是什么? 其基本步骤是怎样的?</p>
+</li>
+<li>
+<p>加⼊随时间变化的微扰 Hamilton 后, 体系状态如何随时间变化? 什么是量⼦跃迁?</p>
+</li>
+<li>
+<p>什么是长时间常微扰作⽤下的跃迁概率? Fermi 黄⾦规则指的是什么?</p>
+</li>
+<li>
+<p>周期性微绕下量⼦跃迁的性质是什么?</p>
+</li>
+<li>
+<p>对于量⼦跃迁或光的发射与吸收, 所谓选择定则指的是什么?</p>
+</li>
+<li>
+<p>电场作⽤导致的 Stark 效应指的是什么?</p>
+</li>
+<li>
+<p>光谱的精细结构⼀般指的是什么? 轨道角动量-⾃旋耦合是如何导致能级分裂的? 其光谱分裂具有什么特征?</p>
+</li>
+<li>
+<p>磁场导致的Zeeman效应指的是什么?</p>
+</li>
+<li>
+<p>如何描述微观粒⼦的散射过程?</p>
+</li>
+<li>
+<p>什么是⼊射束流强度? 什么是微分散射截⾯? 什么是总散射截⾯? 什么是散射振幅?</p>
+</li>
+<li>
+<p>⼊射波和散射波指的是什么?</p>
+</li>
+<li>
+<p>处理中⼼⼒场弹性散场的分波法指的是什么?</p>
+</li>
+<li>
+<p>什么是光学定理?</p>
+</li>
+<li>
+<p>量⼦"刚性球"散射和经典刚性球散射具有什么不同之处?</p>
+</li>
+<li>
+<p>什么是 Born 近似?</p>
+</li>
+<li>
+<p>什么是 Green 函数? (*)</p>
+</li>
+<li>
+<p>什么是全同粒⼦, 什么是量⼦⼒学中的全同性原理?</p>
+</li>
+<li>
+<p>全同粒⼦组成的体系, 体系波函数具有什么样的对称性?</p>
+</li>
+<li>
+<p>什么是 Boson 和 Fermion?</p>
+</li>
+<li>
+<p>全同 Boson 和全同 Fermion 组成的体系波函数各具有什么样的性质?</p>
+</li>
+<li>
+<p>如何写出全同 Boson 或者全同 Fermion 的体系波函数?</p>
+</li>
+<li>
+<p>在⼀维⽆限深势阱中放⼊2个(3个, 4个)全同电⼦, 不考虑相互作⽤, 体系的基态波函数是什么样的?</p>
+</li>
+<li>
+<p>氦原⼦核外有两个电⼦, 如何考虑其体系基态波函数?</p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%A4%8D%E4%B9%A0/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 第一章从经典物理到量子论">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                第一章从经典物理到量子论
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../Statistical%20Physics/Maxwell%20%E5%85%B3%E7%B3%BB/" class="md-footer__link md-footer__link--next" aria-label="Next: Maxwell Relation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Maxwell Relation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      
+        <script src="../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.bytedance.com/?query=mathjax&amp;version=3.2.0"></script>
+      
+    
+  </body>
+</html>

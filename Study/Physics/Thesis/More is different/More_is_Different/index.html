@@ -1,0 +1,1682 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Jun Wang's Home Page">
+      
+      
+        <meta name="author" content="JUN WANG">
+      
+      
+        <link rel="canonical" href="https://wenmnal.github.io/Study/Physics/Thesis/More%20is%20different/More_is_Different/">
+      
+      
+        <link rel="prev" href="../../../Quantum%20Field%20Theory/QFTFGA%20Note/Part%20IV%20Propagators%20and%20perturbations/">
+      
+      
+        <link rel="next" href="../More%20Is%20Different%20Chinese/">
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+    
+    
+      
+        <title>More is Different - JUN WANG's Home Page</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.732c4fb1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Math:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans Math";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../stylesheets/unordered-list-symbols.css">
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#more-is-different" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="JUN WANG&#39;s Home Page" class="md-header__button md-logo" aria-label="JUN WANG's Home Page" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            JUN WANG's Home Page
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              More is Different
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wenmnal/wenmnal.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wenmnal.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
+          
+  
+    
+  
+  Study
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../Me/Self_Introduction/About_Me/" class="md-tabs__link">
+          
+  
+    
+  
+  Me
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../Documents/" class="md-tabs__link">
+          
+  
+    
+  
+  Documents
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="JUN WANG&#39;s Home Page" class="md-nav__button md-logo" aria-label="JUN WANG's Home Page" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    JUN WANG's Home Page
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/wenmnal/wenmnal.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wenmnal.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../../.." class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Study
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Study
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Physics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Physics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Formula/formula/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Formula
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Quantum%20Mechanics/%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E7%BB%AA%E8%AE%BA/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Quantum Mechanics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Statistical%20Physics/Maxwell%20%E5%85%B3%E7%B3%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Statistical Physics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../../Mathematical%20Physics/Complex%20Analysis/Formula%20of%20Complex%20Analysis/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Mathematical Physics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../../Quantum%20Field%20Theory/Introduction%20to%20Quantum%20Field%20Theory%20by%20peskin/Introductio%20to%20Quantum%20Field%20Theory%20Note/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Quantum Field Theory
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_6" id="__nav_2_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Thesis
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Thesis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    More is Different
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../More%20Is%20Different%20Chinese/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More is Different (Chinsese)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Math
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Math
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../../Math/Algebra/Linear_Algebra_Done_Right/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Algebra
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../../../../Me/Self_Introduction/About_Me/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Me
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../../../Documents/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Documents
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="more-is-different">More is Different<a class="headerlink" href="#more-is-different" title="Permanent link">&para;</a></h1>
+<p><strong>Broken symmetry and the nature of the hierarchical structure of science by</strong> <strong>P.W.Anderson</strong></p>
+<p>The reductionist hypothesis may still be a topic for controversy among
+philosophers, but among the great majority of active scientists I think
+it is accepted without question. The workings of our minds and bodies,
+and of all the animate or inanimate matter of which we have any detailed
+knowledge, are assumed to be controlled by the same set of fundamental
+laws, which except under certain extreme conditions we feel we know
+pretty well.</p>
+<p>It seems inevitable to go on uncritically to what appears at first sight
+to be an obvious corollary of reductionism: that if everything obeys the
+same fundamental laws, then the only scientists who are studying
+anything really fundamental are those who are working on those laws. In
+practice, that amounts to some astrophysicists, some elementary particle
+physicists, some logicians and other mathematicians, and few others.
+This point of view, which is the main purpose of this article to oppose,
+is expressed in a rather well-known passage by Weisskopf:</p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>Looking at the development of science in the Twentieth Century one can
+distinguish two trends, which I will call "intensive" and
+"extensive"research, lacking a better terminology. In short:
+intensive research goes for the fundamental laws, extensive research
+goes for the explanation of phenomena in terms of known fundamental
+laws. As always, distinctions of this kind are not unambiguous, but
+they are clear in most cases. Solid sate physics, plasma physics, and
+perhaps also biology are extensive. High energy physics and a good
+part of nuclear physics are intensive. There is always much less
+intensive research going on than extensive. Once new fundamental laws
+are discovered,a large and ever increasing activity begins in order to
+apply the discoveries to hitherto unexplained phenomena. Thus there
+are two dimensions to basic research. The frontier of science extends
+all along a long line from the newest and most modern intensive
+research, over the extensive research recently spawned by the
+intensive research of yesterday, to the broad and well developed web
+of extensive research activities based on intensive research of past
+decades.</p>
+</div>
+<p>The effectiveness of this message may be indicated by the fact that I
+heard it quoted recently by a leader in the field of materials science,
+who urged the participants at a meeting dedicated to "fundamental
+problems in condensed matter physics"to accept that there were few or
+no such problems and that nothing was left but extensive science, which
+he seemed to equate with device engineering.</p>
+<p>The main fallacy in this kind of thinking is that the reductionist
+hypothesis does not by any means imply a "constructionist"one: The
+ability to reduce everything to simple fundamental laws does not imply
+the ability to start from those laws and reconstruct the universe. In
+fact, the more the elementary particle physicists tell us about the
+nature of the fundamental laws, the les relevance they seem to have the
+very real problems of the rest of science, much less to those of
+society.</p>
+<p>The constructionist hypothesis breaks down when confronted with the twin
+difficulties of scale and complexity. The behavior of large and complex
+aggregates of elementary particles, it turns out, is not to be
+understood in terms of a simple extrapolation of the properties of a few
+particles. Instead, at each level of complexity entirely new properties
+appear, and the understanding of the new behaviors requires research
+which I think is as fundamental in its nature as any other. That is, it
+seems to me that one may array the sciences roughly linearly in a
+hierarchy, according to the idea: The elementary entities of science X
+obey the laws of science Y.</p>
+<table>
+<thead>
+<tr>
+<th>X</th>
+<th>Y</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>solid state or many-body physics</td>
+<td>elementary particle physics</td>
+</tr>
+<tr>
+<td>chemistry</td>
+<td>many-body physics</td>
+</tr>
+<tr>
+<td>molecular biology</td>
+<td>chemistry</td>
+</tr>
+<tr>
+<td>cell biology</td>
+<td>molecular biology</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\bullet\)</span></td>
+<td><span class="arithmatex">\(\bullet\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\bullet\)</span></td>
+<td><span class="arithmatex">\(\bullet\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\bullet\)</span></td>
+<td><span class="arithmatex">\(\bullet\)</span></td>
+</tr>
+<tr>
+<td>psychology</td>
+<td>physiology</td>
+</tr>
+<tr>
+<td>social sciences</td>
+<td>psychology</td>
+</tr>
+</tbody>
+</table>
+<p>But this hierarchy does not imply that science X is "just applied Y".
+At each stage entirely new laws, concepts, and generalizations are
+necessary, requiring inspiration and creativity to just as great a
+degree as in the previous one. Psychology is not applied biology, nor is
+biology applied chemistry.</p>
+<p>In my own field of many-body physics, we are, perhaps, closer to our
+fundamental, intensive underpinnings than in any other science in which
+nontrivial complexities occur, and as a result we have begun to
+formulate a general theory of just how this shift from quantitative to
+qualitative differentiation takes place. This formulation, called the
+theory of "broken symmetry,"may be of help in making more generally
+clear the breakdown of the constructionist converse of reductionism. I
+will give an elementary and incomplete explanation of these ideas, and
+then go on to some more general speculative comments about analogies at
+other levels and about similar phenomena.</p>
+<p>Before beginning this I wish to sort out two possible sources of
+misunderstanding. First, when I speak of scale change causing
+fundamental change I do not mean the rather well-understood idea that
+phenomena at a new scale may obey actually different fundamental
+laws--as, for example, general relativity is required on the
+cosmological scale and quantum mechanics on the atomic. I think it will
+be accepted all ordinary matter obeys simple electrodynamics and quantum
+theory, and that really covers most of what I shall discuss. (As I said,
+we must all start with reductionism, which I fully accept.) A second
+source of confusion may be the fact that the concept of broken symmetry
+has been borrowed by the elementary particle physicists, but their use
+of the term is strictly an analogy, whether a deep or a specious one
+remaining to be understood.</p>
+<p>Let me then start my discussion with an example on the simplest possible
+level, a natural one for me because I worked with it when I was a
+graduate student: the ammonia molecule. At that time everyone knew about
+ammonia and used it to calibrate his theory or his apparatus, and I was
+no exception. The chemists will tell you that ammonia "is"a triangular
+pyramid with the nitrogen negatively charged and the hydrogens
+positively</p>
+<p>charged, so that it has an electric dipole moment (<span class="arithmatex">\(\mu\)</span>), negative
+toward the apex of the pyramid. Now this seemed very strange to me,
+because I was just being taught that nothing has an electric dipole
+moment. The professor was really proving that no nucleus has a dipole
+moment, because he was teaching nuclear physics, but as his arguments
+were based on the symmetry of space and time they should have been
+correct in general.</p>
+<p>I soon learned that, in fact, they were correct (or perhaps it would be
+more accurate to say not incorrect) because he had been careful to say
+that no stationary state of a system (that is, one which does not change
+in time) has an electric dipole moment. If ammonia starts out from the
+above unsymmetrical state, it will not stay in it very long. By means of
+quantum mechanical tunneling, the nitrogen can leak through the triangle
+of hydrogens to the other side, turning the pyramid inside out, and, in
+fact, it can do so very rapidly. This is the so-called "inversion,"
+which occurs at frequency of about <span class="arithmatex">\(3\times 10^{10}\)</span> per second. A truly
+stationary state can only be an equal superposition of the unsymmetrical
+pyramid and its inverse. That mixture does not have a dipole moment. (I
+warn the reader again that I am greatly oversimplifying and refer him to
+the textbooks for details.)</p>
+<p>I will not go through the proof, but the result is that the state of the
+system, if it is to be stationary, must always have the same symmetry as
+the laws of motion which govern it. A reason may be put very simply: In
+quantum mechanics there is always a way, unless symmetry forbids, to get
+from one state to another. Thus, if we start from any one unsymmetrical
+state, the system will make transitions to others, so only by adding up
+all the possible unsymmetrical states in a symmetrical way can we get a
+stationary state. The symmetry involved in the case of ammonia is
+parity, the equivalence of left- and right-handed ways of looking at
+things. (The elementary particle experimentalists' discovery of certain
+violations of parity is not relevant to this question; those effects are
+too weak to affect ordinary matter.)</p>
+<p>Having seen how the ammonia molecule satisfies our theorem that there is
+no dipole moment, we may look into other cases and, in particular, study
+progressively bigger systems to see whether the state and the symmetry
+are always related. There are other similar pyramidal molecules, made of
+heavier atoms. Hydrogen phosphide, <span class="arithmatex">\(\mathrm{PH}_{3}\)</span>, which is twice as
+heavy as ammonia, inverts, but at one-tenth the ammonia frequency.
+Phosphorus trifluoride, <span class="arithmatex">\(\mathrm{PF}_{3}\)</span>, in which the much heavier
+fluorine is substituted for hydrogen, is not observed to invert at a
+measurable rate, although theoretically one can be sure that a state
+prepared in one orientation would invert in a reasonable time.</p>
+<p>We may then go on to more complicated molecules, such as sugar, with
+about 40 atoms. For these it longer makes any sense to expect the
+molecule to invert itself. Every sugar molecule made by a living
+organism is spiral in the same sense, and they never invert, either by
+quantum mechanical tunneling or even under thermal agitation at normal
+temperatures. At this point we must forget about the possibility of
+inversion and ignore the parity symmetry:the symmetry laws have been,
+not repealed, but broken.</p>
+<p>If, on the other hand, we synthesize our sugar molecules by a chemical
+reaction more or less in thermal equilibrium, we will find that there
+are not, on the average, more left- than right-handed ones or vice
+versa. In the absence of anything more complicated than a collection of
+free molecules, the symmetry laws are never broken, on the average. We
+needed living matter to produce an actual unsymmetry in the populations.</p>
+<p>In really large, but still inanimate, aggregates of atoms, quite a
+different kind of broken symmetry can occur, again leading to a net
+dipole moment or to a net optical rotating power, or both. Many crystals
+have a net dipole moment in each elementary unit cell (pyroelectricity),
+and in some this moment can be reversed by an electric field
+(ferroelectricity). This asymmetry is a spontaneous effect of the
+crystal's seeking its lowest energy state. Of course, the state with the
+opposite moment also exists and has, by symmetry, just the same energy,
+but the system is so large that no thermal or quantum mechanical force
+can cause a conversion of one to the other in a finite time compared to,
+say, the age of the universe.</p>
+<p>There are at least three inferences to be drawn from this. One is that
+symmetry is of great importance in physics. By symmetry we mean the
+existence of different viewpoints from which the system appears the
+same. It is only slightly overstating the case to say that physics is
+the study of symmetry. The first demonstration of the power of this idea
+may have been by Newton, who may have asked himself the question: What
+if the matter here in my hand obeys the same laws as that up in the
+sky--that is, what if space and matter are homogeneous and isotropic?</p>
+<p>The second inference is that the internal structure of a piece of matter
+need not be symmetrical even if the total state of it is. I would
+challenge you start from the fundamental laws of quantum mechanics and
+predict the ammonia inversion and its easily observable properties
+without going through the stage of using the unsymmetrical pyramidal
+structure, even though no "state"ever has that structure. It is
+fascinating that it was not until a couple of decades ago that nuclear
+physicists stopped thinking of the nucleus as a featureless, symmetrical
+little ball and realized that while it really never has a dipole moment,
+it can become football-shaped or plate-shaped. This has observable
+consequences in the reactions and excitation spectra that are studied in
+nuclear physics, even though it is much more difficult to demonstrate
+directly than the ammonia inversion. In my opinion, whether or not one
+calls this intensive research, it is as fundamental in nature as many
+things one might so label. But it needed no new knowledge of fundamental
+laws and would have been extremely difficult to derive synthetically
+from those laws; it was simply an inspiration, based, to be sure, on
+everyday intuition, which suddenly fitted everything together.</p>
+<p>The basic reason why this result would have been difficult to derive is
+an important one for our further thinking. If the nucleus is
+sufficiently small there is no real way to define its shape rigorously:
+Three or four or ten particles whirling about each other do not define a
+rotating "plate"or "football."It is only as the nucleus is
+considered to be a many-body system--in what is often called the
+<span class="arithmatex">\(N \to \infty\)</span> limit--that such behavior is rigorously definable. We say
+to ourselves: A macroscopic body of that shape would have such-and-such
+a spectrum of rotational and vibrational excitations, completely
+different in nature from those which would characterize a featureless
+system. When we see such a spectrum, even not so separated, and somewhat
+imperfect, we recognize that the nucleus is, after all, not macroscopic;
+it is merely approaching macroscopic behavior. Starting with the
+fundamental laws and a computer, we would have to do two impossible
+things--solve a problem with infinitely many bodies, and then apply the
+result to a finite system--before we synthesized this behavior.</p>
+<p>A third insight is that the state of a really big system does not at all
+have to have the symmetry of the laws which govern it; in fact, it
+usually has less symmetry. The outstanding example of this is the
+crystal: Built from a substrate of atoms and space according to laws
+which express the perfect homogeneity of space, the crystal suddenly and
+unpredictably displays an entirely new and very beautiful symmetry. The
+general rule, however, even in the case of the crystal, is that the
+large system is less symmetrical than the underlying structure would
+suggest: Symmetrical as it is, a crystal is less symmetrical than
+perfect homogeneity.</p>
+<p>Perhaps in the case of crystals this appears to be merely an exercise in
+confusion. The regularity of crystals could be deduced semiempirically
+in the mid-19<sup>th</sup> century without any complicated reasoning at all. But
+sometimes, as in the case of superconductivity, the new symmetry--now
+called broken symmetry because the original symmetry is no longer
+evident--may be of an entirely unexpected kind and extremely difficult
+to visualize. In the case of superconductivity, 30 years elapsed between
+the time when physicists were in possession of every fundamental law
+necessary for explaining it and the time when it was actually done.</p>
+<p>The phenomenon of superconductivity is the most spectacular example of
+the broken symmetries which ordinary macroscopic bodies undergo, but it
+is of course not the only one. Antiferromagnets, ferroelectrics, liquid
+crystals, and matter in many other states obey certain rather general
+scheme of rules and ideas, which some many-body theorists refer to under
+the general heading of broken symmetry. I shall not further discuss the
+history, but give a bibliography at the end of this article.</p>
+<p>The essential idea is that in the so called <span class="arithmatex">\(N\to \infty\)</span>limit of large
+systems (on our own, macroscopic scale) it is not only convenient but
+essential to realize that matter will undergo mathematically sharp,
+singular "phase transitions"to states in which the microscopic
+symmetries, and even the microscopic equations of motion, are in a sense
+violated. The symmetry leaves behind as its expression only certain
+characteristic behaviors, for instance, long-wavelength vibrations, of
+which the familiar example is sound waves; or the unusual macroscopic
+conduction phenomena of the superconductor; or, in a very deep analogy,
+the very rigidity of crystal lattices, and thus of most solid matter.
+There is, of course, no question of the system's really violating, as
+opposed to breaking, the symmetry of space and time, but because its
+parts find it energetically more favorable to maintain certain fixed
+relationships with each other, the symmetry allows only the body as a
+whole to respond to external forces.</p>
+<p>This leads to a "rigidity,"which is also an apt description of
+superconductivity and superfluidity in spite of their apparent "fluid"
+behavior. [In the former case, London noted this aspect very early.]
+Actually, for a hypothetical gaseous but intelligent citizen of Jupiter
+or of a hydrogen cloud somewhere in the galactic center, the properties
+of ordinary crystals might well be a more baffling and intriguing puzzle
+than those of superfluid helium.</p>
+<p>I do not mean to give the impression that all is settled. For instance,
+I think there are still fascinating questions of principle about glasses
+and other amorphous phases, which may reveal even more complex types of
+behavior. Nevertheless, the role of this type of broken symmetry in the
+properties of inert but macroscopic material bodies is now understood,
+at least in principle. In this case we can see how the whole becomes not
+only more than but very different from the sum of its parts.</p>
+<p>The next order of business logically is to ask whether an even more
+complete destruction of the fundamental symmetries of space and time is
+possible and whether new phenomena then arise, intrinsically different
+from the "simple"phase transition representing a condensation into a
+less symmetric state.</p>
+<p>We have already excluded the apparently unsymmetric cases of liquids,
+gases, and glasses. (In any real sense they are more symmetric.)It seems
+to me that the next stage is to consider the system which is regular but
+contains information. That is, it is regular in space in some sense so
+that it can be "read out,"but it contains elements which can be varied
+from one "cell"to the next. An obvious example is DNA; in everyday
+life, a line of type or a movie film have the same structure. This type
+of "information-bearing crystallinity"seems to be essential to life.
+Whether the development of life requires any further breaking of
+symmetry is by no means clear.</p>
+<p>Keeping on with the attempt to characterize types of broken symmetry
+which occur in living things, I find that at least one further
+phenomenon seems to be identifiable and either universal or remarkably
+common, namely, ordering (regularity or periodicity) in the time
+dimension. A number of theories of life processes have appeared in which
+regular pulsing in time plays an important role:theories of development,
+of growth and growth limitation, and of the memory. Temporal regularity
+is very commonly observed in living objects. I plays at least two kinds
+of roles. First,most methods of extracting energy from the environment
+in order to set up a continuing, quasi-stable process involve
+time-periodic machines, such as oscillators and generators, and the
+processes of life work in the same way. Second, temporal regularity is a
+means of handling information, similar to information-bearing spatial
+regularity. Human spoken language is an example, and it is noteworthy
+that all computing machines use temporal pulsing. A possible third role
+is suggested in some of the theories mentioned above: the use of phase
+relationships of temporal pulses to handle information and control the
+growth and development of cells and organisms.</p>
+<p>In some sense, structure--functional structure in a teleological sense,
+as opposed to mere crystalline shape--must also be considered a stage,
+possibly intermediate between crystallinity and information strings, in
+the hierarchy of broken symmetries.</p>
+<p>To pile speculation on speculation, I would say that the next stage
+could be hierarchy or specialization of function, or both. At some point
+we have to stop talking about decreasing symmetry and start calling it
+increasing complication. Thus, with increasing complication at each
+stage, we go on up the hierarchy of sciences. We expect to encounter
+fascinating and, I believe, very fundamental questions at each stage in
+fitting together less complicated pieces into the more complicated
+system and understanding the basically new types of behavior which can
+result.</p>
+<p>There may well be no useful parallel to be drawn between the way in
+which complexity appears in the simplest cases of many-body theory and
+chemistry and the way it appears in the truly complex cultural and
+biological ones,except perhaps to say that, in general, the relationship
+between the system and its parts is intellectually a one-way street.
+Synthesis is expected to be all but impossible: analysis, on the other
+hand, may be not only possible but fruitful in all kinds of ways:
+Without an understanding of the broken symmetry in superconductivity,
+for instance, Josephson would probably not have discovered his
+effect.[Another name for the Josephson effect is "macroscopic
+quantum-interference phenomena": interference effects observed between
+macroscopic wave functions of electrons in superconductors, or of helium
+atoms in superfluid liquid helium. These phenomena have already
+enormously extended the accuracy of electromagnetic measurements, and
+can be expected to play a great role in future computers, among other
+possibilities, so that in the long run they may lead to some of the
+major technological achievements of this decade.] For another example,
+biology has certainly taken on al whole new aspect from the reduction of
+genetics to biochemistry and biophysics, which will have untold
+consequences. So it is not true, as a recent article would have it, that
+we each should "cultivate our own valley, and not attempt to build roads
+over the mountain ranges ... between the sciences."Rather, we should
+recognize that such roads, while often the quickest shortcut to another
+part of our own science, are not visible from the viewpoint of one
+science alone.</p>
+<p>The arrogance of the particle physicist and his intensive research may
+be behind us (the discoverer of the positron said "the rest is
+chemistry"), but we have yet to recover from that of some molecular
+biologists, who seem determined to try to reduce everything about the
+human organism to "only"chemistry, from the common cold and all mental
+disease to the religious instinct. Surely there are more levels of
+organization between human ethology and DNA than there are between DNA
+and quantum electrodynamics, and each level can require a whole new
+conceptual structure. In closing, I offer two examples from economics of
+what I hope to have said. Marx said that quantitative differences become
+qualitative ones, but a dialogue in Paris in the 1920's sums it up even
+more clearly:</p>
+<p>Fitzgerald: The rich are different from us.</p>
+<p>Hemingway: Yes, they have more money.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../../Quantum%20Field%20Theory/QFTFGA%20Note/Part%20IV%20Propagators%20and%20perturbations/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Chapter 18 \(\displaystyle S\) - Matrix">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Chapter 18 \(\displaystyle S\) - Matrix
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../More%20Is%20Different%20Chinese/" class="md-footer__link md-footer__link--next" aria-label="Next: More is Different (Chinsese)">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                More is Different (Chinsese)
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      
+        <script src="../../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.bytedance.com/?query=mathjax&amp;version=3.2.0"></script>
+      
+    
+  </body>
+</html>

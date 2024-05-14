@@ -1,0 +1,2849 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Jun Wang's Home Page">
+      
+      
+        <meta name="author" content="JUN WANG">
+      
+      
+        <link rel="canonical" href="https://wenmnal.github.io/Study/Physics/Quantum%20Mechanics/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E9%9D%9E%E7%9B%B8%E5%AF%B9%E8%AE%BA%E7%B2%92%E5%AD%90%E6%B3%A2%E5%87%BD%E6%95%B0%E5%92%8C%20Schr%C3%B6dinger%20%E6%96%B9%E7%A8%8B/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E7%BB%AA%E8%AE%BA/">
+      
+      
+        <link rel="next" href="../%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E5%BD%A2%E5%BC%8F%E7%90%86%E8%AE%BA/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+    
+    
+      
+        <title>第二章 非相对论粒子波函数和 Schrödinger 方程 - JUN WANG's Home Page</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.732c4fb1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Math:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans Math";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/unordered-list-symbols.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#schrodinger" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="JUN WANG&#39;s Home Page" class="md-header__button md-logo" aria-label="JUN WANG's Home Page" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            JUN WANG's Home Page
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第二章 非相对论粒子波函数和 Schrödinger 方程
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wenmnal/wenmnal.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wenmnal.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
+          
+  
+    
+  
+  Study
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../Me/Self_Introduction/About_Me/" class="md-tabs__link">
+          
+  
+    
+  
+  Me
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../Documents/" class="md-tabs__link">
+          
+  
+    
+  
+  Documents
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="JUN WANG&#39;s Home Page" class="md-nav__button md-logo" aria-label="JUN WANG's Home Page" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    JUN WANG's Home Page
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/wenmnal/wenmnal.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wenmnal.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../.." class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Study
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Study
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Physics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Physics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Formula/formula/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Formula
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Quantum Mechanics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Quantum Mechanics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E7%BB%AA%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第一章 绪论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    第二章 非相对论粒子波函数和 Schrödinger 方程
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    第二章 非相对论粒子波函数和 Schrödinger 方程
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#born" class="md-nav__link">
+    <span class="md-ellipsis">
+      Born 的统计解释
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      态叠加原理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="态叠加原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      量子力学的态叠加原理
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schrodinger_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schrödinger 方程
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schrödinger 方程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      平面波
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      非相对论粒子
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      定域的概率流守恒
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schrodinger-stationary-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      定态 Schrödinger 方程 Stationary Equation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      一维势阱
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一维势阱">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#potential-well" class="md-nav__link">
+    <span class="md-ellipsis">
+      一维无限深势阱 Potential well
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      一维有限深势阱
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      半无限深势阱
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      一维不对称有限深势阱
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      高维势阱
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="高维势阱">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      二维无限深势阱
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hard-box" class="md-nav__link">
+    <span class="md-ellipsis">
+      三维 Hard Box
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\delta\) 势阱
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      一维谐振子
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一维谐振子">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      代数解法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      散射态
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="散射态">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      一维有限深方势阱
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      一维方势垒
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delta_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一维 \(\delta\) 势垒
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E5%BD%A2%E5%BC%8F%E7%90%86%E8%AE%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第三章 形式理论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%A4%8D%E4%B9%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第一章从经典物理到量子论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95%20A%20%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E9%97%AE%E9%A2%98/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    量子力学问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Statistical%20Physics/Maxwell%20%E5%85%B3%E7%B3%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Statistical Physics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../Mathematical%20Physics/Complex%20Analysis/Formula%20of%20Complex%20Analysis/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Mathematical Physics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../Quantum%20Field%20Theory/Introduction%20to%20Quantum%20Field%20Theory%20by%20peskin/Introductio%20to%20Quantum%20Field%20Theory%20Note/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Quantum Field Theory
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Thesis/More%20is%20different/More_is_Different/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Thesis
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Math
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Math
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Math/Algebra/Linear_Algebra_Done_Right/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Algebra
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../../../Me/Self_Introduction/About_Me/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Me
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../../Documents/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Documents
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#born" class="md-nav__link">
+    <span class="md-ellipsis">
+      Born 的统计解释
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      态叠加原理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="态叠加原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      量子力学的态叠加原理
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schrodinger_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schrödinger 方程
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Schrödinger 方程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      平面波
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      非相对论粒子
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      定域的概率流守恒
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schrodinger-stationary-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      定态 Schrödinger 方程 Stationary Equation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      一维势阱
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一维势阱">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#potential-well" class="md-nav__link">
+    <span class="md-ellipsis">
+      一维无限深势阱 Potential well
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      一维有限深势阱
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      半无限深势阱
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      一维不对称有限深势阱
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      高维势阱
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="高维势阱">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      二维无限深势阱
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hard-box" class="md-nav__link">
+    <span class="md-ellipsis">
+      三维 Hard Box
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\delta\) 势阱
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      一维谐振子
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一维谐振子">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      代数解法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      散射态
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="散射态">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      一维有限深方势阱
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      一维方势垒
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delta_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一维 \(\delta\) 势垒
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="schrodinger">第二章 非相对论粒子波函数和 Schrödinger 方程<a class="headerlink" href="#schrodinger" title="Permanent link">&para;</a></h1>
+<h2 id="born">Born 的统计解释<a class="headerlink" href="#born" title="Permanent link">&para;</a></h2>
+<p>一个非相对论粒子的波函数 <span class="arithmatex">\(\psi(x,y,z, t)\)</span> 是一个单值、连续的可归一化的复函数，描述了 <span class="arithmatex">\(t\)</span> 时刻在空间中某一点 <span class="arithmatex">\((x,y,z)\)</span> 处该粒子出现的概率密度.
+根据统计解释有如下结论
+1. 概率
+<span class="arithmatex">\(|\psi(\boldsymbol{r},t)|^2\)</span> 是指在 <span class="arithmatex">\(t\)</span> 时刻，粒子出现在 <span class="arithmatex">\(\boldsymbol{r}\)</span> 处的概率密度.
+2. 归一化
+<span class="arithmatex">\(\displaystyle\int_V｜\psi(\boldsymbol{r}, t)｜^2\mathrm{d}^3\boldsymbol{r}=1\)</span>，要求 <span class="arithmatex">\(\psi(x,y,z, t)\)</span> 是平方可积函数.
+3. 力学量的期望</p>
+<div class="arithmatex">\[
+\displaystyle\langle f(\boldsymbol{r})\rangle=\frac{\displaystyle\int_{-\infty}^{+\infty}f(\boldsymbol{r})|\psi(\boldsymbol{r})|^2\mathrm{d}^3\boldsymbol{r}}{\displaystyle\int_{-\infty}^{+\infty}|\psi(\boldsymbol{r})|^2\mathrm{d}^3\boldsymbol{r}}\]</div>
+<ol>
+<li>归一化常数和相角的不确定性
+<span class="arithmatex">\(\psi\)</span> 和 <span class="arithmatex">\(Ae^{\mathrm{i}\alpha}\psi\)</span> 描述同一个体系（仅限于统计解释）.</li>
+<li>多粒子体系
+<span class="arithmatex">\(N\)</span> 个粒子 <span class="arithmatex">\(|\psi(\boldsymbol{r}_1,\boldsymbol{r}_2,\cdots,\boldsymbol{r}_N)|^2 \mathrm{d}\boldsymbol{r}_1\mathrm{d}\boldsymbol{r}_2\cdots \mathrm{d}\boldsymbol{r}_N\)</span> 表示第 <span class="arithmatex">\(i\)</span> 个粒子处在 <span class="arithmatex">\(\boldsymbol{r}_i\rightarrow\boldsymbol{r}_i+\mathrm{d}\boldsymbol{r}_i\)</span> 的概率.</li>
+<li>波函数的参数可以是其他物理量</li>
+</ol>
+<h2 id="_1">态叠加原理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">量子力学的态叠加原理<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>若 <span class="arithmatex">\(\psi_1,\psi_2\cdots,\psi_n\)</span> 为体系的可能状态，则 <span class="arithmatex">\(c_1\psi_1+c_2\psi_2+\cdots+c_n\psi_n\)</span> 也为体系的可能状态.</p>
+</div>
+<p>可用特定的基矢来表示任意的波函数.</p>
+<div class="admonition example">
+<p class="admonition-title">在动量空间展开 (Fourier 变换）</p>
+</div>
+<div class="arithmatex">\[\displaystyle\psi(\boldsymbol{r},t)=\frac{1}{(2\pi\hbar)^\frac{3}{2}}\int\phi(\boldsymbol{p},t)e^{-\frac{\mathrm{i}}{\hbar}(Et-\boldsymbol{p\cdot r})}\mathrm{d}^3\boldsymbol{p}\]</div>
+<div class="arithmatex">\[\displaystyle\phi(\boldsymbol{p},t)=\frac{1}{(2\pi\hbar)^\frac{3}{2}}\int\psi(\boldsymbol{r},t)e^{\frac{\mathrm{i}}{\hbar}(Et-\boldsymbol{p\cdot r})}\mathrm{d}^3\boldsymbol{r}\]</div>
+<p><span class="arithmatex">\(|\phi(\boldsymbol{p},t)|^2d\boldsymbol{p}\)</span> 表示具有特定动量大小的概率。</p>
+<h2 id="schrodinger_1">Schrödinger 方程<a class="headerlink" href="#schrodinger_1" title="Permanent link">&para;</a></h2>
+<p>坐标空间的 Schrödinger 方程</p>
+<div class="arithmatex">\[\displaystyle i\hbar\frac{\partial}{\partial t}\psi(\boldsymbol{x},t)=\left[-\frac{\hbar^2}{2m}\nabla^2+\hat{V}(\boldsymbol{x})\right]\psi(\boldsymbol x,t)\]</div>
+<p>用 Hamiltonian 算符表示的 Schrödinger 方程 (General)</p>
+<div class="arithmatex">\[\displaystyle i\hbar\frac{\partial}{\partial t}\psi=\hat{H}\psi\]</div>
+<p>Schrödinger 方程是量子力学的基本假设之一。
+<span class="arithmatex">\(\psi\left( \boldsymbol{x} \right)|_{x \to \infty} \to 0\)</span> 束缚态 bound state</p>
+<h3 id="_3">平面波<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(1-\dim \psi\left( \boldsymbol{x} \right)=A \mathrm{e}^{\mathrm{i}(\boldsymbol{k}\cdot \boldsymbol{x}-\omega t)}=A \mathrm{e}^{\frac{\mathrm{i}}{\hbar}(\boldsymbol{p}\cdot \boldsymbol{x}-Et)}\)</span>
+<span class="arithmatex">\(|\phi(\boldsymbol{x})|^{2}=|A|^2\)</span> 不可归一化
+归一化和束缚态归一化不一样，称为散射态 Scattering State</p>
+<h3 id="_4">非相对论粒子<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>自由粒子 <span class="arithmatex">\(\displaystyle E=\frac{\boldsymbol{p}}{2m}\)</span> , 平面波 <span class="arithmatex">\(\psi(\boldsymbol{r},t)=A \mathrm{e}^{\frac{\mathrm{i}}{\hbar}(\boldsymbol{p}\cdot \boldsymbol{r}-Et)}\)</span>
+<span class="arithmatex">\(\displaystyle \mathrm{i}\hbar\frac{\partial }{\partial t}\)</span> 作用在 <span class="arithmatex">\(\psi(\boldsymbol{r},t)\)</span> 上 <span class="arithmatex">\(\implies E\psi(\boldsymbol{r},t)\)</span>, <span class="arithmatex">\(-\mathrm{i}\hbar \nabla\)</span> 作用在 <span class="arithmatex">\(\psi(\boldsymbol{r},t)\)</span> 上 <span class="arithmatex">\(\implies\boldsymbol{p}\psi(\boldsymbol{r},t)\)</span></p>
+<div class="arithmatex">\[\displaystyle \mathrm{i}\hbar\frac{\partial }{\partial t}\psi(\boldsymbol{r},t)=\frac{(-\mathrm{i}\hbar\nabla)(-\mathrm{i}\hbar\nabla)}{2m}\psi(\boldsymbol{r},t)=-\frac{\hbar ^{2}}{2m}\nabla^{2}\psi(\boldsymbol{r},t)\]</div>
+<p>平面波叠加成波包（自由粒子）</p>
+<div class="arithmatex">\[
+\displaystyle \psi(\boldsymbol{r},t)=\frac{1}{(2\pi\hbar)^{\frac{3}{2}}}\int \phi(\boldsymbol{p},t)\mathrm{e}^{\frac{\mathrm{i}}{\hbar}(\boldsymbol{p}\cdot \boldsymbol{r}-Et)}\rm d^{3}\boldsymbol{p}\]</div>
+<p>对于有势场的情形 <span class="arithmatex">\(V(\boldsymbol{r})\)</span>, Schrödinger 方程</p>
+<div class="arithmatex">\[
+\displaystyle \mathrm{i}\hbar\frac{\partial}{\partial t}\psi(\boldsymbol{x},t)=\left[-\frac{\hbar^2}{2m}\nabla^2+\hat{V}(\boldsymbol{x})\right]\psi(\boldsymbol x,t)\]</div>
+<p>可推广至多粒子体系（<span class="arithmatex">\(N\)</span> 粒子体系）<span class="arithmatex">\(\psi(\boldsymbol{r_1},\cdots \boldsymbol{r_n},t)\)</span></p>
+<div class="arithmatex">\[
+\displaystyle \mathrm{i}\hbar\frac{\partial }{\partial t}\psi(\boldsymbol{r_1},\cdots \boldsymbol{r_n},t)=\left[\sum_{i}-\frac{\hbar^2}{2m_i}\nabla_i^2+\hat{V}(\boldsymbol{r_1},\cdots \boldsymbol{r_n})\right]\psi(\boldsymbol x,t)\]</div>
+<h2 id="_5">定域的概率流守恒<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>归一化的属性不随时间变化
+考虑 <span class="arithmatex">\(1-\dim\)</span> 问题，且势场为实数即 <span class="arithmatex">\(V(\boldsymbol{x})=V^\ast(\boldsymbol{x})\)</span> 概率密度 <span class="arithmatex">\(\rho(x)=\psi^\ast(x,t)\psi(x,t)= \left| \psi(x,t) \right|^{2}\)</span></p>
+<div class="arithmatex">\[
+\frac{\mathrm{d}}{\mathrm{d}t} \int_{-\infty}^{+\infty} \rho(x) \mathrm{d}=\frac{\mathrm{d}}{\mathrm{d}t}\int_{-\infty}^{+\infty}\psi^\ast(x,t)\psi(x,t)\mathrm{d}x\qquad\frac{\partial }{\partial t}\psi^\ast\psi=\psi^\ast\frac{\partial \psi}{\partial t}+\frac{\partial \psi^\ast}{\partial t}\psi\]</div>
+<p>由 Schrödinger 方程得</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\frac{\partial }{\partial t}\psi(x,t)=\frac{1}{\mathrm{i}\hbar}\left[ -\frac{\hbar^2}{2m} \frac{\partial ^2}{\partial x^{2}}+V(x)\right] \psi(x,t)\\=\frac{\mathrm{i}\hbar}{2m}\frac{\partial ^{2}\psi(x,t)}{\partial x^{2}}-\frac{\mathrm{i}}{\hbar}V(x)\psi(x,t)
+\end{aligned}\]</div>
+<p>同理</p>
+<div class="arithmatex">\[
+\frac{\partial \psi^\ast}{\partial t}=-\frac{\mathrm{i}\hbar}{2m}\frac{\partial ^{2}\psi^\ast}{\partial x^{2}}+\frac{\mathrm{i}}{\hbar}V(x)\psi\ast\]</div>
+<p>则</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\frac{\partial }{\partial t}\left| \psi(x,t) \right|^{2}=\frac{\mathrm{i}\hbar}{2m} \left[\psi^\ast\frac{\partial ^{2}\psi}{\partial x^{2}}-\frac{\partial ^{2}\psi^\ast}{\partial x^{2}}\psi\right]\\
+=\frac{\partial }{\partial x}\frac{\mathrm{i}\hbar}{2m}\left( \psi^\ast\frac{\partial \psi}{\partial x}-\frac{\partial \psi^\ast}{\partial x}\psi\right) \\
+=-\frac{\partial }{\partial x}\frac{\mathrm{i}\hbar}{2m}\left( \frac{\partial \psi^\ast}{\partial x}\psi-\psi^\ast\frac{\partial \psi}{\partial x}\right)
+\end{aligned}\]</div>
+<p>若取 <span class="arithmatex">\(\displaystyle j(x,t)=\frac{\partial }{\partial x}\frac{\mathrm{i}\hbar}{2m}\left( \frac{\partial \psi^\ast}{\partial x}\psi-\psi^\ast\frac{\partial \psi}{\partial x}\right)\)</span> ，则有守恒流方程 <span class="arithmatex">\(\displaystyle \frac{\partial \rho(x,t)}{\partial t}+\frac{\partial }{\partial x}j(x,t)=0\)</span>
+推广至 <span class="arithmatex">\(3-\dim\)</span> 情况则有 <span class="arithmatex">\(\displaystyle \color{red}\frac{\partial \rho(\boldsymbol{x},t)}{\partial t}+\nabla\cdot \boldsymbol{j}(\boldsymbol{x},t)=0\color{red}\)</span> 称为概率流
+对全空间积分</p>
+<div class="arithmatex">\[
+\frac{\partial }{\partial t}\int_{\infty}\rho(\boldsymbol{r},t ) \mathrm{d}^3\boldsymbol{r}=-\int_{\Omega}^{} \boldsymbol{j}\cdot \mathrm{d}\boldsymbol{S}\]</div>
+<p>即 Schrödinger 方程满足概率守恒（实数势）
+若为复数势，取 <span class="arithmatex">\(V(x)=V_R(x)-\mathrm{i}\Gamma/2\)</span>，重复之前的计算可得</p>
+<div class="arithmatex">\[
+\frac{\partial \rho(x,t)}{\partial t}=-\frac{\partial j(x,t)}{\partial x}-\frac{\Gamma}{\hbar}\rho(x,t)\]</div>
+<p>对全空间积分则有 (<span class="arithmatex">\(\tau_D\)</span> 为粒子寿命)</p>
+<div class="arithmatex">\[
+P(t)=\int_{-\infty}^{+\infty} \rho(x,t) \mathrm{d}x
+\frac{\mathrm{d}P(t)}{\mathrm{d}t}=-\frac{\Gamma}{\hbar}P(t)=-\lambda_DP(t)=-\frac{1}{\tau_D}P(t)\]</div>
+<p>即</p>
+<div class="arithmatex">\[
+P(t)=P(0)\mathrm{e}^{-\lambda_Dt}=P(0)\mathrm{e}^{-t/\tau_D}\]</div>
+<p>由 <span class="arithmatex">\(\hat{p}=-\mathrm{i}\hbar\nabla\)</span> , 可得 <span class="arithmatex">\(\displaystyle \boldsymbol{j}=\operatorname{Re}(\psi^\ast\frac{\hat{p}}{m}\psi)\)</span>
+用 <span class="arithmatex">\(\psi(\boldsymbol{r},t)\)</span> 描述体系，物理量 <span class="arithmatex">\(\implies\)</span> 算符</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\boldsymbol{p}\to \hat{p}&amp;=-\mathrm{i}\hbar\nabla \\
+E\to \hat{H}&amp;=-\frac{\hbar^{2}}{2m}\nabla^{2}+V(r)\\
+L\to \hat{L}&amp;=\hat{r} \times \hat{p}=\hat{r} \times (-\mathrm{i}\hbar\nabla)
+\end{aligned}\]</div>
+<p>矩阵力学物理量 <span class="arithmatex">\(\to\)</span> 算符状态 <span class="arithmatex">\(\to\)</span> 态矢
+矢量空间 : 无限维复矢量空间 Hilbert 空间
+一般的 <span class="arithmatex">\(\psi(x,t) \displaystyle \psi(x,t)=\sum_{i}c_i \psi_i(x,t)\)</span>，其中 <span class="arithmatex">\(\hat{H}\psi_i(x,t)=E_i\psi_i(x,t)\)</span>。</p>
+<h2 id="schrodinger-stationary-equation">定态 Schrödinger 方程 Stationary Equation<a class="headerlink" href="#schrodinger-stationary-equation" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(V(x)\)</span> 不显含 <span class="arithmatex">\(t\)</span>
+分离变量法
+<span class="arithmatex">\(\psi(x,t)=\phi(x)f(t)\)</span>，代入 Schrödinger 方程</p>
+<div class="arithmatex">\[
+\mathrm{i}\hbar\frac{\partial }{\partial t}\left[ \phi(x)f(t) \right] =\left[-\frac{\hbar^{2}}{2m}\frac{\mathrm{d}^{2}}{\mathrm{d}x^{2}}+V(x) \right] \phi(x)f(t)\]</div>
+<div class="arithmatex">\[
+\frac{\mathrm{i}\hbar}{f(t)}\frac{\mathrm{d}f(t)}{\mathrm{d}t}=\frac{1}{\phi(x)}\left[ -\frac{\hbar^{2}}{2m}\frac{\mathrm{d}^{2}}{\mathrm{d}x^{2}}+V(x) \right]\phi(x)=E\]</div>
+<p>即</p>
+<div class="arithmatex">\[
+\left\{
+\begin{aligned}
+\mathrm{i}\hbar\frac{\mathrm{d}f(t)}{\mathrm{d}t}&amp;=Ef(t) \\
+\left[ -\frac{\hbar^{2}}{2m}\frac{\mathrm{d}^{2}}{\mathrm{d}x^{2}}+V(x)\right] \phi(x)&amp;=\hat{H}\phi(x)=E\phi(x)
+\end{aligned}
+\right.\]</div>
+<ol>
+<li><span class="arithmatex">\(\displaystyle f(t)=C\mathrm{e}^{-\frac{\mathrm{i}}{\hbar}Et}\implies \psi(x,t)=\phi(x)\mathrm{e}^{-\frac{\mathrm{i}}{\hbar}Et}=\phi(x)\mathrm{e}^{-\mathrm{i}\omega t}\)</span></li>
+<li><span class="arithmatex">\(\hat{H}\phi_E(x)=E\phi_E(x)\)</span> 本征值方程, <span class="arithmatex">\(\phi_E(x)\)</span> 是本征值为 E 的本征函数 (本征矢)。
+对应了一个确定能量 <span class="arithmatex">\(E\)</span> 的一个波函数 <span class="arithmatex">\(\phi_E\)</span> 称为定态波函数, 态称为定态。
+则 <span class="arithmatex">\(\displaystyle \psi (x, t)=\phi_E (x)\mathrm{e}^{-\frac{\mathrm{i}}{\hbar}Et}\)</span>
+在定态下测量一个力学量 <span class="arithmatex">\(F (\hat{F})\)</span>
+<span class="arithmatex">\(\displaystyle \left&lt;F \right&gt;=\int\psi^\ast(x,t)\hat{F}\psi(x,t)\mathrm{d}x=\left&lt;F \right&gt;_{(0)}\)</span> 不随时间改变
+<span class="arithmatex">\(V(x)\)</span> 的连续性与，<span class="arithmatex">\(\phi(x)\)</span>、<span class="arithmatex">\(\phi^{\prime}(x)\)</span> 的连续性
+<span class="arithmatex">\(\displaystyle\phi^{\prime\prime}(x)=-\frac{2m(E-V(x))}{\hbar^{2}}\phi(x)\)</span></li>
+<li>若 <span class="arithmatex">\(V(x)\)</span> 连续, 则 <span class="arithmatex">\(\phi(x)\)</span> 以及 <span class="arithmatex">\(\phi^{\prime}(x)\)</span> 都连续</li>
+<li>若 <span class="arithmatex">\(V(x)\)</span> 在某一点处间断则 <span class="arithmatex">\(\phi(x)\)</span>、<span class="arithmatex">\(\phi^{\prime}(x)\)</span> 也连续</li>
+<li>若 <span class="arithmatex">\(V(x)\)</span> 存在一阶奇点，则 <span class="arithmatex">\(\phi(x)\)</span> 连续 <span class="arithmatex">\(\phi^{\prime}(x)\)</span> 不连续</li>
+</ol>
+<h2 id="_6">一维势阱<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="potential-well">一维无限深势阱 Potential well<a class="headerlink" href="#potential-well" title="Permanent link">&para;</a></h3>
+<p>![[QM2.1.svg|#invert|600]]</p>
+<p>在区间 <span class="arithmatex">\(-a&lt;x&lt;a\)</span>
+满足定态 Schrödinger 方程</p>
+<div class="arithmatex">\[
+-\frac{\hbar^{2}}{2m}\frac{\mathrm{d}^{2}}{\mathrm{d}x^{2}}\psi(x)=E\psi(x)\]</div>
+<p>令 <span class="arithmatex">\(\displaystyle k^{2}=\frac{2mE}{\hbar^{2}}\)</span>, 则有 <span class="arithmatex">\(\psi^{\prime\prime}+k^{2}\psi(x)=0\)</span>, 可设解为 <span class="arithmatex">\(\psi(x)=A\sin kx+B\cos kx\)</span>
+加上边界条件 <span class="arithmatex">\(\psi(-a)=\psi(a)=0\)</span>
+则有</p>
+<div class="arithmatex">\[
+\left\{\begin{aligned}
+-A\sin ka+B\cos ka=0 \\
+A\sin ka+B\cos ka=0
+\end{aligned} \right.\longrightarrow \begin{aligned}
+A\sin ka=0 \\
+B\cos ka=0
+\end{aligned}\]</div>
+<p>可得
+    1. <span class="arithmatex">\(\displaystyle A=0\,,B\neq 0 \,,\cos ka=0 \,,ka=\frac{\pi}{2}n(n=2m+1,m \in \mathbb{N})\)</span>
+    2. <span class="arithmatex">\(\displaystyle A\neq 0\,,B=0 \,,\sin ka=0 \,,ka=\frac{\pi}{2}n(n=2m,m \in \mathbb{N})\)</span>
+则 <span class="arithmatex">\(\displaystyle k_{n}=\frac{n\pi}{2a}\,(n \in \mathbb{N})\)</span> 对应能量本征值 <span class="arithmatex">\(\displaystyle E_n=\frac{\hbar^{2}k_n^2}{2m}=\frac{n^{2}\hbar^{2}\pi^{2}}{8ma^{2}}\,(n \in \mathbb{N})\)</span>
+波函数为</p>
+<div class="arithmatex">\[
+\left\{
+\begin{aligned}
+\psi_n(x)=A\sin kx=A\sin \frac{n\pi x}{2a}\,\,(n=2,4,\cdots ) \\
+\psi_n (x)=B\cos kx=B\cos \frac{n\pi x}{2a}\,\, (n=1, 3,\cdots )
+\end{aligned}
+\right.\]</div>
+<p>归一化
+<span class="arithmatex">\(\displaystyle\int_{-a}^{a} \psi^*_n (x)\psi_n (x) \mathrm{d}=1,\,\,\implies A=B= \sqrt{\frac{1}{a}}\)</span>
+归一化的波函数为</p>
+<div class="arithmatex">\[
+\left\{
+\begin{aligned}
+\psi_n(x)=\sqrt{\frac{1}{a}}\sin \frac{n\pi x}{2a}\,\,(n=2,4,\cdots ) \\
+\psi_n(x)=\sqrt{\frac{1}{a}}\cos \frac{n\pi x}{2a}\,\,(n=1,3,\cdots )
+\end{aligned}
+\right.\]</div>
+<p>基态 <span class="arithmatex">\(\displaystyle E_1=\frac{\hbar^{2}\pi^{2}}{8ma^{2}}\)</span> Ground State ，第一激发态 <span class="arithmatex">\(\displaystyle E_2=\frac{\hbar^{2}\pi^{2}}{2ma^{2}}\)</span>。
+由此可得到以下的结论
+-  <span class="arithmatex">\(E_{n} \propto n^{2}\)</span>
+- knot point (节点) 依次增加.
+    <span class="arithmatex">\(\displaystyle \int_{-\infty}^{+\infty}\psi ^\ast_{i}(x)\psi_{j}(x) \mathrm{d}x=\delta_{ij}\)</span> 正交归一 Orthonormal.
+- 基态 <span class="arithmatex">\(\displaystyle \lambda_{1}=4a ,p_{1}=\frac{h}{4a}=\frac{\pi\hbar}{2a},E_{1}=\frac{\pi ^{2}\hbar ^{2}}{8ma^{2}}\)</span> 
+    <span class="arithmatex">\(<span class="arithmatex">\(\begin{aligned} \psi_{1}(x,t)=\sqrt{\frac{1}{a}}\mathrm{e}^{-\mathrm{i}E_{1}t/ \hbar} \cos \frac{\pi x}{2a}&amp;=\frac{1}{2}\sqrt{\frac{1}{a}} \mathrm{e}^{-\mathrm{i}E_{1}\frac{t}{\hbar}} (\mathrm{e}^{\mathrm{i}kx}+\mathrm{e}^{-\mathrm{i}kx}) \\ &amp;=\frac{1}{2}\sqrt{\frac{1}{a}}[\mathrm{e}^{\mathrm{i}(kx-\omega_1 t)}+\mathrm{e}^{-\mathrm{i}(kx+\omega_1 t)}] \end{aligned}\)</span>\)</span></p>
+<div class="language-text highlight"><pre><span></span><code>可看作相反方向传播的波的叠加.
+</code></pre></div>
+<ul>
+<li><span class="arithmatex">\(n \to \infty ,\,\,\lambda_n=2a/n \longrightarrow\)</span> Classical Situation.</li>
+<li>一般的波函数</li>
+</ul>
+<div class="arithmatex">\[
+\psi_i(x,t)=\sqrt{\frac{1}{a}}\mathrm{e}^{-\mathrm{i}\omega_i t/ \hbar}
+\left\{
+\begin{aligned}
+\cos \frac{\pi x}{2a}n\quad n=1,3,5\cdots\\
+\sin \frac{\pi x}{2a}n \quad n=2,4,6\cdots
+\end{aligned}
+\right.\]</div>
+<p>对于一般 <span class="arithmatex">\(t=0\)</span> 时刻的波函数 <span class="arithmatex">\(\psi(x,0), \displaystyle \psi(x,0)=\sum_{i}c_{i}\psi_{i}(x)\)</span></p>
+<div class="arithmatex">\[
+\int_{-a}^{a} \psi^\ast_i\psi(x,o) \mathrm{d}x=\int_{-a}^{a}
+\psi^\ast_i \sum_{j}c_{j}\psi_{i}(x)\mathrm{d}x=\sum_{j}c_{j}\int_{-a}^{a}
+\psi^\ast_i \psi_{i}(x)\mathrm{d}x=c_i\]</div>
+<p>对于任意时刻的波函数 <span class="arithmatex">\(\displaystyle \psi(x,t)=\sum_{i}c_{i}(t)\psi_{i}(x),\)</span> 代入 Schrödinger 方程</p>
+<div class="arithmatex">\[
+\mathrm{i}\hbar\sum_{i}\dot{c}{i}(t)\psi{i}(x)
+=\hat{H}\psi(x,t)=\sum_{i}c_{i}(t)\hat{H}\psi_{i}(x)
+=\sum_{i}c_{i}(t)E_{i}\psi_{i}(x)\]</div>
+<p>用 <span class="arithmatex">\(\psi^\ast_j(x)\)</span> 乘等式两边并积分得</p>
+<div class="arithmatex">\[
+\begin{aligned}
+LHS:\int_{-a}^{a}\psi^\ast_j(x)\mathrm{i}\hbar\sum_{i}\dot{c}{i}(t)
+\psi{i}(x) \mathrm{d}x =\mathrm{i}\hbar\dot{c}{j}(t)\\
+RHS:\int{-a}^{a}\psi^\ast_j(x)\sum_{i}c_{i}(t)E_{i}\psi_{i}(x)
+\mathrm{d}x =\mathrm{i}\hbar c_{j}E_j
+\end{aligned}
+\implies \mathrm{i}\hbar\dot{c}_j(t)=E_jc_j(t)\]</div>
+<p>即</p>
+<div class="arithmatex">\[
+c_j(t)=c_j \mathrm{e}^{-i E_j t /\hbar}\]</div>
+<p>故</p>
+<div class="arithmatex">\[
+\psi(x,t)=\sum_{i}c_i\mathrm{e}^{-i E_i t /\hbar} \psi_i(x)
+=\sum_{i}c_i\mathrm{e}^{-i \omega_i t} \psi_i(x)\]</div>
+<ul>
+<li>测量能量 <span class="arithmatex">\(E\)</span>
+对于定态 <span class="arithmatex">\(\psi_i(x,t)=\mathrm{e}^{-\mathrm{i}E_i t /\hbar}\phi_i(x),\hat{H}\phi_i(x)=E_i\phi(x)\)</span></li>
+</ul>
+<div class="arithmatex">\[
+\left&lt;E \right&gt; = \int_{-a}^{a} \psi^\ast_i(x,t)\hat{H}\psi_i(x,t) \mathrm{d}x=E_i\]</div>
+<p>为唯一确定的值.
+对于一般态, 在特定时刻 <span class="arithmatex">\(t=0 ,\psi(x)=\sum_{i}c_i\phi_i(x)\)</span></p>
+<div class="arithmatex">\[
+\begin{aligned}\left&lt;E \right&gt;=\int_{-a}^{a} \psi^\ast(x)\hat{H}\psi(x) \mathrm{d}x&amp;=
+\int_{-a}^{a} \sum_{i}c^\ast_i\phi^\ast_i(x) \hat{H}\sum_{j}c_j\phi_j(x)\mathrm{d}x\\&amp;=\sum_{i}\sum_{j}c^\ast_i c_j\int_{-a}^{a} \phi^\ast_i(x)\hat{H}\phi_j(x) \mathrm{d}x
+=\sum_{i}\sum_{j}c^\ast_ic_jE_j\delta_{ij}\\
+&amp;=\sum_{i}c^\ast_ic_iE_i=\sum_{i}\left| c_i \right|^{2}E_i
+\end{aligned}\]</div>
+<ul>
+<li>简并 degeneracy 当一个本征值对应多个线性无关的本征函数时称为简并.
+<strong>一维束缚态波函数的能级无简并</strong>
+<span class="arithmatex">\(1-\dim\)</span> bound state
+设线性无关的波函数 <span class="arithmatex">\(\psi_{1,2}\)</span> 对应相同的能量本征值 <span class="arithmatex">\(E\)</span>, 那么</li>
+</ul>
+<div class="arithmatex">\[
+\psi_1\psi^{\prime}_2-\psi^{\prime}_1\psi_2=\text{constant}\]</div>
+<p>i.e. Prove <span class="arithmatex">\((\psi_1\psi^{\prime}_2-\psi^{\prime}_1\psi_2)^{\prime}=\psi_1\psi^{\prime\prime}_2-\psi^{\prime\prime}_1\psi_2=0,\)</span> 代入 Schrödinger 方程即证.
+若一维 bound state 存在简并, <span class="arithmatex">\(\psi_{1,2}\)</span> 对应的能量本征值为 <span class="arithmatex">\(E\)</span>
+则 <span class="arithmatex">\(\psi_1\psi^{\prime}_2-\psi^{\prime}1\psi_2=\text{constant}=0(\psi(x)|{x \to \infty}=0)\)</span>, 即 <span class="arithmatex">\(\psi_1\psi^{\prime}_2=\psi^{\prime}1\psi_2\)</span>
+即 <span class="arithmatex">\((\ln \psi_1)^\prime=(\ln \psi_2)^\prime\implies\psi_1=C\psi_2\)</span> 故 <span class="arithmatex">\(\psi_{1,2}\)</span>
+不独立, 即**一维束缚态不存在简并**.
+能量为 <span class="arithmatex">\(E\)</span> 的自由粒子存在简并.
+简并度 <span class="arithmatex">\(\longleftrightarrow\hat{H}\)</span> 的对称性或体系的对称性
+<span class="arithmatex">\(\color{red}\)</span> 对称性 <span class="arithmatex">\(\implies\)</span> Group theory 群论, 群, 表示
+<span class="arithmatex">\(1-\dim\)</span> : 反演 Reflection 、平移 Translation
+<span class="arithmatex">\(2-\dim, 3-\dim\)</span> :Degeneracy
+氢原子能级有简并度
+-  对于对称势 <span class="arithmatex">\(V (x)=V (-x)\)</span> 体系的波函数具有特定的奇偶性</p>
+<div class="arithmatex">\[
+\displaystyle\hat{H}=-\frac{\hbar^{2}}{2m}\frac{\mathrm{d}^{2}}{\mathrm{d}x^{2}}+V(x)\]</div>
+<p>做对称变换 <span class="arithmatex">\(\hat{H}(x)=\hat{H}(-x)\)</span>, 则 <span class="arithmatex">\(\psi(x)=C\psi(-x)=C^2\psi(x)\)</span>
+则 <span class="arithmatex">\(C=\pm_1,\,\,\psi(x)=\pm\psi(-x)\)</span></p>
+<h3 id="_7">一维有限深势阱<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>束缚态, 设 <span class="arithmatex">\(E&lt;V_0\)</span>, 在三个区间内的波函数分别为 <span class="arithmatex">\(\psi_{1,2,3}(x)\)</span>, 分别满足 Schrödinger 方程</p>
+<div class="arithmatex">\[
+\left\{
+\begin{aligned}
+-\frac{\hbar^{2}}{2m}&amp;\frac{\mathrm{d}^{2}\psi_{1}(x)}{\mathrm{d}x^{2}}
++V_0\psi_{1}(x)&amp;=E\psi_{1}(x)
+\\
+-\frac{\hbar^{2}}{2m}&amp;\frac{\mathrm{d}^{2}\psi_{2}(x)}{\mathrm{d}x^{2}}
+&amp;=E\psi_{2}(x)
+\\
+-\frac{\hbar^{2}}{2m}&amp;\frac{\mathrm{d}^{2}\psi_{3}(x)}{\mathrm{d}x^{2}}
++V_0\psi_{3}(x)&amp;=E\psi_{3}(x)
+\end{aligned}\right.\]</div>
+<p>令 <span class="arithmatex">\(\displaystyle k=\sqrt{\frac{2mE}{\hbar^{2}}},k^{\prime}=\sqrt{\frac{2m(V_0-E)}{\hbar^{2}}},\)</span> 则有</p>
+<div class="arithmatex">\[
+\left\{
+\begin{aligned}
+\psi^{\prime\prime}_{1,3}(x) -k^{\prime 2}\psi_{1,3}(x)=&amp;0\to
+\psi_{1,3}(x)\sim\mathrm{e}^{\pm k^\prime x}
+\\
+\psi^{\prime\prime}_{2}(x)+k^{2}\psi_{2}(x) =&amp;0
+\to \psi_{2}(x)\sim \{\cos kx ,\sin kx\}
+\end{aligned}
+\right.\]</div>
+<p>对于束缚态 <span class="arithmatex">\(\psi_{1}(-\infty)=0,\,\,\psi_{3}(+\infty)=0\)</span>, 故解可设为</p>
+<div class="arithmatex">\[
+\left\{
+\begin{aligned}
+\psi_{1}(x)=&amp;A\mathrm{e}^{ k^\prime x},\\
+\psi_{2}(x)=&amp;B \cos kx +C\sin kx,\\
+\psi_{3}(x)=&amp;D\mathrm{e}^{- k^\prime x}
+\end{aligned}\right.\]</div>
+<p>加上边界条件</p>
+<div class="arithmatex">\[
+\left\{
+\begin{aligned}
+\psi_{1}(-a)=\psi_{2}(-a),\,\,\psi_{2}(a)=\psi_{3}(a) \\
+\psi^\prime_{1}(-a)=\psi^\prime_{2}(-a),\,\,\psi^\prime_{2}(a)=\psi^\prime_{3}(a)
+\end{aligned}
+\right.\]</div>
+<p>可以得到关于 <span class="arithmatex">\(A,B,C,D\)</span> 的方程组</p>
+<div class="arithmatex">\[
+\left\{
+\begin{aligned}
+A \mathrm{e}^{-k^\prime a}=&amp;B\cos ka -C\sin ka\\
+D\mathrm{e}^{-k^\prime a}=&amp;B\cos ka +C\sin ka\\
+Ak^{\prime} \mathrm{e}^{-k^\prime a}=&amp;Bk\sin ka +Ck\cos ka\\
+-Dk^{\prime} \mathrm{e}^{-k^\prime a}=&amp;-Bk\sin ka +Ck\cos ka
+\end{aligned}
+\right.\]</div>
+<p>即</p>
+<div class="arithmatex">\[
+\begin{pmatrix}
+\mathrm{e}^{-k^\prime a}&amp; -\cos ka&amp; \sin ka &amp;0\\
+0&amp; \cos ka &amp; \sin ka&amp;-\mathrm{e}^{-k^\prime a} \\
+k^\prime\mathrm{e}^{-k^\prime a}&amp; -k\sin ka&amp;-k\cos ka &amp;0 \\
+0&amp;-k\sin ka&amp; k\cos ka&amp;k^\prime \mathrm{e}^{-k^\prime a}
+\end{pmatrix}
+\begin{pmatrix}
+A\\B\\C\\D
+\end{pmatrix}
+=0\implies\boldsymbol{M}\boldsymbol{x}=0\]</div>
+<p>由齐次线性方程组有非平庸解的条件 <span class="arithmatex">\((\det (\boldsymbol{M})=0)\)</span> 得</p>
+<div class="arithmatex">\[
+\left(\tan ka-\frac{k^{\prime}}{k} \right)
+\left(\tan ka +\frac{k}{k^\prime} \right) =0\]</div>
+<p>对应两组解 <span class="arithmatex">\(\displaystyle\tan ka=\frac{k^{\prime}}{k}\)</span> 或 <span class="arithmatex">\(\displaystyle\tan ka =-\frac{k}{k^\prime}\)</span> , 注意到 <span class="arithmatex">\(\displaystyle k=\sqrt{\frac{2mE}{\hbar^{2}}},k^{\prime}=\sqrt{\frac{2m(V_0-E)}{\hbar^{2}}}\)</span>, 有 <span class="arithmatex">\(\displaystyle k^{2}+k^{\prime2}=\frac{2mV_0}{\hbar^{2}}\)</span>
+当 <span class="arithmatex">\(\displaystyle \tan ka=\frac{k^{\prime}}{k}=\frac{k^{\prime}a}{ka}\)</span> 时,
+代入边界条件可得 <span class="arithmatex">\(C=0,\, A=D\)</span>, 令 <span class="arithmatex">\(\xi =ka,\eta=k^{\prime}a\)</span>, 则有</p>
+<div class="arithmatex">\[
+\left\{
+\begin{aligned}
+\xi^{2}+\eta^{2}=&amp;\frac{2mV_0a^2}{\hbar^{2}}\\
+\xi\tan \xi=&amp;\eta
+\end{aligned}
+\right.\]</div>
+<p>当 <span class="arithmatex">\(\displaystyle \tan ka=-\frac{k}{k^{\prime}}=-\frac{ka}{k^{\prime}a}\)</span> 时,
+代入边界条件可得 <span class="arithmatex">\(B=0,\,A=-D,\)</span> 令 <span class="arithmatex">\(\xi =ka,\,\eta=k^{\prime}a,\)</span> 则有</p>
+<div class="arithmatex">\[
+\left\{
+\begin{aligned}
+\xi^{2}+\eta^{2}=&amp;\frac{2mV_0a^2}{\hbar^{2}}\\
+\xi\cot \xi=&amp;-\eta
+\end{aligned}
+\right.\]</div>
+<p>定性分析: 当 <span class="arithmatex">\(V_0\)</span> 很小时, 使 <span class="arithmatex">\(\displaystyle\frac{2mV_0a^{2}}{\hbar^{2}}&lt;\left( \frac{\pi}{2} \right) ^{2}\)</span> 时有一个解. 即无论势阱有多浅, 都至少存在一个束缚态解.</p>
+<h3 id="_8">半无限深势阱<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>仍然采用之前的记号, 由 Schrödinger 方程加上边界条件可得</p>
+<div class="arithmatex">\[
+\left\{ \begin{aligned}
+\psi_{1}(x)=&amp;0 &amp;x\le 0 \\
+\psi_{2}(x)=&amp;A\sin kx &amp;x&lt;0&lt;a\\
+\psi_{3}(x)=&amp;B \mathrm{e}^{-k^\prime x}&amp;x\ge a
+\end{aligned} \right.
+,\qquad
+\left\{
+\begin{aligned}
+k\cot ka=-k^\prime \\
+k^2+k^{\prime2}=\frac{2mV_0}{\hbar^{2}}
+\end{aligned}
+\right.\]</div>
+<h3 id="_9">一维不对称有限深势阱<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>设 <span class="arithmatex">\(\displaystyle E&lt;V_{1,2},k=\frac{\sqrt{2mE}}{\hbar},k_1=\frac{\sqrt{2m(V_1-E)}}{\hbar},k_2=\frac{2m(V_2-E)}{\hbar}\)</span>, 由 Schrödinger 方程加上边界条件可得</p>
+<div class="arithmatex">\[
+\left\{
+\begin{aligned}
+\tan (2ka)=&amp;\frac{k(k_1+k_2)}{k^{2}-k_1k_2} \\
+k^{2}+k_1^{2}=&amp;\frac{2mV_1}{\hbar^{2}}\\
+k^{2}+k_2^{2}=&amp;\frac{2mV_2}{\hbar^{2}}
+\end{aligned}
+\right.\]</div>
+<p>可数值求解得到能级.</p>
+<h2 id="_10">高维势阱<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<h3 id="_11">二维无限深势阱<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+V(x,y)=\left\{
+\begin{aligned}
+&amp;0,\,\,(0\le x,y\le a)&amp; \\
+&amp;\infty,\,\,\text{otherwise}&amp;
+\end{aligned}
+\right.\]</div>
+<p>设定态波函数为</p>
+<div class="arithmatex">\[
+\left\{
+\begin{aligned}
+\psi&amp;(x,y)\,\, &amp;(0\le x,y\le a)\\
+0&amp;\,\,&amp;\text{otherwise}
+\end{aligned}
+\right.\]</div>
+<p>满足 Schrödinger 方程</p>
+<div class="arithmatex">\[
+-\frac{\hbar^{2}}{2m}\left( \frac{\mathrm{d}2}{\mathrm{d}x^{2}}+
+\frac{\mathrm{d}^{2}}{\mathrm{d}x^{2}}\right) \psi(x,y)=E\psi(x,y)\]</div>
+<p>分离变量 <span class="arithmatex">\(\psi(x,y)=\phi(x)\varphi(y)\)</span>, 代入得</p>
+<div class="arithmatex">\[
+-\frac{\hbar^{2}}{2m}\left[ \frac{\phi^{\prime\prime}}{\phi(x)}
++\frac{\varphi^{\prime\prime}(y)}{\varphi(y)}\right] =E\]</div>
+<p>设 <span class="arithmatex">\(\displaystyle -\frac{\hbar^{2}}{2m} \frac{\phi^{\prime\prime}}{\phi(x)}=E_x,-\frac{\hbar^{2}}{2m}\frac{\varphi^{\prime\prime}(y)}{\varphi(y)}=E_y,\)</span> 则有 <span class="arithmatex">\(\phi(x)\sim \mathrm{e}^{\pm \mathrm{i}k_x x},\varphi(y)\sim \mathrm{e}^{\pm\mathrm{i} k_y y}\)</span> 加上边界条件</p>
+<div class="arithmatex">\[
+\left\{
+\begin{aligned}
+\phi(0)\varphi(y)=0,\,\, \phi(a)\varphi(y)=0\\
+\phi(x)\varphi(0)=0,\,\, \phi(x)\varphi(a)=0
+\end{aligned}
+\right.\]</div>
+<p>可以得到</p>
+<div class="arithmatex">\[
+\psi(x,y)=\frac{2}{a}\sin \frac{n_x\pi x}{a}\sin \frac{n_y\pi y}{a}\quad
+E=\frac{\pi^{2}\hbar^{2}}{2ma^{2}}(n_x^{2}+n_y^{2})\]</div>
+<div class="arithmatex">\[
+\left\{
+\begin{aligned}
+k_x=n_x\pi,\,\,\, n_x=1, 2, 3\cdots \quad E_x=\frac{n_x^{2}\pi^{2}\hbar^{2}}{2ma^{2}}\\[1ex]
+k_y=n_y\pi,\,\,\, n_y=1, 2, 3\cdots \quad E_y=\frac{n_y^{2}\pi^{2}\hbar^{2}}{2ma^{2}}
+\end{aligned}
+\right.\]</div>
+<h3 id="hard-box">三维 Hard Box<a class="headerlink" href="#hard-box" title="Permanent link">&para;</a></h3>
+<p>同理可得</p>
+<div class="arithmatex">\[
+\psi(x,y,z)=\left( \frac{2}{a} \right)
+\sin \frac{n_x\pi x}{a} \sin \frac{n_y\pi y}{a} \sin \frac{n_y\pi y}{a}\quad
+E=\frac{\pi^{2}\hbar^{2}}{2ma^{2}}(n_x^{2}+n_y^{2}+n_z^{2})\]</div>
+<h3 id="delta"><span class="arithmatex">\(\delta\)</span> 势阱<a class="headerlink" href="#delta" title="Permanent link">&para;</a></h3>
+<p>势函数 <span class="arithmatex">\(V(x)=-\lambda\delta (x),\)</span> 其中 <span class="arithmatex">\([\lambda]=[M][L]^{3}\left[ T \right] ^{-2}.\)</span>
+在束缚态下, 求解定态 Schrödinger 方程, 则 <span class="arithmatex">\(E&lt;0\)</span>
+在 <span class="arithmatex">\(x\neq 0\)</span> 处</p>
+<div class="arithmatex">\[
+\frac{\hbar^{2}}{2m}\frac{\mathrm{d}^2\psi(x)}{\mathrm{d}x^{2}}=E\psi(x)\implies
+\frac{\mathrm{d}^2\psi(x)}{\mathrm{d}x^{2}}+\frac{2mE}{\hbar^{2}}=0\]</div>
+<p>即</p>
+<div class="arithmatex">\[
+\psi^{\prime\prime}(x)-k^{2}\psi(x)=0\implies\psi(x)\sim \mathrm{e}^{\pm kx}\]</div>
+<p>在 <span class="arithmatex">\(x=0\)</span> 附近则有</p>
+<div class="arithmatex">\[
+\psi^{\prime\prime}(x)-k^{2}\psi(x)+\alpha\delta (x)\psi(x)=0\]</div>
+<p>其中 <span class="arithmatex">\(\displaystyle k^{2}=-\frac{2mE}{\hbar^{2}},\alpha=\frac{2m\lambda}{\hbar^{2}}.\)</span> 对上式在 <span class="arithmatex">\((-\varepsilon,\varepsilon)\)</span> 上做积分并令 <span class="arithmatex">\(\varepsilon\to 0\)</span> 得</p>
+<div class="arithmatex">\[
+\psi^{\prime}(0^{+})-\psi^{\prime}(0^{-})=\int_{-\varepsilon}^{\varepsilon}
+\left[ k^{2}\psi(x)-\alpha\delta (x)\psi(x)\right] \mathrm{d}x
+=-\alpha\psi(0)\]</div>
+<p>在 <span class="arithmatex">\(x\neq 0\)</span> 处设 <span class="arithmatex">\(\psi(x)=A \mathrm{e}^{\pm kx}\)</span>, 则</p>
+<div class="arithmatex">\[
+\psi^{\prime}=
+\left\{
+\begin{aligned}
+&amp;Ak \mathrm{e}^{kx}&amp;\quad(x&lt;0) \\
+&amp;-Ak \mathrm{e}^{-kx}&amp;\quad(x&gt;0)
+\end{aligned}
+\right.\]</div>
+<p>代入得 <span class="arithmatex">\(-Ak-Ak=-\alpha A\)</span>, 即</p>
+<div class="arithmatex">\[
+k=\frac{\alpha}{2}=\frac{m\lambda}{\hbar^{2}}\quad
+E=-\frac{\hbar^{2}k^{2}}{2m}=-\frac{\lambda^{2}m}{2\hbar^{2}}\]</div>
+<p>只有一个束缚态解.
+归一化</p>
+<div class="arithmatex">\[
+\int_{-\infty}^{+\infty} \left| \psi(x) \right|^{2} \mathrm{d}=2
+\int_{0}^{+\infty} \left| A \right|^{2} \mathrm{e}^{-2kx} \mathrm{d}x=
+\frac{A^{2}}{k}=1\implies A=\sqrt{k}\]</div>
+<h2 id="_12">一维谐振子<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<p>经典谐振子 <span class="arithmatex">\(V(x)=\frac{1}{2}kx^{2}=\frac{1}{2} m \omega^{2}x^{2}\)</span>, 量子化, 满足定态 Schrödinger 方程</p>
+<div class="arithmatex">\[
+-\frac{\hbar^{2}}{2m}\frac{\mathrm{d}^2\psi(x)}{\mathrm{d}x^{2}}
++\frac{1}{2}m \omega^{2}x^{2}\psi(x)=E\psi(x)\]</div>
+<p>边界条件 <span class="arithmatex">\(\psi(\pm\infty)\to 0\)</span> , 将上述方程无量纲化, 选取参量 <span class="arithmatex">\(\xi、\lambda\)</span> , 有 <span class="arithmatex">\(\displaystyle\xi=\sqrt{\frac{m \omega}{\hbar}}x=\alpha x,,\alpha=\sqrt{\frac{m \omega}{\hbar}},,\lambda=\frac{2E}{\hbar\omega},\)</span> 得</p>
+<div class="arithmatex">\[
+\frac{\mathrm{d}^{2}\psi(\xi)}{\mathrm{d}\xi^{2}}+
+(\lambda-\xi^{2})\psi(\xi)=0\]</div>
+<p>考虑函数在 <span class="arithmatex">\((x=\pm \infty)\)</span> 处的渐进行为, 当 <span class="arithmatex">\(\xi\to \pm\infty\)</span> 时 <span class="arithmatex">\(\xi^{2}\gg \lambda\)</span>, 方程有近似解 <span class="arithmatex">\(\psi(\xi)\sim \mathrm{e}^{\pm \frac{\xi^{2}}{2}}\)</span>, 加上边界条件, 可取 <span class="arithmatex">\(\psi(\xi)\sim \mathrm{e}^{-\frac{\xi^{2}}{2}},\)</span> 不妨设 <span class="arithmatex">\(\psi(\xi)=H(\xi) \mathrm{e}^{-\frac{\xi^{2}}{2}}\)</span> 代入上式得</p>
+<div class="arithmatex">\[
+H^{\prime\prime}(\xi)-2\xi H^{\prime}(\xi)+(\lambda-1)H(\xi)=0\]</div>
+<p>上式称为 Hermite 方程, 设 <span class="arithmatex">\(H(\xi)=\sum_{\nu=0}^{\infty}a_\nu\xi^{\nu}\)</span> 代入上式可得</p>
+<div class="arithmatex">\[
+2a_2 + 6a_3\xi +\cdots + (\nu+ 2)(\nu+ 1)a_{\nu+2}\xi^\nu+ \cdots
+= (1−\lambda)a_0 +\cdots + (2\nu−\lambda+ 1)a_\nu\xi^\nu+\cdots\]</div>
+<p>比较系数可以得到递推关系</p>
+<div class="arithmatex">\[
+\frac{a_{\nu+2}}{a_{\nu}}=\frac{2\nu-\lambda+1}{(\nu+2)(\nu+1)}
+\overset{\nu\gg 1}{\longrightarrow}\frac{2}{\nu}\]</div>
+<p>由上式可知其级数和的发散行为与 <span class="arithmatex">\(\mathrm{e}^{\xi^{2}}\)</span> 类似, 加上边界条件可知 Hermite 多项式必须有截断, 即</p>
+<div class="arithmatex">\[
+\lambda=2n+1\,\,(n=0,1,2\cdots )\implies
+\left\{
+\begin{aligned}
+E_n=\frac{\lambda}{2}\hbar\omega=(n+\frac{1}{2})\hbar\omega \\
+\psi_n (x)=N_n \mathrm{e}^{-\frac{1}{2}\alpha ^{2}x^{2}}H_n (\alpha x)
+\end{aligned}
+\right.\]</div>
+<p>其中 <span class="arithmatex">\(N_{n}=\sqrt{\frac{\alpha}{\sqrt{\pi}2^{n}n!}}\)</span> 为归一化系数, <span class="arithmatex">\(H_n(\alpha x)\)</span> 为截断 (奇数次幂或偶数次幂) 的多项式.
+<strong>Hermite 多项式具有如下的性质</strong>
+- Rodrignes 公式:</p>
+<div class="arithmatex">\[
+H_n (\xi)=(-1)^n e^{\xi^2} \frac{\mathrm{d}^n}{\mathrm{d} \xi^n} e^{-\xi^2}\]</div>
+<ul>
+<li>生成函数:</li>
+</ul>
+<div class="arithmatex">\[
+e^{-s^2+2 \xi s}=\sum_{n=0}^{\infty} \frac{H_n(\xi)}{n !} s^n\]</div>
+<ul>
+<li>正交性:</li>
+</ul>
+<div class="arithmatex">\[
+\int_{-\infty}^{+\infty} H_m(\xi) H_n(\xi)
+\mathrm{e}^{-\xi^2} \mathrm{d}\xi=\sqrt{\pi} 2^n n ! \delta_{m n}\]</div>
+<ul>
+<li>递推关系:</li>
+</ul>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;H_{n+1}(\xi)-2 \xi H_n(\xi)+2 n H_{n-1}(\xi)=0 \\
+&amp;H_n^{\prime}(\xi)=2 n H_{n-1}(\xi)
+\end{aligned}\]</div>
+<p>最初的几个 Hermite 多项式为</p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;H_0(\xi)=1 \\
+&amp;H_1(\xi)=2 \xi \\
+&amp;H_2(\xi)=4 \xi^2-2 \\
+&amp;H_3(\xi)=8 \xi^3-12 \xi
+\end{aligned}\]</div>
+<p>能量最低的几个波函数具体表达式为,</p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;\psi_0(x)=\frac{\sqrt{\alpha}}{\pi^{1 / 4}} e^{-\frac{1}{2} \alpha^2 x^2}\\
+&amp;\psi_1(x)=\frac{\sqrt{2 \alpha}}{\pi^{1 / 4}} \alpha x e^{-\frac{1}{2} \alpha^2 x^2}\\
+&amp;\psi_2(x)=\frac{1}{\pi^{1 / 4}} \sqrt{\frac{\alpha}{2}}\left(2 \alpha^2 x^2-1\right) e^{-\frac{1}{2} \alpha^2 x^2}\\
+&amp;\psi_3(x)=\frac{\sqrt{3 \alpha}}{\pi^{1 / 4}} \alpha x\left(\frac{2}{3} \alpha^2 x^2-1\right) e^{-\frac{1}{2} \alpha^2 x^2}
+\end{aligned}
+\]</div>
+<p>波函数具有递推公式</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\xi \psi_n(\xi) &amp;=\sqrt{\frac{n}{2}} \psi_{n-1}(\xi)+\sqrt{\frac{n+1}{2}} \psi_{n+1}(\xi)\\
+\frac{\mathrm{d}}{\mathrm{d}\xi} \psi_n(\xi) &amp;=\sqrt{\frac{n}{2}} \psi_{n-1}(\xi)-\sqrt{\frac{n+1}{2}} \psi_{n+1}(\xi)
+\end{aligned}
+\]</div>
+<p>并且有</p>
+<div class="arithmatex">\[
+\psi_n(-x)=(-1)^n \psi(x)
+\]</div>
+<p>即 <span class="arithmatex">\(n\)</span> 的奇偶性决定了波函数的宇称。
+几个最低能级波函数与概率分布的图像
+一维谐振子波函数
+一维谐振子概率密度</p>
+<h3 id="_13">代数解法<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>Hamilton 算符</p>
+<div class="arithmatex">\[
+\hat{H}=\frac{\hat{p}^{2}}{2m}+\frac{1}{2}m\omega^{2}x^{2}
+\]</div>
+<p>定义产生湮灭算符</p>
+<div class="arithmatex">\[
+\hat{a}^\dagger=\sqrt{\frac{m \omega}{2\hbar}}\hat{x}-
+\frac{\mathrm{i} \hat{p}}{\sqrt{2m\hbar \omega}}\quad\quad
+\hat{a}=\sqrt{\frac{m \omega}{2\hbar}}\hat{x}+
+\frac{\mathrm{i} \hat{p}}{\sqrt{2m\hbar \omega}}\quad\quad
+\]</div>
+<p>由对易关系 <span class="arithmatex">\([\hat{x},\hat{p}]=\mathrm{i}\hbar\)</span>, 可以得到产生湮灭算符的对易关系</p>
+<div class="arithmatex">\[
+[\hat{a},\hat{a}^\dagger]=1
+\]</div>
+<p>即 <span class="arithmatex">\(\hat{a}\hat{a}^\dagger-\hat{a}^\dagger\hat{a}=1\)</span>.
+也可以用 <span class="arithmatex">\(\hat{a}、\hat{a}^\dagger\)</span> 表示 <span class="arithmatex">\(\hat{x}\)</span> 和 <span class="arithmatex">\(\hat{p}\)</span></p>
+<div class="arithmatex">\[
+\hat{x}=\sqrt{\frac{\hbar}{2m \omega}}(\hat{a}+\hat{a}^\dagger),\qquad
+\hat{p}=\mathrm{i}\sqrt{\frac{m \omega\hbar}{2}}(\hat{a}^\dagger-\hat{a})
+\]</div>
+<p>代入 Hamilton 算符可以得到</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\hat{H} &amp;=\frac{1}{2 m}\left (-\frac{m \hbar \omega}{2}\right)\left (\hat{a}^{\dagger}-\hat{a}\right)^{2}+\frac{m \omega^{2}}{2}\left (\frac{\hbar}{2 m \omega}\right)\left (\hat{a}+\hat{a}^{\dagger}\right)^{2} \\
+&amp;=\frac{\hbar \omega}{2}\left (\hat{a}^{\dagger} \hat{a}+\hat{a} \hat{a}^{\dagger}\right) \\
+&amp;=\hbar \omega\left(\hat{a}^{\dagger} \hat{a}+\frac{1}{2}\right)=\hbar \omega\left(\hat{a} \hat{a}^{\dagger}-\frac{1}{2}\right)
+\end{aligned}
+\]</div>
+<p>设 <span class="arithmatex">\(\hat{H}\)</span> 的一个本征函数为 <span class="arithmatex">\(\psi_n(x)\)</span>, 即 <span class="arithmatex">\(\hat{H}\psi_n(x)=E_n\psi_n(x)\)</span>,
+使 <span class="arithmatex">\(\hat{H}\)</span> 分别作用在 <span class="arithmatex">\(\hat{a}\psi_n(x),\,\,\hat{a}^\dagger\psi_n(x)\)</span> 上利用产生湮灭算符表达的 Hamilton 算符可以得到</p>
+<div class="arithmatex">\[
+\hat{H}\hat{a}\psi_n(x)=(E_n-\hbar\omega)\hat{a}\psi_n(x),\quad
+\hat{H}\hat{a}\psi_n(x)=(E_n+\hbar\omega)\hat{a}^\dagger\psi_n(x)
+\]</div>
+<p>即 <span class="arithmatex">\(\hat{a}\psi_n(x)\)</span> 和 <span class="arithmatex">\(\hat{a}^\dagger\psi_n(x)\)</span> 分别是 <span class="arithmatex">\(\hat{H}\)</span> 本征值为 <span class="arithmatex">\(E_n-\hbar\omega\)</span> 和 <span class="arithmatex">\(E_n+\hbar\omega\)</span> 的本征函数, 也就是说将 <span class="arithmatex">\(\hat{a}^\dagger(\hat{a})\)</span> 作用在波函数上将使得波函数的能量增加 (减少) <span class="arithmatex">\(\hbar\omega\)</span>.
+若将 <span class="arithmatex">\(\hat{a}\)</span> 持续作用于 <span class="arithmatex">\(\psi_n\)</span> 将会得到负能量, 这并不符合物理规律, 故存在基态波函数
+<span class="arithmatex">\(\psi_0(x)\)</span> 使得 <span class="arithmatex">\(\hat{a}\psi_0(x)=0\)</span>.
+将 <span class="arithmatex">\(\hat{H}\)</span> 作用在 <span class="arithmatex">\(\psi_0(x)\)</span> 上可以得到</p>
+<div class="arithmatex">\[
+\hat{H}\psi_0(x)=\hbar\omega(\hat{a}^\dagger\hat{a}+\frac{1}{2})\psi_0(x)
+=\frac{1}{2}\hbar\omega \psi_0(x)
+\]</div>
+<p>即基态能量为 <span class="arithmatex">\(\frac{1}{2}\hbar\omega\)</span>.
+将 <span class="arithmatex">\(\hat{a}^\dagger\)</span> 对 <span class="arithmatex">\(\psi_0(x)\)</span> 作用 <span class="arithmatex">\(n\)</span> 次可以得到能级为 <span class="arithmatex">\(n\)</span> 的本征函数, <span class="arithmatex">\(E_n=(n+\frac{1}{2})\hbar\omega\)</span>.
+第 <span class="arithmatex">\(n\)</span> 能级的波函数可通过将 <span class="arithmatex">\(\hat{a}^{\dagger}\)</span> 作用在基态 n 次后得到</p>
+<div class="arithmatex">\[
+\psi_{0} \longrightarrow
+\stackrel{\left(\hat{a}^{\dagger}\right)^{n}}{\longrightarrow} \psi_{n}(x)
+=C\left(\hat{a}^{\dagger}\right)^{n} \psi_{0} \equiv C \psi_{n}(x)
+\]</div>
+<p>其中 C 为归一化系数.
+<span class="arithmatex">\(\hat{a}^\dagger\)</span> 作用在 <span class="arithmatex">\(\psi_{n}(x)\)</span> 上可以得到 <span class="arithmatex">\(\psi_{n+1}(x)\)</span> ,</p>
+<div class="arithmatex">\[
+\psi_{n+1}(x)=D \hat{a}^{\dagger} \psi_{n}(x)
+\]</div>
+<p>但还有一个常数 <span class="arithmatex">\(D\)</span> 待定, 可通过产生湮灭算符的具体微分形式得到 <span class="arithmatex">\(D\)</span> .
+坐标空间中产生湮灭算符为</p>
+<div class="arithmatex">\[
+\hat{a}=\frac{1}{\sqrt{2}}\left(\frac{\mathrm{d}}{\mathrm{d} \xi}+\xi\right)
+\quad, \quad \hat{a}^{\dagger}=\frac{1}{\sqrt{2}}\left(\xi-
+\frac{\mathrm{d}}{\mathrm{d} \xi}\right)
+\]</div>
+<p>其中 <span class="arithmatex">\(\xi=\sqrt{\frac{m \omega}{\hbar}} x=\alpha x\)</span>.
+将波函数 <span class="arithmatex">\(\psi_{n+1}(x)\)</span> 做内积</p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp; \int \psi_{n+1}^{}(x) \psi_{n+1}(x) \mathrm{d}x \\
+=&amp;|D|^{2} \int\left(\hat{a}^{\dagger} \psi_{n}(x)\right)^{}\left(\hat{a}^{\dagger}
+\psi_{n}(x)\right) \mathrm{d}x =|D|^{2} \frac{1}{\sqrt{2}} \int\left(-\frac{d}{d \xi}+\xi\right)
+\psi_{n}^{}(x)\left(\hat{a}^{\dagger} \psi_{n}(x)\right) \mathrm{d}x \\
+=&amp;-\left.|D|^{2} \frac{1}{\sqrt{2} \alpha} \psi_{n}^{}(x)\left(\hat{a}^{\dagger}
+\psi_{n}(x)\right)\right|_{-\infty} ^{+\infty}+|D|^{2} \int \psi{n}^{}(x)
+\frac{1}{\sqrt{2}}\left(\frac{d}{d \xi}+\xi\right)\left(\hat{a}^{\dagger} \psi_{n}(x)\right) \mathrm{d}x \\
+=&amp;|D|^{2} \int \psi_{n}^{}(x) \hat{a} \hat{a}^{\dagger} \psi_{n}(x) \mathrm{d}x=|D|^{2}
+\int \psi_{n}^{}(x)\left(\hat{a}^{\dagger} \hat{a}+1\right) \psi_{n}(x) \mathrm{d}x \\
+=&amp;|D|^{2}(n+1) \int \psi_{n}^{}(x) \psi_{n}(x) \mathrm{d} x
+\end{aligned}
+\]</div>
+<p><span class="arithmatex">\(\psi_{n}\)</span> 和 <span class="arithmatex">\(\psi_{n+1}\)</span> 都是归一化的, 且 <span class="arithmatex">\(D\)</span> 为实数得</p>
+<div class="arithmatex">\[
+D=\frac{1}{\sqrt{n+1}}
+\]</div>
+<p>以及递推关系</p>
+<div class="arithmatex">\[
+\hat{a}^{\dagger} \psi_{n}(x)=\sqrt{n+1} \psi_{n+1}(x)
+\]</div>
+<p>应用上述的递推关系可以得到 <span class="arithmatex">\(\psi_{n}(x)\)</span> 中的常数 <span class="arithmatex">\(C\)</span> ,</p>
+<div class="arithmatex">\[
+\psi_{n}(x)=\frac{1}{\sqrt{n !}}\left(\hat{a}^{\dagger}\right)^{n}
+\psi_{0}(x)=\frac{1}{\sqrt{n !} \sqrt{2^{n}}}
+\left(\xi-\frac{\mathrm{d}}{\mathrm{d} \xi}\right)^{n} \psi_{0}(x)
+\]</div>
+<p>同理可得</p>
+<div class="arithmatex">\[
+\hat{a} \psi_{n}(x)=\sqrt{n} \psi_{n-1}(x)
+\]</div>
+<p>所以</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\hat{H} &amp; \psi_{n}(x)=
+\hbar \omega\left (\hat{a}^{\dagger} \hat{a}+\frac{1}{2}\right)
+\psi_{n}(x)=\hbar \omega\left(n+\frac{1}{2}\right) \psi_{n}(x) \\
+&amp;\Longrightarrow \hat{N} \psi_{n}(x) \equiv \hat{a}^{\dagger}
+\hat{a} \psi_{n}(x)=n \psi_{n}(x)
+\end{aligned}
+\]</div>
+<p>即 <span class="arithmatex">\(\psi_{n}(x)\)</span> 是 <span class="arithmatex">\(\hat{N}\equiv\hat{a}^{\dagger}\hat{a}\)</span> (粒子束算符) 的本征值为 <span class="arithmatex">\(n\)</span> 的本征函数.
+可以通过基态条件 <span class="arithmatex">\(\hat{a} \psi_{0}(x)=0\)</span> 求解出基态波函数, 由</p>
+<div class="arithmatex">\[
+\hat{a} \psi_{0}(\xi)=\frac{1}{\sqrt{2}}
+\left (\frac{\mathrm{d}}{\mathrm{d} \xi}+\xi\right)
+\psi_{0}(\xi)=0
+\]</div>
+<p>可得</p>
+<div class="arithmatex">\[
+\psi_{0}(\xi)=A \mathrm{e}^{-\xi^{2} / 2}
+\]</div>
+<p>归一化后得</p>
+<div class="arithmatex">\[
+A=\left(\frac{m \omega}{\pi \hbar}\right)^{1 / 4}
+\]</div>
+<p>和</p>
+<div class="arithmatex">\[
+\psi_{0}(x)=\left(\frac{m \omega}{\pi \hbar}\right)^{1 / 4}
+\mathrm{e}^{-\xi^{2} / 2}=\sqrt{\frac{\alpha}{\sqrt{\pi}}}
+\mathrm{e}^{-\alpha^{2} x^{2}}
+\]</div>
+<p>激发态的波函数, 可以通过将产生算符作用于 <span class="arithmatex">\(\psi_0(x)\)</span> 得到,</p>
+<div class="arithmatex">\[
+\psi_{n}(x)=\frac{1}{\sqrt{n !}}\left(\hat{a}^{\dagger}\right)^{n}
+\psi_{0}(x)=\frac{1}{\sqrt{n !}
+\sqrt{2^{n}}}\left(\xi-\frac{\mathrm{d}}{\mathrm{d} \xi}\right)^{n}
+\psi_{0}(x)
+\]</div>
+<p>将产生湮灭算符代入 <span class="arithmatex">\(\hat{x}\)</span> 和 <span class="arithmatex">\(\hat{p}\)</span> 中得到</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\hat{x} \psi_{n} &amp;=\sqrt{\frac{\hbar}{2 m \omega}}\left(\sqrt{n}
+\psi_{n-1}+\sqrt{n+1} \psi_{n+1}\right)\\
+\hat{p} \psi_{n} &amp;=-\mathrm{i} \sqrt{\frac{m \hbar \omega}{2}}
+\left(\sqrt{n} \psi_{n-1}-\sqrt{n+1} \psi_{n+1}\right)
+\end{aligned}
+\]</div>
+<p>因为 <span class="arithmatex">\(\hat{x}\)</span> 和 <span class="arithmatex">\(\hat{p}\)</span> 要改变宇称, 所以它们在 <span class="arithmatex">\(\psi_{n}(x)\)</span> 态的平均值为零, 这也可以从上面的递推关系得出 (<span class="arithmatex">\(\psi_{n}(x)\)</span> 和 <span class="arithmatex">\(\psi_{n \pm 1}(x)\)</span> 是相互正交的).
+由 <span class="arithmatex">\(\hat{a}^\dagger,\hat{a}\)</span> 表示的 <span class="arithmatex">\(\hat{x}\)</span> 和 <span class="arithmatex">\(\hat{p}\)</span> 可得</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\left&lt;x^{2} \right&gt;{n}&amp;=\int{-\infty}^{+\infty} \psi_n^\ast(x)\hat{x}^{2}
+\psi_{n}(x) \mathrm{d}x=\frac{\hbar}{2m \omega}\int_{-\infty}^{+\infty}
+\psi_{n}^\ast(x)[\hat{a}^{2}+\hat{a}\hat{a}^\dagger+
+\hat{a}^\dagger\hat{a}+\hat{a}^{\dagger 2}]\psi_{n}(x) \mathrm{d}x
+\\
+&amp;=\frac{\hbar}{2m \omega}\int_{-\infty}^{+\infty}
+\psi_{n}^\ast(x)[2\hat{a}^\dagger\hat{a}+1]\psi_{n}(x) \mathrm{d}x
+=\frac{\hbar}{2m \omega}\int_{-\infty}^{+\infty}
+\psi_{n}^\ast(x)[2\hat{N}+1]\psi_{n}(x) \mathrm{d}x\\
+&amp;=\frac{\hbar}{2m \omega}(2n+1)
+\end{aligned}
+\]</div>
+<p>以上推导利用到了波函数的正交性、递推关系以及产生湮灭算符的对易关系.
+同理可得</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\left&lt;p^{2} \right&gt;{n}&amp;=\int_{-\infty}^{+\infty} \psi_n^\ast (x)\hat{p}^{2}
+\psi_{n}(x) \mathrm{d}x=\frac{\hbar}{2m \omega}\int_{-\infty}^{+\infty}
+\psi_{n}^\ast (x)[\hat{a}^{2}-\hat{a}\hat{a}^\dagger-
+\hat{a}^\dagger\hat{a}+\hat{a}^{\dagger 2}]\psi_{n}(x) \mathrm{d}x
+\\
+&amp;=\frac{m \omega\hbar}{2}(2n+1)
+\end{aligned}
+\]</div>
+<p>故</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\left&lt;V \right&gt;{n}&amp;=\left&lt;\frac{1}{2}m \omega^{2}x^{2} \right&gt;{n}=
+\frac{1}{2}m \omega^{2}\left&lt;x^{2} \right&gt;{n}=\frac{1}{2}m
+\omega^{2}\cdot
+\frac{\hbar}{2m \omega }(2n+1)=\frac{1}{2}E{n}
+\\
+\left&lt;T \right&gt;_{n}&amp;=\left&lt;\frac{p^{2}}{2m} \right&gt;_n=\frac{1}{2m}
+\left&lt;p^{2} \right&gt;_n=\frac{1}{2m}\cdot
+\frac{m \omega\hbar}{2}(2n+1)=\frac{1}{2}E_n
+\end{aligned}
+\]</div>
+<h2 id="_14">散射态<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<p>束缚态是指在无穷处势能无限大或者粒子能量在无穷远处小于势能, 粒子被势场束缚, 无穷远处波函数为 0, 从而能级分立. 而对于无穷远处势能为 0 的场或者粒子能量在无穷远处大于势能粒子可以出现在无穷远处, 无穷远处波函数不为 0, 能量可以任意取值, 可以为连续谱, 粒子态称为散射态（scattering state). 在这类问题中, 如果某处有势场粒子在传播过程中会受到势场影响, 发生相互作用, 粒子被散射. 也就是说在这类情况下, 讨论给定能量的粒子被势场散射的问题.</p>
+<h3 id="_15">一维有限深方势阱<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>对于散射态 <span class="arithmatex">\(E&gt;V_0\)</span>
+考虑 <span class="arithmatex">\(x&lt;0, x&gt;a\)</span> , 波函数 <span class="arithmatex">\(\psi_{1,3}(x)\)</span> 满足定态 Schrödinger 方程,</p>
+<div class="arithmatex">\[
+\frac{\mathrm{d}^{2}}{\mathrm{d} x^{2}} \psi+\frac{2 m\left(E-V_{0}\right)}{\hbar^{2}} \psi=0
+\]</div>
+<p>解为 <span class="arithmatex">\(\psi \sim \mathrm{e}^{\pm\mathrm{ i} k_{1} x}\)</span> , 其中 <span class="arithmatex">\(k_{1}=\sqrt{2 m\left(E-V_{0}\right) / \hbar^{2}}\)</span>
+而在 <span class="arithmatex">\(0&lt;x&lt;a\)</span> 区域, <span class="arithmatex">\(\psi_2(x)\)</span> 满足</p>
+<div class="arithmatex">\[
+\frac{\mathrm{d}^{2}}{\mathrm{d} x^{2}}
+\psi+\frac{2 m E}{\hbar^{2}} \psi=\frac{\mathrm{d}^{2}}{d x^{2}}
+\psi+k_{2}^{2} \psi=0
+\]</div>
+<p>解为 <span class="arithmatex">\(\psi \sim \mathrm{e}^{\pm \mathrm{ i} k_{2} x}\)</span>
+一维有限深方势阱
+即</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\psi_{1}(x)=A \mathrm{e}^{\mathrm{i} k_{1} x}+A^{\prime} \mathrm{e}^{-\mathrm{i} k_{1} x}\,\,
+&amp; (x \leq 0) \\
+\psi_{2}(x)=B \mathrm{e}^{\mathrm{i} k_{2} x}+B^{\prime} \mathrm{e}^{-\mathrm{i} k_{2} x}\,\,
+&amp; (0&lt;x&lt;a) \\
+\psi_{3}(x)=C \mathrm{e}^{\mathrm{i} k_{1} x}+C^{\prime} \mathrm{e}^{-\mathrm{i} k_{1} x}\,\,
+&amp; (x \geq a)
+\end{aligned}
+\]</div>
+<p>加上在 <span class="arithmatex">\(x=0\)</span> 和 <span class="arithmatex">\(x=a\)</span> 处的边界条件有</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\psi_{1}(0)=\psi_{2}(0) &amp; : A+A^{\prime}=B+B^{\prime} \\
+\psi_{1}^{\prime}(0)=\psi_{2}^{\prime}(0) &amp; : k_{1}\left(A-A^{\prime}\right)
+=k_{2}\left(B-B^{\prime}\right) \\
+\psi_{2}(a)=\psi_{3}(a) &amp; : B \mathrm{e}^{\mathrm{i} k_{2} a}+B^{\prime}
+\mathrm{e}^{-i k_{2} a}=C \mathrm{e}^{\mathrm{i} k_{1} a}
++C^{\prime} \mathrm{e}^{-\mathrm{i} k_{1} a} \\
+\psi_{2}^{\prime}(a)=\psi_{3}^{\prime}(a) &amp; :
+k_{2} B \mathrm{e}^{\mathrm{i} k_{2} a}-k_{2} B^{\prime} \mathrm{e}^{-\mathrm{i} k_{2} a}=k_{1} C
+\mathrm{e}^{\mathrm{i} k_{1} a}-k_{1} C^{\prime} \mathrm{e}^{-\mathrm{i} k_{1} a}
+\end{aligned}
+\]</div>
+<p>有 6 个未知参数 <span class="arithmatex">\(\left(A, A^{\prime}, B, B^{\prime}, C, C^{\prime}\right)\)</span> , 但仅有 4 个边界条件. 对于波数 <span class="arithmatex">\(k&gt;0 , \mathrm{e}^{\mathrm{i} k x}\)</span> 为由左向右传播的行波, <span class="arithmatex">\(\mathrm{e}^{-\mathrm{i} k x}\)</span> 是由右向左传播的行波. (波函数有时间相因子 <span class="arithmatex">\(\mathrm{e}^{-\mathrm{i} E t / \hbar}=\mathrm{e}^{-\mathrm{i} \omega t}\)</span>) . <span class="arithmatex">\(A, C\)</span> 表示向右传播的概率波的振幅, 而 <span class="arithmatex">\(A^{\prime}, C^{\prime}\)</span> 表示向左传播的概率波的振幅. 考虑实际散射情况从左向右发送一束粒子, 这种情况下, 在右边区域向左传播的概率波为零, 即取 <span class="arithmatex">\(C^{\prime}=0\)</span> . 波函数无法归一化, 但可以得到四个比值 <span class="arithmatex">\(\left(A^{\prime} / A, B / A, B^{\prime} / A, C / A\right)\)</span> . 也可以得到透射系数和反射系数. 对于波函数 <span class="arithmatex">\(\psi(x)\)</span> , 概率流为</p>
+<div class="arithmatex">\[
+j_{x}=-\frac{\mathrm{i} \hbar}{2 m}\left(\psi^{*}(x)
+\frac{\mathrm{d} \psi(x)}{\mathrm{d} x}-\frac{\mathrm{d} \psi^{*}(x)}{\mathrm{d} x}
+\psi(x)\right)
+\]</div>
+<p>这样, 对于入射波 <span class="arithmatex">\(\psi_{i n}=A \mathrm{e}^{\mathrm{i} k_{1} x}\)</span> 的入射概率流密度 <span class="arithmatex">\(J_{i n}\)</span> 为</p>
+<div class="arithmatex">\[
+J_{i n}=\frac{\mathrm{i} \hbar}{2 m}\left(\psi_{i n}
+\frac{\mathrm{d} \psi_{i n}^{*}}{\mathrm{d} x}-
+\frac{\mathrm{d} \psi_{i n}}{\mathrm{d} x}
+\psi_{i n}^{\ast}\right)=\frac{\hbar k_{1}}{m}|A|^{2}
+\]</div>
+<p>透射波 <span class="arithmatex">\(\psi_{T}=C \mathrm{e}^{\mathrm{i} k_{1} x}\)</span> 的透射概率流密度为</p>
+<div class="arithmatex">\[
+J_{T}=\frac{\hbar k_{1}}{m}|C|^{2}
+\]</div>
+<p>反射波 <span class="arithmatex">\(\psi_{R}=A^{\prime} \mathrm{e}^{-\mathrm{i} k_{1} x}\)</span> 的反射概率流密度为</p>
+<div class="arithmatex">\[
+J_{R}=\frac{\hbar k_{1}}{m}\left|A^{\prime}\right|^{2}
+\]</div>
+<p>可得透射系数 (transmission coefficient) 和反射系数 (reflection coefficient),</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{透射系数} : T=\frac{J_{T}}{J_{i n}}=\left|\frac{C}{A}\right|^{2}
+\\
+\text{反射系数}: R=\frac{J_{R}}{J_{i n}}=\left|\frac{A^{\prime}}{A}\right|^{2}
+\end{aligned}
+\]</div>
+<p>求解边界条件可得,</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\frac{C}{A}=\frac{4 k_{1} k_{2} \mathrm{e}^{-\mathrm{i} k_{1} a}}{\left (k_{1}+k_{2}\right)^{2}
+\mathrm{e}^{-\mathrm{i} k_{2} a}-\left (k_{1}-k_{2}\right)^{2} \mathrm{e}^{\mathrm{i} k_{2} a}} \\
+\frac{A^{\prime}}{A}=\frac{-2 \mathrm{i}\left(k_{1}^{2}-k_{2}^{2}\right) \sin k_{2} a}{\left(k_{1}+k_{2}\right)^{2}
+\mathrm{e}^{-\mathrm{i} k_{2} a}-\left(k_{1}-k_{2}\right)^{2} \mathrm{e}^{i k_{2} a}}
+\end{aligned}
+\]</div>
+<p>这样可以得到透射系数和反射系数</p>
+<div class="arithmatex">\[
+\begin{aligned}
+T &amp;=\frac{|C|^{2}}{|A|^{2}}=\frac{4 k_{1}^{2} k_{2}^{2}}{\left(k_{1}^{2}-k_{2}^{2}\right)^{2} \sin ^{2} k_{2} a+4 k_{1}^{2} k_{2}^{2}}\\
+R &amp;=\frac{\left|A^{\prime}\right|^{2}}{|A|^{2}}=
+\frac{\left(k_{1}^{2}-k_{2}^{2}\right)^{2} \sin ^{2} k_{2} a}
+{\left(k_{1}^{2}-k_{2}^{2}\right)^{2} \sin ^{2} k_{2} a+
+4 k_{1}^{2} k_{2}^{2}}
+\end{aligned}
+\]</div>
+<p>可以看出, 不是所有的粒子都能通过势阱, 即反射系数 <span class="arithmatex">\(R \neq 0\)</span> . 但满足概率守恒, 即透射系数和反射系数和为 1 , 有</p>
+<div class="arithmatex">\[
+T+R=1
+\]</div>
+<h3 id="_16">一维方势垒<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+V(x)=\left\{\begin{aligned}
+V_{0}\,\, &amp; 0&lt;x&lt;a \\
+0\,\, &amp; \text { otherwise }
+\end{aligned}\right.
+\]</div>
+<p>一维方势垒
+其中 <span class="arithmatex">\(V_{0}&gt;0\)</span> . 考虑一维情况下, 单粒子从左方向右传播, 在 <span class="arithmatex">\(x=\{0, a\}\)</span> 处遇到势垒, 发生相互作用后进行散射.
+- <span class="arithmatex">\(E&gt;V_{0}&gt;0\)</span>
+在 <span class="arithmatex">\(x&lt;0, x&gt;a\)</span> 处, 波函数 <span class="arithmatex">\(\psi_{1, 3}(x)\)</span> 满足定态 Schrödinger 方程,</p>
+<div class="arithmatex">\[
+\frac{\mathrm{d}^{2}}{\mathrm{d} x^{2}} \psi+\frac{2 m E}{\hbar^{2}} \psi=0
+\]</div>
+<p>解为 <span class="arithmatex">\(\psi \sim \mathrm{e}^{\pm \mathrm{i} k_{1} x}\)</span> , 其中 <span class="arithmatex">\(k_{1}=\sqrt{2 m E / \hbar^{2}}\)</span> .
+在 <span class="arithmatex">\(0&lt;x&lt;a\)</span> 处, <span class="arithmatex">\(\psi_{2}(x)\)</span> 满足定态 Schrödinger 方程</p>
+<div class="arithmatex">\[
+\frac{\mathrm{d}^{2}}{\mathrm{d} x^{2}} \psi+\frac{2 m\left (E-V_{0}\right)}{\hbar^{2}}
+\psi=\frac{\mathrm{d}^{2}}{\mathrm{d} x^{2}} \psi+k_{2}^{2} \psi=0
+\]</div>
+<p>解为 <span class="arithmatex">\(\psi \sim \mathrm{e}^{\pm \mathrm{i} k_{2} x}\)</span> .
+即</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\psi_{1}(x)=A \mathrm{e}^{\mathrm{i} k_{1} x}+A^{\prime} \mathrm{e}^{-\mathrm{i} k_{1} x}&amp; (x \leq 0) \\
+\psi_{2}(x)=B \mathrm{e}^{\mathrm{i} k_{2} x}+B^{\prime} \mathrm{e}^{-\mathrm{i} k_{2} x} &amp; (0&lt;x&lt;a) \\
+\psi_{3}(x)=C \mathrm{e}^{\mathrm{i} k_{1} x}\quad(x \geq a)&amp;
+\end{aligned}
+\]</div>
+<p>其中</p>
+<div class="arithmatex">\[
+k_{1}=\frac{\sqrt{2 m E}}{\hbar} \quad, \quad k_{2}=
+\frac{\sqrt{2 m\left(E-V_{0}\right)}}{\hbar^{2}}
+\]</div>
+<p>加上在 <span class="arithmatex">\(x=0\)</span> 和 <span class="arithmatex">\(x=a\)</span> 处的边界条件可得</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\frac{C}{A}=\frac{4 k_{1} k_{2} \mathrm{e}^{-\mathrm{i} k_{1} a}}
+{\left(k_{1}+k_{2}\right)^{2}
+\mathrm{e}^{-\mathrm{i} k_{2} a}-\left(k_{1}-k_{2}\right)^{2}
+\mathrm{e}^{\mathrm{i} k_{2} a}} \\
+\frac{A^{\prime}}{A}=\frac{-2 \mathrm{i}
+\left(k_{1}^{2}-k_{2}^{2}\right) \sin k_{2} a}
+{\left(k_{1}+k_{2}\right)^{2} \mathrm{e}^{-\mathrm{i} k_{2} a}-
+\left(k_{1}-k_{2}\right)^{2}
+\mathrm{e}^{\mathrm{i} k_{2} a}}
+\end{aligned}
+\]</div>
+<p>可得透射系数和反射系数为</p>
+<div class="arithmatex">\[
+\begin{aligned}
+T=\frac{|C|^{2}}{|A|^{2}}=\frac{4 k_{1}^{2} k_{2}^{2}}
+{\left(k_{1}^{2}-k_{2}^{2}\right)^{2} \sin ^{2} k_{2} a+4 k_{1}^{2}
+k_{2}^{2}}
+\\
+R=\frac{\left|A^{\prime}\right|^{2}}{|A|^{2}}=\frac{\left(k_{1}^{2}-k_{2}^{2}\right)^{2}
+\sin ^{2} k_{2} a}
+{\left(k_{1}^{2}-k_{2}^{2}\right)^{2} \sin ^{2} k_{2} a+4 k_{1}^{2} k_{2}^{2}}
+\end{aligned}
+\]</div>
+<p>在高能散射情况下, 即高能极限 <span class="arithmatex">\(\left(k_{2} \simeq k_{1}\right)\)</span> , 透射系数 <span class="arithmatex">\(T \approx 1\)</span> 此时将发生“全透散射”, 因为势垒相对于入射粒子的能量而言可以忽略.
+从上式可以看出另一个发生“全透散射”的条件</p>
+<div class="arithmatex">\[
+\sin \left(k_{2} a\right)=0 \quad \Longrightarrow \quad k_{2} a=n \pi \quad
+\Longrightarrow \quad \frac{\sqrt{2 m\left(E-V_{0}\right)}}{\hbar} a=n \pi
+\]</div>
+<p>此时入射波能量为</p>
+<div class="arithmatex">\[
+E-V_{0}=\frac{n^{2} \pi^{2} \hbar^{2}}{2 m a^{2}}=n^{2} E_{1}^{\infty}
+\]</div>
+<p>其中 <span class="arithmatex">\(E_{1}^{\infty}\)</span> 是宽度为 <span class="arithmatex">\(a\)</span> 的无穷深势阱的基态能量. 这种情况又被称作为“共振散射”.
+- <span class="arithmatex">\(V_{0}&gt;E&gt;0\)</span>
+当入射粒子能量小于势垒高度时, <span class="arithmatex">\(k_{2}\)</span> 是虚数, 区域 2 的波函数呈现指数形式, 令 <span class="arithmatex">\(k_{2}=\mathrm{i} k_{3}\)</span> , 其中 <span class="arithmatex">\(k_{3}=\sqrt{\frac{2 m\left(V_{0}-E\right)}{\hbar^{2}}}\)</span> 为实数. 所以波函数为</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\psi_{1}(x)&amp;=A \mathrm{e}^{\mathrm{i} k_{1} x}+A^{\prime} \mathrm{e}^{-\mathrm{i} k_{1} x}\quad(x \leq 0) \\
+\psi_{2}(x)&amp;=B \mathrm{e}^{-k_{3} x}+B^{\prime} \mathrm{e}^{k_{3} x} \quad(0&lt;x&lt;a) \\
+\psi_{3}(x)&amp;=C \mathrm{e}^{\mathrm{i} k_{1} x}\quad(x \geq a)
+\end{aligned}
+\]</div>
+<p>此时结果可以从 <span class="arithmatex">\(E&gt;V(x)\)</span> 散射结果通过如下替换得到：</p>
+<div class="arithmatex">\[
+k_{2} \rightarrow i k_{3} \quad \Longrightarrow \quad k_{2}^{2} \rightarrow-k_{3}^{2}
+\]</div>
+<p>重复上述计算可得</p>
+<div class="arithmatex">\[
+\begin{aligned}
+T &amp;=\frac{|C|^{2}}{|A|^{2}}=\frac{4 k_{1}^{2} k_{3}^{2}}{\left(k_{1}^{2}+
+k_{3}^{2}\right)^{2} \sinh ^{2} k_{3} a+4 k_{1}^{2} k_{3}^{2}}, \\
+R &amp;=\frac{\left|A^{\prime}\right|^{2}}{|A|^{2}}=\frac{\left(k_{1}^{2}+
+k_{3}^{2}\right)^{2} \sinh ^{2} k_{3} a}{\left(k_{1}^{2}+k_{3}^{2}\right)^{2} \sinh ^{2} k_{3} a+4 k_{1}^{2} k_{3}^{2}} .
+\end{aligned}
+\]</div>
+<p>一般地, 透射系数 <span class="arithmatex">\(T \neq 0\)</span> , 粒子有一定的概率“穿过”势垒, 透射过去. 这种现象称为隧道效应 (tunneling).
+在低能入射下, <span class="arithmatex">\(E\)</span> 较小, 当 <span class="arithmatex">\(k_{3} a \gg 1\)</span> 时, 由 <span class="arithmatex">\(\sinh k_{3} a \sim \frac{1}{2} \mathrm{e}^{k_{3} a}\)</span> 得到</p>
+<div class="arithmatex">\[
+T=\frac{16 k_{1}^{2} k_{3}^{2}}{\left(k_{1}^{2}+k_{3}^{2}\right)^{2}}
+\mathrm{e}^{-2 k_{3} a}=T_{0} \mathrm{e}^{-\frac{2 a}{\hbar}
+\sqrt{2 m\left(V_{0}-E\right)}}=\frac{16 E\left(V_{0}-E\right)}{V_{0}^{2}}
+\mathrm{e}^{-\frac{2}{\hbar} \int_{0}^{a} \sqrt{2 m\left(V_{0}-E\right)} \mathrm{d} x}
+\]</div>
+<p>其中积分适用于一般形状的势垒, 而</p>
+<div class="arithmatex">\[
+T_{0}=\frac{16 k_{1}^{2} k_{3}^{2}}{\left(k_{1}^{2}+
+k_{3}^{2}\right)^{2}}=\frac{16 E\left(V_{0}-E\right)}{V_{0}^{2}}
+\]</div>
+<p>可以看出, 透射系数 <span class="arithmatex">\(T\)</span> 依赖于势垒高度, 势垒宽度, 以及粒子质量. 随着势垒高度, 宽度和粒子质量的增大而指数下降，所以宏观条件下一般观测不到隧道效应.</p>
+<h3 id="delta_1">一维 <span class="arithmatex">\(\delta\)</span> 势垒<a class="headerlink" href="#delta_1" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+V=V_{0} \delta(x) \quad\left(V_{0}&gt;0\right)
+\]</div>
+<p>Schrödinger 方程为</p>
+<div class="arithmatex">\[
+\frac{\hbar^{2}}{2 m} \frac{\mathrm{d}^{2} \psi}
+{\mathrm{d} x^{2}}=\left[E-V_{0} \delta(x)\right] \psi
+\]</div>
+<p>两边作积分 <span class="arithmatex">\(\lim_{\epsilon \rightarrow 0^{+}} \int_{-\epsilon}^{+\epsilon} \mathrm{d} x\)</span> , 得到</p>
+<div class="arithmatex">\[
+\frac{\hbar^{2}}{2 m}\left[\psi^{\prime}\left(0^{+}\right)-\psi^{\prime}
+\left(0^{-}\right)\right]=V_{0} \psi(0) .
+\]</div>
+<p>这表明, 对于 <span class="arithmatex">\(\delta\)</span> 势垒, <span class="arithmatex">\(\psi^{\prime}\)</span> 在 <span class="arithmatex">\(x=0\)</span> 处不连续 (除非 <span class="arithmatex">\(\psi(0)=0\)</span>) . 令</p>
+<div class="arithmatex">\[
+\psi(x)=\left\{\begin{aligned}
+&amp;\mathrm{e}^{\mathrm{i} k x}+A^{\prime} \mathrm{e}^{-\mathrm{i} k x} &amp; (x&lt;0)\\
+&amp;C\mathrm{e}^{\mathrm{i} k x} &amp; (x&gt;0)
+\end{aligned}\right.
+\]</div>
+<p>代入前式有</p>
+<div class="arithmatex">\[
+\frac{\mathrm{i} k \hbar^{2}}{2 m}\left(C-1+A^{\prime}\right)=V_{0}
+C \text { or } V_{0}\left(1+A^{\prime}\right)
+\]</div>
+<p>另外由 <span class="arithmatex">\(\psi(0)\)</span> 连续有</p>
+<div class="arithmatex">\[
+1+A^{\prime}=C
+\]</div>
+<p>可得</p>
+<div class="arithmatex">\[
+C=\frac{1}{\left(1+\frac{\mathrm{i} m V_{0}}{\hbar^{2} k}\right)} .
+\]</div>
+<p>透射系数为</p>
+<div class="arithmatex">\[
+T=|C|^{2}=\frac{1}{1+\frac{m^{2} V_{0}^{2}}{\hbar^{4} k^{2}}}
+=\frac{1}{1+\frac{m V_{0}^{2}}{2 E \hbar^{2}}},
+\]</div>
+<p>式中使用了 <span class="arithmatex">\(E=\frac{\hbar^{2} k^{2}}{2 m}\)</span> .
+反射系数则为</p>
+<div class="arithmatex">\[
+R=1-T=\frac{\frac{m V_{0}^{2}}{2 E \hbar^{2}}}{1+\frac{m V_{0}^{2}}{2 E \hbar^{2}}} .
+\]</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E7%BB%AA%E8%AE%BA/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 第一章 绪论">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                第一章 绪论
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E5%BD%A2%E5%BC%8F%E7%90%86%E8%AE%BA/" class="md-footer__link md-footer__link--next" aria-label="Next: 第三章 形式理论">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                第三章 形式理论
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      
+        <script src="../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.bytedance.com/?query=mathjax&amp;version=3.2.0"></script>
+      
+    
+  </body>
+</html>

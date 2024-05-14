@@ -1,0 +1,1701 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Jun Wang's Home Page">
+      
+      
+        <meta name="author" content="JUN WANG">
+      
+      
+        <link rel="canonical" href="https://wenmnal.github.io/Study/Physics/Quantum%20Field%20Theory/QFTFGA%20Note/Part%20IV%20Propagators%20and%20perturbations/">
+      
+      
+        <link rel="prev" href="../Part%20II%20Writing%20down%20Lagrangians/">
+      
+      
+        <link rel="next" href="../../../Thesis/More%20is%20different/More_is_Different/">
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+    
+    
+      
+        <title>Chapter 18 \(\displaystyle S\) - Matrix - JUN WANG's Home Page</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.732c4fb1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Math:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans Math";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../stylesheets/unordered-list-symbols.css">
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-18-displaystyle-s-matrix" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="JUN WANG&#39;s Home Page" class="md-header__button md-logo" aria-label="JUN WANG's Home Page" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            JUN WANG's Home Page
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 18 \(\displaystyle S\) - Matrix
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wenmnal/wenmnal.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wenmnal.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
+          
+  
+    
+  
+  Study
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../Me/Self_Introduction/About_Me/" class="md-tabs__link">
+          
+  
+    
+  
+  Me
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../Documents/" class="md-tabs__link">
+          
+  
+    
+  
+  Documents
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="JUN WANG&#39;s Home Page" class="md-nav__button md-logo" aria-label="JUN WANG's Home Page" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    JUN WANG's Home Page
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/wenmnal/wenmnal.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wenmnal.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../../.." class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Study
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Study
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Physics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Physics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Formula/formula/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Formula
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Quantum%20Mechanics/%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E7%BB%AA%E8%AE%BA/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Quantum Mechanics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Statistical%20Physics/Maxwell%20%E5%85%B3%E7%B3%BB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Statistical Physics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../../Mathematical%20Physics/Complex%20Analysis/Formula%20of%20Complex%20Analysis/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Mathematical Physics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_5" id="__nav_2_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Quantum Field Theory
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Quantum Field Theory
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Introduction%20to%20Quantum%20Field%20Theory%20by%20peskin/Introductio%20to%20Quantum%20Field%20Theory%20Note/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Introduction to Quantum Field Theory
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_5_2" id="__nav_2_2_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Quantum Field Theory for the Gifted amateur
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_5_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Quantum Field Theory for the Gifted amateur
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Part%20I%20The%20Universe%20as%20a%20set%20of%20harmonic%20oscillators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 1 Lagrangians
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Part%20II%20Writing%20down%20Lagrangians/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 5 Continuous systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Chapter 18 \(\displaystyle S\) - Matrix
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 18 \(\displaystyle S\) - Matrix
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-displaystyle-s-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      The \(\displaystyle S\) -Matrix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-interaction-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      The interaction representation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-interaction-picture-applied-to-scattering" class="md-nav__link">
+    <span class="md-ellipsis">
+      The interaction picture applied to scattering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#perturbation-expansion-of-the-displaystyle-s-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Perturbation expansion of the \(\displaystyle S\)-matrix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wick-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wick theorem
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Thesis/More%20is%20different/More_is_Different/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Thesis
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Math
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Math
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../../Math/Algebra/Linear_Algebra_Done_Right/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Algebra
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../../../../Me/Self_Introduction/About_Me/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Me
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../../../Documents/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Documents
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-displaystyle-s-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      The \(\displaystyle S\) -Matrix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-interaction-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      The interaction representation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-interaction-picture-applied-to-scattering" class="md-nav__link">
+    <span class="md-ellipsis">
+      The interaction picture applied to scattering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#perturbation-expansion-of-the-displaystyle-s-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Perturbation expansion of the \(\displaystyle S\)-matrix
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wick-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wick theorem
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="chapter-18-displaystyle-s-matrix">Chapter 18 <span class="arithmatex">\(\displaystyle S\)</span> - Matrix<a class="headerlink" href="#chapter-18-displaystyle-s-matrix" title="Permanent link">&para;</a></h1>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>Interactions involves the creation or destruction of particles.</p>
+</div>
+<h2 id="the-displaystyle-s-matrix">The <span class="arithmatex">\(\displaystyle S\)</span> -Matrix<a class="headerlink" href="#the-displaystyle-s-matrix" title="Permanent link">&para;</a></h2>
+<p>Consider the scattering process of two particles, starting with <span class="arithmatex">\(\displaystyle \ket{p_{1}p_{2}}^{\text in}_{\text{ realworld}}(t\to-\infty)\)</span>, ending up with <span class="arithmatex">\(\displaystyle \ket{q_{1}q_{2}}^{\text{ out}}_{\text {realworld}}(t\to + \infty)\)</span>.
+scattering amplitude <span class="arithmatex">\(\displaystyle \mathcal{A}\)</span> is given by</p>
+<div class="arithmatex">\[
+\mathcal{A}=^{\text {out}}_{\text{realworld}}\langle q_{1}q_{2}|p_{1}p_{2}\rangle ^{\text{in}}_{\text{realworld}}
+\]</div>
+<p>We must recreate this amplitude using the simple-world states .We define </p>
+<div class="arithmatex">\[
+\mathcal{A}=^{\text {out}}_{\text{realworld}}\langle q_{1}q_{2}|p_{1}p_{2}\rangle ^{\text{in}}_{\text{realworld}}=_{\text{simpleworld}}\langle q_{1}q_{2} |\hat{S}| p_{1}p_{2}\rangle_{\text{simpleworld}}
+\]</div>
+<p><span class="arithmatex">\(S\)</span> -matrix contains the amplitudes for starting with a particular ‘in’ state and ending up with a particular ‘out’ state.</p>
+<h2 id="the-interaction-representation">The interaction representation<a class="headerlink" href="#the-interaction-representation" title="Permanent link">&para;</a></h2>
+<div class="arithmatex">\[
+\hat{H}=\hat{H}_{0}+\hat{H}'
+\]</div>
+<p><span class="arithmatex">\(\displaystyle \hat{H}_{0}\)</span> free part , <span class="arithmatex">\(\displaystyle \hat{H}'\)</span> interaction part </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Operators in the interaction picture evolve in time via the free part <span class="arithmatex">\(\displaystyle \hat{H}_{0}\)</span></p>
+<div class="arithmatex">\[\hat{O}_{\text{I}}(t)=\mathrm{e}^{ \mathrm{i}\hat{H}_{0}t }\hat{O}\mathrm{e}^{ -\mathrm{i}\hat{H}_{0}t }\quad \mathrm{i}\frac{\mathrm{d}\hat{O}_{\text{I}}(t)}{\mathrm{d}t}=[\hat{O}_{\text{I}}(t),\hat{H}_{0}]\]</div>
+</div>
+<p>Compare a matrix element from the Schrödinger picture to one in the interaction picture</p>
+<div class="arithmatex">\[
+\langle \phi(t)|\hat{O} |\psi(t) \rangle=\langle \phi _{\text{I}}(t)|\mathrm{e}^{ \mathrm{i} \hat{H}_{0}t}\hat{O}\mathrm{e}^{ -\mathrm{i}\hat{H}_{0}t } | \psi _{\text{I}}(t)\rangle\]</div>
+<p>for the matrix elements to be the same as in the Schrödinger picture</p>
+<div class="arithmatex">\[
+\ket{\psi_{\text{I}}(t)}=\mathrm{e}^{ \mathrm{i} \hat{H}_{0}t}\ket{\psi(t)}  \]</div>
+<div class="admonition note equation of motion for the interaction">
+<p class="admonition-title">Note</p>
+<div class="arithmatex">\[\mathrm{i}\frac{\mathrm{d}}{\mathrm{d}t} \ket{\psi_{\text{I}}(t)}=\hat{H}_{\text{I}}(t) \ket{\psi_{\text{I}}(t)}\]</div>
+<p>where <span class="arithmatex">\(\displaystyle \hat{H}_{\mathrm{I}}(t)=\mathrm{e}^{ \mathrm{i}\hat{H}_{0}t }\hat{H}'\mathrm{e}^{ -\mathrm{i}\hat{H}_{0}t }\)</span></p>
+</div>
+<h2 id="the-interaction-picture-applied-to-scattering">The interaction picture applied to scattering<a class="headerlink" href="#the-interaction-picture-applied-to-scattering" title="Permanent link">&para;</a></h2>
+<p>Identify the simple-world states as those of the interaction picture at the start and end:</p>
+<div class="arithmatex">\[
+\ket{\phi} _{\mathrm{simpleworld}}=\ket{\phi _{\mathrm{I}}(\pm \infty)} 
+\]</div>
+<p>All of quantum mechanical pictures are defined so that they coincide at <span class="arithmatex">\(\displaystyle t\)</span> = 0</p>
+<div class="arithmatex">\[
+_{\text{simpleworld}}\langle \phi|\hat{S} | \psi\rangle _{\text{simpleworld}}=^{\text{out}}_{\text{realworld}}\langle \phi | \psi\rangle^{\text{in}} _{\text{realworld}}=\langle \phi_{\text{I}}(0) |\psi_{\text{I}}(0) \rangle 
+\]</div>
+<p>Using the time-evolution operator in the interaction picture</p>
+<div class="arithmatex">\[\begin{align}
+_{\text{simpleworld}}\langle \phi|\hat{S} | \psi\rangle _{\text{simpleworld}}= &amp; \langle \phi_{\text{I}}(\infty)|\hat{U}_{\text{I}}(\infty,0) \hat{U}_{\text{I}}(0,-\infty)|\psi_{\text{I}}(-\infty) \rangle  \\
+= &amp;\langle \phi_{\text{I}}(\infty)|\hat{U}_{\text{I}}(\infty,-\infty)|\psi_{\text{I}}(-\infty) \rangle  \\
+= &amp; {\text{simpleworld}}\langle \phi|\hat{U}_{\text{I}}(\infty,-\infty) | \psi\rangle _{\text{simpleworld}}
+\end{align}
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><span class="arithmatex">\(\displaystyle \hat{S}\)</span> -operator is the time-evolution operator for the interaction-picture <span class="arithmatex">\(\displaystyle \hat{U}_{\text{I}}(t,-t)\)</span> as <span class="arithmatex">\(\displaystyle t\to \infty\)</span>.</p>
+</div>
+<h2 id="perturbation-expansion-of-the-displaystyle-s-matrix">Perturbation expansion of the <span class="arithmatex">\(\displaystyle S\)</span>-matrix<a class="headerlink" href="#perturbation-expansion-of-the-displaystyle-s-matrix" title="Permanent link">&para;</a></h2>
+<div class="admonition note equation of motion for the interaction picture time-evolution operator">
+<p class="admonition-title">Note</p>
+<div class="arithmatex">\[\mathrm{i}\frac{\mathrm{d}}{\mathrm{d}t^{2}}\hat{U}_{\text{I}}(t_{2},t_{1})=\hat{H}_{\text{I}}(t_{2})\hat{U}_{\text{I}}(t_{2},t_{1})\]</div>
+</div>
+<p>To circumvent the problem that <span class="arithmatex">\(\displaystyle [\hat{H}_{\text{I}}(t_{2},),\hat{H}_\text{I}(t_{1})]\ne 0\)</span>. The solution turns out to be the <strong>time-ordered product</strong> <span class="arithmatex">\(\displaystyle T[\hat{A}\hat{B}\dots]\)</span> defined as the string arranged so that the later operators are on the left.</p>
+<div class="admonition note">
+<p class="admonition-title">Dyson's expansion </p>
+<div class="arithmatex">\[\hat{U}_{\text{I}}(t_{2},t_{1})=T\left[ \mathrm{e}^{ -\mathrm{i}\int_{t_{1}}^{t_{2}}\mathrm{d}t \hat{H}_{\text{I}}(t)} \right]\]</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title"><span class="arithmatex">\(\displaystyle \hat{S}\)</span> -operator</p>
+<div class="arithmatex">\[\displaystyle \hat{S}=T\left[ \mathrm{e}^{ -\mathrm{i}\int_{-\infty}^{\infty}  \, \mathrm{d}^{4}x \hat{\mathcal{H}}_{I}(x)} \right]\]</div>
+</div>
+<p>Usually the integral in the exponent cannot be done exactly so we have to expand out the exponential in Dyson’s expansion thus:</p>
+<div class="arithmatex">\[
+\hat{S}=T\left[ 1-\mathrm{i}\int\mathrm{d}^{4}z \hat{\mathcal{H}_{\text{I}}}(z)+\frac{(-\mathrm{i})^{2}}{2!}\int\mathrm{d}^{4}yd^{4}w \hat{\mathcal{H}}_{\text{I}}(y)\hat{\mathcal{H}}_{\text{I}}(w)+\dots   \right]
+\]</div>
+<h2 id="wick-theorem">Wick theorem<a class="headerlink" href="#wick-theorem" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Wick theorem</p>
+<div class="arithmatex">\[T[\hat{A}\hat{B}\hat{C}\dots  \hat{Z}]=N\left[\hat{A}\hat{B}\hat{C}\dots  \hat{Z}+\begin{align}
+\text{all possible} &amp;\,\,\text{contrations of } \\
+\hat{A}\hat{B}&amp;\hat{C}\dots  \hat{Z}
+\end{align}\right]\]</div>
+</div>
+<h1 id="chapter-19-expanding-the-s-matrix-feynman-diagrams">Chapter 19 Expanding the <span class="arithmatex">\(S\)</span> -matrix: Feynman diagrams<a class="headerlink" href="#chapter-19-expanding-the-s-matrix-feynman-diagrams" title="Permanent link">&para;</a></h1>
+<h2 id="the-example-of-displaystyle-phi4-theory">The example of <span class="arithmatex">\(\displaystyle \phi^4\)</span> theory<a class="headerlink" href="#the-example-of-displaystyle-phi4-theory" title="Permanent link">&para;</a></h2>
+<div class="admonition note lagrangian density">
+<p class="admonition-title">Note</p>
+<div class="arithmatex">\[\mathcal{L}=\frac{1}{2}\left[\partial_{\mu} \phi (x)\right]^{2}-\frac{m^{2}}{2} \phi (x)^{2}-\frac{\lambda}{4 !} \phi (x)^{4}\]</div>
+</div>
+<p>free part 
+<span class="arithmatex">\(\mathcal{L}_{0}=\frac{1}{2}\left (\partial_{\mu} \phi\right)^{2}-\frac{m^{2}}{2} \phi^{2}\)</span> , 
+<span class="arithmatex">\(\hat{\mathcal{H}}_{0}=\frac{1}{2}\left[\left (\frac{\partial \hat{\phi}}{\partial t}\right)^{2}+(\boldsymbol{\nabla} \hat{\phi})^{2}+m^{2} \hat{\phi}^{2}\right]\)</span>，</p>
+<p>interacting part  <span class="arithmatex">\(\mathcal{L}_{\mathrm{I}}=-\frac{\lambda}{4 !} \phi (x)^{4}\)</span> , <span class="arithmatex">\(\hat{\mathcal{H}}_{\mathrm{I}}=\frac{\lambda}{4 !} \hat{\phi}(x)^{4}\)</span> . </p>
+<div class="admonition example">
+<p class="admonition-title">Expand <span class="arithmatex">\(\displaystyle S\)</span> -matrix</p>
+<p><strong>Step I</strong>
+write it as a vacuum expectation value (VEV), <span class="arithmatex">\(\displaystyle \ket{p}\)</span> in state , <span class="arithmatex">\(\displaystyle \ket{q}\)</span> out state.</p>
+<div class="arithmatex">\[\begin{array}{l}\mathcal{A}={ }^{\text {out }}\langle q\mid p\rangle^{\text {in }}=\langle q|\hat{S}| p\rangle =(2 \pi)^{3}\left (2 E_{\boldsymbol{q}}\right)^{\frac{1}{2}}\left (2 E_{\boldsymbol{p}}\right)^{\frac{1}{2}}\left\langle 0\left|\hat{a}_{\boldsymbol{q}} \hat{S} \hat{a}_{\boldsymbol{p}}^{\dagger}\right| 0\right\rangle, \end{array}\]</div>
+<p>where we recall that the relativistic normalization of our states means that  <span class="arithmatex">\(|p\rangle=(2 \pi)^{\frac{3}{2}}\left (2 E_{\boldsymbol{p}}\right)^{\frac{1}{2}} \hat{a}_{\boldsymbol{p}}^{\dagger}|0\rangle\)</span> 
+<strong>Step II</strong>
+Expand the <span class="arithmatex">\(\hat{S}\)</span> -operator using Dyson's expansion</p>
+<div class="arithmatex">\[\begin{aligned}\hat{S} &amp; =T\left[\exp \left (-\mathrm{i} \int \mathrm{d}^{4} z \hat{\mathcal{H}}_{\mathrm{I}}(z)\right)\right] \\&amp; =T\left[1-\mathrm{i} \int \mathrm{d}^{4} z \hat{\mathcal{H}}_{\mathrm{I}}(z)+\frac{(-\mathrm{i})^{2}}{2} \int \mathrm{d}^{4} y \mathrm{~d}^{4} w \hat{\mathcal{H}}_{\mathrm{I}}(y) \hat{\mathcal{H}}_{\mathrm{I}}(w)+\ldots\right] \end{aligned}\]</div>
+<p><strong>Step III</strong> Plug the resulting expression for the <span class="arithmatex">\(\displaystyle \hat{S}\)</span> -operator into the expression for the S-matrix element that we’re trying to calculate </p>
+<div class="arithmatex">\[\mathcal{A}=\langle q|\hat{S} | p\rangle \]</div>
+<p><strong>Step IV</strong> Use Wick’s theorem to grind down the terms.
+ <strong>Step V</strong> Make sense of a term by drawing a Feynman diagram. </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="arithmatex">\[ \begin{aligned}
+\langle 0|\hat{\phi}(z) \hat{a}_{\boldsymbol{p}}^{\dagger}| 0\rangle &amp; =\int \frac{\mathrm{d}^{3} q}{(2 \pi)^{\frac{3}{2}}} \frac{1}{\left(2 E_{\boldsymbol{q}}\right)^{\frac{1}{2}}}\left\langle 0\left|\left(\hat{a}_{\boldsymbol{q}} \mathrm{e}^{-\mathrm{i} q \cdot z}+\hat{a}_{\boldsymbol{q}}^{\dagger} \mathrm{e}^{\mathrm{i} q \cdot z}\right) \hat{a}_{\boldsymbol{p}}^{\dagger}\right| 0\right\rangle \\
+&amp; =\int \frac{\mathrm{d}^{3} q}{(2 \pi)^{\frac{3}{2}}} \frac{1}{\left(2 E_{\boldsymbol{q}}\right)^{\frac{1}{2}}}\left\langle 0\left|\left(\hat{a}_{\boldsymbol{q}} \mathrm{e}^{-\mathrm{i} q \cdot z}+\hat{a}_{\boldsymbol{q}}^{\dagger} \mathrm{e}^{\mathrm{i} q \cdot z}\right)\right| \boldsymbol{p}\right\rangle \\
+&amp; =\int \frac{\mathrm{d}^{3} q}{(2 \pi)^{\frac{3}{2}}} \frac{1}{\left(2 E_{\boldsymbol{q}}\right)^{\frac{1}{2}}} \mathrm{e}^{-\mathrm{i} q \cdot z} \delta^{(3)}(\boldsymbol{q}-\boldsymbol{p}) \\
+&amp; =\frac{1}{(2 \pi)^{\frac{3}{2}}} \frac{1}{\left(2 E_{\boldsymbol{p}}\right)^{\frac{1}{2}}} \mathrm{e}^{-\mathrm{i} p \cdot z}
+\end{aligned} \]</div>
+<div class="arithmatex">\[ \langle 0|T \hat{\phi}(y) \hat{\phi}(z)| 0\rangle=\Delta(y-z) \]</div>
+</div>
+<h2 id="anatomy-of-a-diagram">Anatomy of a diagram<a class="headerlink" href="#anatomy-of-a-diagram" title="Permanent link">&para;</a></h2>
+<div class="admonition example vocabulary about diagram">
+<p class="admonition-title">Example</p>
+<p><strong>External lines</strong> have one end which appears not to be connected to anything.<br />
+A <strong>vacuum diagram</strong> has no external lines. </p>
+</div>
+<p>A particular connected diagram might contain:
+     <strong>Vertices</strong> where lines join together. These represent interactions.
+     <strong>External incoming lines</strong> represent on-mass-shell particles entering the process.<br />
+<strong>External outgoing lines</strong> represent on-mass-shell particles leaving the process.
+     <strong>Internal lines</strong> e represent virtual particles which are off-mass-shell and therefore exist internally within the diagram.</p>
+<div class="admonition example">
+<p class="admonition-title">Feynman rules for <span class="arithmatex">\(\displaystyle \phi ^{4}\)</span> theory in position space </p>
+<p>To calculate an amplitude in the S-matrix expansion, translate a Feynman diagram into equations as follows:
+  Each vertex contributes a factor <span class="arithmatex">\(\displaystyle -\mathrm{i}\lambda\)</span>. <br />
+  Each line gives a propagation factor <span class="arithmatex">\(\displaystyle \Delta(x-y)\)</span>, where <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> are the start and end points of the line. 
+ External lines contribute incoming (<span class="arithmatex">\(\displaystyle -\mathrm{i}p\cdot x\)</span>) or outgoing (<span class="arithmatex">\(\displaystyle +\mathrm{i}p\cdot x\)</span>) waves <span class="arithmatex">\(\displaystyle \mathrm{e}^{ \pm \mathrm{i}p \cdot x }\)</span>.<br />
+  Integrate the positions of the vertices over all spacetime.  <br />
+  In order to get the right coefficient in front of the term divide by the symmetry factor <span class="arithmatex">\(D\)</span>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Symmetry factor </p>
+<div class="arithmatex">\[D=g 2^{\beta} \prod_{n}(n !)^{\alpha_{n}}\]</div>
+<p><span class="arithmatex">\(g\)</span> : the number of permutations of vertices that leave the diagram unchanged with fixed external lines 
+<span class="arithmatex">\(\beta\)</span>  : the number of bubbles<br />
+<span class="arithmatex">\(\alpha_{n}\)</span>  : the number of pairs of vertices connected by  n  identical lines</p>
+</div>
+<h2 id="calculations-in-displaystyle-p-space">Calculations in <span class="arithmatex">\(\displaystyle p\)</span> space<a class="headerlink" href="#calculations-in-displaystyle-p-space" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title"> Feynman rules for <span class="arithmatex">\(\phi^{4}\)</span>  theory in momentum space</p>
+<p>Each vertex contributes a factor  <span class="arithmatex">\(-\mathrm{i} \lambda\)</span>
+Label each internal line with a momentum  <span class="arithmatex">\(q\)</span>  flowing along it and describe it by a propagator  <span class="arithmatex">\(\displaystyle\frac{\mathrm{i}}{q^{2}-m^{2}+\mathrm{i} \epsilon}\)</span> .
+Force the sum of each momentum coming into a vertex to be equal to the momentum leaving it.
+Integrate over unconstrained internal momenta with a measure  <span class="arithmatex">\(\displaystyle\frac{\mathrm{d}^{4} q}{(2 \pi)^{4}}\)</span> .
+External lines contribute a factor 1.
+Divide by the symmetry factor.
+Include an overall energy-momentum conserving delta function for each diagram.</p>
+</div>
+<h1 id="chapter-20-scattering-theory">Chapter 20 scattering theory<a class="headerlink" href="#chapter-20-scattering-theory" title="Permanent link">&para;</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Part%20II%20Writing%20down%20Lagrangians/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Chapter 5 Continuous systems">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Chapter 5 Continuous systems
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../../Thesis/More%20is%20different/More_is_Different/" class="md-footer__link md-footer__link--next" aria-label="Next: More is Different">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                More is Different
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      
+        <script src="../../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.bytedance.com/?query=mathjax&amp;version=3.2.0"></script>
+      
+    
+  </body>
+</html>
