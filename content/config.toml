@@ -15,9 +15,9 @@ avatar = "/Stack.jpg"
 
 email = "junwang@ihep.ac.cn"
 location = "Beijing, China"
-location_url = "https://maps.google.com"
+location_url = "https://maps.google.com/?q=Institute+of+High+Energy+Physics+CAS+Beijing"
 location_details = [
-  "Institute of High Energy Physics, CAS,",
+  "Institute of High Energy Physics, CAS, Theoretical Physics Division",
   "19B Yuquan Road, Shijingshan District, Beijing, China"
 ]
 # google_scholar = "https://scholar.google.com"

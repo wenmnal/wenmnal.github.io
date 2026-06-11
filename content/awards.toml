@@ -3,7 +3,13 @@ title = "Awards"
 description = "Honors and awards I have received."
 
 [[items]]
+title = "Merit Student of University of Chinese Academy of Sciences"
+subtitle = "University of Chinese Academy of Sciences"
+date = "2026.05"
+content = "Merit Student of University of Chinese Academy of Sciences."
+
+[[items]]
 title = "Outstanding Graduate of Central China Normal University"
 subtitle = "Central China Normal University"
-date = "2024"
+date = "2024.06"
 content = "Outstanding Graduate of Central China Normal University."

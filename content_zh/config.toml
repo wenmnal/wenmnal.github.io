@@ -11,8 +11,9 @@ institution = "中国科学院高能物理研究所"
 [social]
 email = "junwang@ihep.ac.cn"
 location = "北京, 中国"
+location_url = "https://uri.amap.com/marker?position=116.251,39.91&name=中国科学院高能物理研究所"
 location_details = [
-  "中国科学院高能物理研究所,",
+  "中国科学院高能物理研究所,理论物理室",
   "玉泉路 19 号乙, 石景山区, 北京, 中国"
 ]
 orcid = "https://orcid.org/0000-0002-0508-3349"

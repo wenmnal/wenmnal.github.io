@@ -3,8 +3,14 @@ title = "奖项"
 description = "我获得的荣誉与奖项. "
 
 [[items]]
+title="中国科学院大学三好学生"
+subtitle = "中国科学院大学"
+date = "2026.05"
+content = "中国科学院大学三好学生. "
+
+[[items]]
 title = "华中师范大学优秀毕业生"
 subtitle = "华中师范大学"
-date = "2024"
+date = "2024.06"
 content = "华中师范大学优秀毕业生. "
 
