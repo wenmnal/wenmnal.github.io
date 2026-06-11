@@ -31,6 +31,12 @@ type = "page"
 target = "publications"
 href = "/publications"
 
+[[navigation]]
+title = "文档"
+type = "page"
+target = "doc"
+href = "/doc"
+
 # [[navigation]]
 # title = "教学"
 # type = "page"

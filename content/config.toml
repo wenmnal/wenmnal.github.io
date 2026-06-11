@@ -72,6 +72,11 @@ type = "page"
 target = "awards"
 href = "/awards"
 
+[[navigation]]
+title = "Documents"
+type = "page"
+target = "doc"
+href = "/doc"
 # [[navigation]]
 # title = "Services"
 # type = "page"
