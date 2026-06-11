@@ -11,6 +11,7 @@ export interface Author {
 
 export type BibTeXInlineNode =
   | { type: 'text'; text: string }
+  | { type: 'math'; tex: string; display: boolean }
   | {
     type: 'em' | 'strong' | 'smallCaps' | 'sup' | 'sub';
     children: BibTeXInlineNode[];
@@ -22,6 +23,8 @@ export interface Publication {
   titleNodes?: BibTeXInlineNode[];
   authors: Author[];
   abstract?: string;
+  abstractNodes?: BibTeXInlineNode[];
+  descriptionNodes?: BibTeXInlineNode[];
   journal?: string;
   conference?: string;
   volume?: string;

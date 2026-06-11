@@ -1,5 +1,7 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
+I am currently a PhD student in theoretical physics at the Institute of High Energy Physics, Chinese Academy of Sciences (University of Chinese Academy of Sciences), advised by [Prof. Qiang Zhao](https://people.ucas.ac.cn/~zq).
 
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
+Prior to this, I obtained my BSc in Physics from Central China Normal University in 2024, where I was named an Outstanding Graduate.
 
-My current research focuses on investigating the mathematical principles of natural philosophy.
+My research focuses on particle physics and hadron physics.
+
+For my publication list, see [inspire](https://inspirehep.net/authors/2898695).

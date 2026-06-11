@@ -1,8 +1,33 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import { MathJax } from 'better-react-mathjax';
 import type { BibTeXInlineNode } from '@/types/publication';
 
 interface FormattedBibTeXTextProps {
   nodes?: BibTeXInlineNode[];
   fallback: string;
+}
+
+function MathNode({ tex, display }: { tex: string; display: boolean }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const delim = display ? '$$' : '$';
+  const source = `${delim}${tex}${delim}`;
+
+  if (!mounted) {
+    return <span suppressHydrationWarning>{source}</span>;
+  }
+
+  return (
+    <MathJax inline={!display} dynamic>
+      {source}
+    </MathJax>
+  );
 }
 
 function renderNodes(nodes: BibTeXInlineNode[], keyPrefix = 'node'): React.ReactNode {
@@ -11,6 +36,10 @@ function renderNodes(nodes: BibTeXInlineNode[], keyPrefix = 'node'): React.React
 
     if (node.type === 'text') {
       return node.text;
+    }
+
+    if (node.type === 'math') {
+      return <MathNode key={key} tex={node.tex} display={node.display} />;
     }
 
     const children = renderNodes(node.children, key);

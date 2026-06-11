@@ -1,6 +1,8 @@
 import type { BibTeXInlineNode } from '@/types/publication';
 
-const commandTypes: Record<string, Exclude<BibTeXInlineNode['type'], 'text'>> = {
+type StyledNodeType = 'em' | 'strong' | 'smallCaps' | 'sup' | 'sub';
+
+const commandTypes: Record<string, StyledNodeType> = {
   emph: 'em',
   textit: 'em',
   textbf: 'strong',
@@ -60,6 +62,32 @@ function parseGroup(value: string, index: number): ParseResult | null {
   return parseNodes(value, index + 1, true);
 }
 
+function readMath(value: string, index: number): { tex: string; display: boolean; index: number } | null {
+  if (value[index] !== '$') return null;
+
+  const display = value[index + 1] === '$';
+  const delim = display ? '$$' : '$';
+  const start = index + delim.length;
+  let cursor = start;
+
+  while (cursor < value.length) {
+    if (value[cursor] === '\\' && cursor + 1 < value.length) {
+      cursor += 2;
+      continue;
+    }
+    if (display) {
+      if (value[cursor] === '$' && value[cursor + 1] === '$') {
+        return { tex: value.slice(start, cursor), display: true, index: cursor + 2 };
+      }
+    } else if (value[cursor] === '$') {
+      return { tex: value.slice(start, cursor), display: false, index: cursor + 1 };
+    }
+    cursor += 1;
+  }
+
+  return null;
+}
+
 function parseNodes(value: string, startIndex: number, stopAtBrace: boolean): ParseResult {
   const nodes: BibTeXInlineNode[] = [];
   let index = startIndex;
@@ -69,6 +97,15 @@ function parseNodes(value: string, startIndex: number, stopAtBrace: boolean): Pa
 
     if (char === '}' && stopAtBrace) {
       return { nodes, index: index + 1 };
+    }
+
+    if (char === '$') {
+      const math = readMath(value, index);
+      if (math) {
+        nodes.push({ type: 'math', tex: math.tex, display: math.display });
+        index = math.index;
+        continue;
+      }
     }
 
     if (char === '{') {
@@ -125,6 +162,10 @@ export function flattenBibTeXInlineNodes(nodes: BibTeXInlineNode[]): string {
   return nodes.map((node) => {
     if (node.type === 'text') {
       return node.text;
+    }
+    if (node.type === 'math') {
+      const delim = node.display ? '$$' : '$';
+      return `${delim}${node.tex}${delim}`;
     }
     return flattenBibTeXInlineNodes(node.children);
   }).join('');

@@ -236,7 +236,7 @@ export default function PublicationsList({ config, publications, embedded = fals
 
                                     {pub.description && (
                                         <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-4 line-clamp-3">
-                                            {pub.description}
+                                            <FormattedBibTeXText nodes={pub.descriptionNodes} fallback={pub.description} />
                                         </p>
                                     )}
 
@@ -302,7 +302,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                             >
                                                 <div className="bg-neutral-50 dark:bg-neutral-800 rounded-lg p-4 border border-neutral-200 dark:border-neutral-700">
                                                     <p className="text-sm text-neutral-600 dark:text-neutral-500 leading-relaxed">
-                                                        {pub.abstract}
+                                                        <FormattedBibTeXText nodes={pub.abstractNodes} fallback={pub.abstract} />
                                                     </p>
                                                 </div>
                                             </motion.div>

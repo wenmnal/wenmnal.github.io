@@ -62,7 +62,7 @@ export default function SelectedPublications({ publications, title, enableOnePag
                         </p>
                         {pub.description && (
                             <p className="text-sm text-neutral-500 dark:text-neutral-500 line-clamp-2">
-                                {pub.description}
+                                <FormattedBibTeXText nodes={pub.descriptionNodes} fallback={pub.description} />
                             </p>
                         )}
                     </motion.div>
