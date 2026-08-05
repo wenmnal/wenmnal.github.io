@@ -2,6 +2,10 @@
 # date = "2025-04"
 # content = "第一篇论文被接收 🎉"
 [[news]]
+date = "2026-08"
+content = "第三篇论文被接收 🎉"
+
+[[news]]
 date = "2026-03"
 content = "第四篇论文完成 ✅"
 
